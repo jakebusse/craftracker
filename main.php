@@ -14,7 +14,7 @@
         <script src="../lib/js/dmc_colors.js"></script>
         <script src="../lib/js/dmc_paint.js"></script>
     </head>
-    <body onload="ran_elem_col([\'header\',\'footer\'],' . $_SESSION['color'] . ')">
+    <body onload="setAccentColor([\'header\',\'footer\'],' . $_SESSION['color'] . ')">
         <header class="header" id="header">
             <div class="header-left">
                 <a href="./home" class="' . ($current_file_name == 'home.php' ? 'active' : '') . '">Home</a>

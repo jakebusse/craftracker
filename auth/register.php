@@ -47,9 +47,9 @@
         <title>Craftracker - Login</title>
         <link rel="stylesheet" type="text/css" href="../lib/css/auth.css" />
         <script src="../lib/js/dmc_colors.js"></script>
-        <script src="../lib/js/randomdmc.js"></script>
+        <script src="../lib/js/dmc_paint.js"></script>
     </head>
-    <body  onload="ran_bg_col()">
+    <body  onload="setRanAuthBg()">
         <div id="page">
             <div class="form-container">
                 <h1>Welcome to Craftracker!</h1>
