@@ -12,7 +12,7 @@
         <link href="./lib/css/app.css" rel="stylesheet" type="text/css">
         <script src="https://kit.fontawesome.com/99974eb84c.js" crossorigin="anonymous"></script>
         <script src="../lib/js/dmc_colors.js"></script>
-        <script src="../lib/js/randomdmc.js"></script>
+        <script src="../lib/js/dmc_paint.js"></script>
     </head>
     <body onload="ran_elem_col([\'header\',\'footer\'],' . $_SESSION['color'] . ')">
         <header class="header" id="header">
