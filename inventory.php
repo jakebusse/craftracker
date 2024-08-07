@@ -62,15 +62,17 @@
             // output data of each row
             echo '<script>let color;let elem;</script>';
             echo '<table class="inventory-table" cellspacing="0"';
-            echo '<tr>
-                    <th class="color-prev"></th>
-                    <th>Manufacturer</th>
-                    <th>Number</th>
-                    <th>Quantity</th>
-                </tr>';
+            echo '
+                    <tr>
+                        <th class="color-prev"></th>
+                        <th>Manufacturer</th>
+                        <th>Number</th>
+                        <th>Quantity</th>
+                    </tr>';
             $count = 0;
             while($row = $result->fetch_assoc()) {
-                echo '<tr>
+                echo '
+                    <tr>
                         <td class="color-prev" id="cp'.$count.'"></td>
                         <td>' . $row['mfr'] . '</td>
                         <td>' . $row['num'] . '</td>
@@ -78,17 +80,7 @@
                         <td class="control"><i style="color:#8B8000;" class="fa-solid fa-pencil" /></td>
                         <td class="control"><i style="color:darkred;" class="fa-solid fa-trash" /></td>
                     </tr>
-                    <script>
-                        elem = document.getElementById(\'cp'.$count.'\');
-                        for(let i = 0; i < colors.length; i++) {
-                            if(colors[i].Number == '.$row['num'].') {
-                                color = colors[i].Hex;
-                                console.log(i);
-                                break;
-                            }
-                        }
-                        elem.style.backgroundColor = color;
-                    </script>';
+                    <script>setElemBg(\'cp'.(string)$count.'\','.($row['num']*10000).');</script>';
                 $count++;
             }
             echo '</table>';
