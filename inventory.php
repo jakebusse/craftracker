@@ -2,34 +2,51 @@
     include 'main.php';
     $configs = include('config.php');
 
+
     session_start();
     if(!$_SESSION['loggedin']) {
         header('Location: ./auth/login');
     }
 
-
-
-    $conn = new mysqli($configs->mysql_host, $configs->mysql_user, $configs->mysql_pass, $configs->mysql_db);
-    if($conn->connect_error) {
-        die("Connection Failed: " . $conn->connect_error);
+    try {
+        $conn = new PDO("mysql:host={$configs->mysql_host};dbname={$configs->mysql_db}", $configs->mysql_user, $configs->mysql_pass);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch (PDOException $e) {
+        die("Connection Failed: " . $e->getMessage());
     }
 
     if($_SERVER['REQUEST_METHOD']=="POST") {
-        $sql = "INSERT INTO inventory (mfr, num, qty, owner) VALUES ('" . $_POST['mfr'] . "', '" . $_POST['num'] . "', '" . $_POST['qty'] . "', '" . $_SESSION['id'] . "')";
-    
-        $message;
+        $sql = "INSERT INTO inventory (mfr, num, qty, owner) VALUES (:mfr, :num, :qty, :owner)";
+        $stmt = $conn->prepare($sql);
 
-        if ($conn->query($sql) === TRUE) {
-            $message = "New record created successfully";
-        } else {
-            $message = "Error: " . $sql . "<br>" . $conn->error;
+        try {
+            $stmt->execute([
+                ':mfr' => $_POST['mfr'],
+                ':num' => $_POST['num'],
+                ':qty' => $_POST['qty'],
+                ':owner' => $_SESSION['id']
+            ]);
+            echo "New record created successfully";
+        } catch (PDOException $e) {
+            if($e->errorInfo[1] == 1062) {
+                $updateSql = "UPDATE inventory SET qty = qty + :qty WHERE mfr = :mfr AND num = :num AND owner = :owner";
+                $updateStmt = $conn->prepare($updateSql);
+                $updateStmt->execute([
+                    ':qty' => $_POST['qty'],
+                    ':mfr' => $_POST['mfr'],
+                    ':num' => $_POST['num'],
+                    ':owner' => $_SESSION['id']
+                ]);
+                $_SESSION['messageDisplay'] = 'block';
+                $_SESSION['message'] = "Existing record updated with new quantity";
+            } else {
+                echo "Error: " . $e->getMessage();
+            }
         }
 
         $_POST = array();
         header('Location: ./inventory');
     }
-
-    $conn->close;
 ?>
 
 
@@ -50,15 +67,20 @@
         <input type="number" id="qty" name="qty" required />
         <input type="submit" value="Add" />
     </form>
-    <p id="form-validation"></p>
+    <p id="form-validation" style="display: <?php echo $_SESSION['messageDisplay']; ?>;color: <?php echo $_SESSION['messageColor']; ?>;"><?php echo $_SESSION['message']; ?></p>
 </div>
 
 <div class="inventory-table-container">
     <?php 
-        $sql = "SELECT id,mfr,num,qty,owner FROM inventory WHERE owner = '" . $_SESSION['id'] . "'";
-        $result = $conn->query($sql);
+        $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-        if ($result->num_rows > 0) {
+        $sql = "SELECT id, mfr, num, qty, owner FROM inventory WHERE owner = :owner";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([':owner' => $_SESSION['id']]);
+
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        if (count($results) > 0) {
             // output data of each row
             echo '<script>let color;let elem;</script>';
             echo '<table class="inventory-table" cellspacing="0"';
@@ -70,7 +92,14 @@
                         <th>Quantity</th>
                     </tr>';
             $count = 0;
-            while($row = $result->fetch_assoc()) {
+            foreach ($results as $row) {
+                if($row['qty'] <= 0) {
+                    $deleteSql = "DELETE FROM inventory WHERE id = :id";
+                    $deleteStmt = $conn->prepare($deleteSql);
+                    $deleteStmt->execute([':id' => $row['id']]);
+                    continue;
+                }
+
                 echo '
                     <tr>
                         <td class="color-prev" id="cp'.$count.'"></td>
@@ -92,24 +121,20 @@
 
 <script>
     function validateForm() {
-        let post = document.forms["inventoryAdd"];
+        let colorNum = document.forms["inventoryAdd"]["num"].value;
         const validText = document.getElementById('form-validation');
-        if(post["mfr"].value == "DMC") {
-            for(let i = 0; i < colors.length;  i++) {
-                if(colors[i].Number == post["num"].value) {
-                    validText.style.color = 'green';
-                    validText.innerText = "Adding DMC " + post["num"].value + " to inventory"
-                    return true;
-                }
-            }
-            validText.style.display = 'block';
-            validText.style.color = 'red';
-            validText.innerText = "Not a valid DMC number"
+        if(!validateDmcColor(colorNum)) {
+            // validText.style.display = 'block';
+            // validText.style.color = 'red';
+            // validText.innerText = "Not a valid DMC number"
+            validText.innerHTML = "<?php $_STATUS['messageDisplay']='block';$_STATUS['messageColor']='red';$_STATUS['message']='Invalid DMC Number';echo $_STATUS['message']; ?>";
             return false;
         }
+        return true;
     }
 </script>
 
 <?php
-    template_footer('Home')
+    template_footer('Home');
+    $conn = null;
 ?>

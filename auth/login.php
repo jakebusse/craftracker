@@ -27,6 +27,7 @@
                     } else {
                         $_SESSION['color'] = rand(0, 485);
                     }
+                    session_message_init();
                     header('Location: ../home');
                 }
             }

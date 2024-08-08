@@ -1,5 +1,13 @@
 <?php
-    session_start();
+    ini_set('display_errors', '1');
+    ini_set('display_startup_errors', '1');
+    error_reporting(E_ALL);
+
+    function session_message_init() {
+        $_SESSION['message'] = '';
+        $_SESSION['messageDisplay'] = 'none';
+        $_SESSION['messageColor'] = 'black';
+    }
 
     function template_header($title) {
         $current_file_name = basename($_SERVER['PHP_SELF']);
