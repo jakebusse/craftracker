@@ -54,88 +54,39 @@
     template_header('Home');
 ?>
 
-<div class="inventory-form-container">
-    <fieldset>
-        <legend>Individual Add</legend>
-        <form name="inventoryAdd" onsubmit="return validateForm();" method="post">
-            <select id="mfr" name="mfr" required>
-                <option disable selected value>Brand</option>
-                <option value="DMC">DMC</option>
-            </select>
-            <input type="number" id="num" name="num" placeholder="Number" required />
-            <input type="number" id="qty" name="qty" placeholder="Quantity" required />
-            <input type="submit" id="submit" value="Add" />
-        </form>
-        <p id="form-validation" style="display: <?php echo $_SESSION['messageDisplay']; ?>;color: <?php echo $_SESSION['messageColor']; ?>;"><?php echo $_SESSION['message']; ?></p>
-    </fieldset>
-    <fieldset>
-        <legend>Bulk Add</legend>
-    </fieldset>
+<div class="tab-container">
+    <div class="tab">
+        <div class="tablinks" onclick="openTab(event, 'DMC')" id="defaultOpen">DMC</div>
+        <div class="tablinks" onclick="openTab(event, 'Anchor')">Anchor</div>
+        <div class="fillertab">&nbsp;</div>
+    </div>
+
+    <div id="DMC" class="tabcontent">
+        <div class="inventory-actions">
+            <div>
+            <form>
+                <label for="filter"><i class="fa-solid fa-filter"></i>
+                <input type="text" class="text" id="filter" name="filter" />
+                <input type="submit" id="submit" value="Search" />
+            </form>
+            </div>
+            <div>
+                <form>
+                    <label for="quickadd"><i class="fa-solid fa-circle-plus"></i></label>
+                    <input type="text" class="text" id="quickadd" name="quickadd" />
+                    <input type="submit" id="submit" value="Add" />
+                </form>
+            </div>
+            <button class="new"><i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Add New</button>
+        </div>
+    </div>
+
+    <div id="Anchor" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p> 
+    </div>
+    <script src="./lib/js/inventory.js"></script>
 </div>
-
-<div class="inventory-table-container">
-    <?php 
-        $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-
-        $sql = "SELECT id, mfr, num, qty, owner FROM inventory WHERE owner = :owner";
-        $stmt = $conn->prepare($sql);
-        $stmt->execute([':owner' => $_SESSION['id']]);
-
-        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-        if (count($results) > 0) {
-            // output data of each row
-            echo '<script>let color;let elem;</script>';
-            echo '<table class="inventory-table" cellspacing="0"';
-            echo '
-                    <tr>
-                        <th class="color-prev"></th>
-                        <th>Manufacturer</th>
-                        <th>Number</th>
-                        <th>Quantity</th>
-                    </tr>';
-            $count = 0;
-            foreach ($results as $row) {
-                if($row['qty'] <= 0) {
-                    $deleteSql = "DELETE FROM inventory WHERE id = :id";
-                    $deleteStmt = $conn->prepare($deleteSql);
-                    $deleteStmt->execute([':id' => $row['id']]);
-                    continue;
-                }
-
-                echo '
-                    <tr>
-                        <td class="color-prev" id="cp'.$count.'"></td>
-                        <td>' . $row['mfr'] . '</td>
-                        <td>' . $row['num'] . '</td>
-                        <td>' . $row['qty'] . '</td>
-                        <td class="control"><i style="color:#8B8000;" class="fa-solid fa-pencil" /></td>
-                        <td class="control"><i style="color:darkred;" class="fa-solid fa-trash" /></td>
-                    </tr>
-                    <script>setElemBg(\'cp'.(string)$count.'\','.($row['num']*10000).');</script>';
-                $count++;
-            }
-            echo '</table>';
-        } else {
-            echo "<p>0 results</p>";
-        }
-    ?>
-</div>
-
-<script>
-    function validateForm() {
-        let colorNum = document.forms["inventoryAdd"]["num"].value;
-        const validText = document.getElementById('form-validation');
-        if(!validateDmcColor(colorNum)) {
-            // validText.style.display = 'block';
-            // validText.style.color = 'red';
-            // validText.innerText = "Not a valid DMC number"
-            validText.innerHTML = "<?php $_STATUS['messageDisplay']='block';$_STATUS['messageColor']='red';$_STATUS['message']='Invalid DMC Number';echo $_STATUS['message']; ?>";
-            return false;
-        }
-        return true;
-    }
-</script>
 
 <?php
     template_footer('Home');
