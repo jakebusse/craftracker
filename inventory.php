@@ -55,19 +55,22 @@
 ?>
 
 <div class="inventory-form-container">
-    <form name="inventoryAdd" onsubmit="return validateForm();" method="post">
-        <label for="mfr">Brand</label>
-        <select id="mfr" name="mfr" required>
-            <option disable selected value>-- Select --</option>
-            <option value="DMC">DMC</option>
-        </select>
-        <label for="num">Number</label>
-        <input type="number" id="num" name="num" required />
-        <label for="qty">Quantity</label>
-        <input type="number" id="qty" name="qty" required />
-        <input type="submit" value="Add" />
-    </form>
-    <p id="form-validation" style="display: <?php echo $_SESSION['messageDisplay']; ?>;color: <?php echo $_SESSION['messageColor']; ?>;"><?php echo $_SESSION['message']; ?></p>
+    <fieldset>
+        <legend>Individual Add</legend>
+        <form name="inventoryAdd" onsubmit="return validateForm();" method="post">
+            <select id="mfr" name="mfr" required>
+                <option disable selected value>Brand</option>
+                <option value="DMC">DMC</option>
+            </select>
+            <input type="number" id="num" name="num" placeholder="Number" required />
+            <input type="number" id="qty" name="qty" placeholder="Quantity" required />
+            <input type="submit" id="submit" value="Add" />
+        </form>
+        <p id="form-validation" style="display: <?php echo $_SESSION['messageDisplay']; ?>;color: <?php echo $_SESSION['messageColor']; ?>;"><?php echo $_SESSION['message']; ?></p>
+    </fieldset>
+    <fieldset>
+        <legend>Bulk Add</legend>
+    </fieldset>
 </div>
 
 <div class="inventory-table-container">

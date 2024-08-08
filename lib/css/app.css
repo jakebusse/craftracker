@@ -61,8 +61,47 @@ body {
 }
 
 .inventory-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.inventory-form-container fieldset {
     border: 1px solid #333;
     padding: 15px;
+    background-color: #fff;
+}
+
+.inventory-form-container form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    row-gap: 15px;
+    column-gap: 5px;
+}
+
+.inventory-form-container form fieldset {
+    border: none;
+}
+
+.inventory-form-container input, select {
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+.inventory-form-container select {
+    flex-grow: 6;
+}
+
+.inventory-form-container input#submit {
+    align-self: flex-end;
+    justify-self: center;
+    flex-basis: 100%;
 }
 
 #form-validation {
