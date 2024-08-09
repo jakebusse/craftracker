@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craftracker - Login</title>
+    <link rel="stylesheet" type="text/css" href="../lib/css/auth.css" />
+    <script src="../lib/js/dmc_colors.js"></script>
+    <script src="../lib/js/dmc_paint.js"></script>
+</head>
+<body onload="setRanAuthBg()">
+    <div id="page">
+        <div class="form-container">
+            <h1>Welcome Back!</h1>
+            <div id="form-validation"></div>
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <input type="text" name="username" placeholder="betsy.devonshire" id="username" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="••••••••••••••" id="password" required>
+                <input type="submit" value="Login">
+            </form>
+            <h3>New to Craftracker? <a href="./register" class="toggle">Register here</a></h3>
+        </div>
+        <p id="dmc"></p>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent the default form submission
+
+            const formData = new FormData(this);
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', 'xLogin.php', true);
+
+            xhr.onload = function() {
+                const response = JSON.parse(this.responseText);
+                const validationDiv = document.getElementById('form-validation');
+
+                if (response.status === 'success') {
+                    window.location.href = response.redirect; // Redirect on success
+                } else {
+                    validationDiv.style.display = 'block';
+                    validationDiv.style.color = 'red';
+                    validationDiv.innerText = response.message;
+                }
+            };
+
+            xhr.onerror = function() {
+                console.error("Request failed due to a network error.");
+            };
+
+            xhr.send(formData);
+        });
+    </script>
+</body>
+</html>
