@@ -6,18 +6,21 @@
 
     if($_SERVER['REQUEST_METHOD']=="POST") {
     
-        $conn = new mysqli($configs->mysql_host, $configs->mysql_user, $configs->mysql_pass, $configs->mysql_db);
-        if($conn->connect_error) {
-            die("Connection Failed: " . $conn->connect_error);
+        try {
+            $conn = new PDO("mysql:host={$configs->mysql_host};dbname={$configs->mysql_db}", $configs->mysql_user, $configs->mysql_pass);
+            $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
+            die("Connection Failed: " . $e->getMessage());
         }
 
         $sql = "SELECT id,username,password,dmc FROM accounts WHERE username = '" . $_POST['username'] . "'";
-        $result = $conn->query($sql);
+        $stmt = $conn->prepare($sql);
+        $stmt->execute();
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        if ($result->num_rows > 0) {
-            // output data of each row
-            while($row = $result->fetch_assoc()) {
-                if(password_verify($_POST["password"], $row["password"])) {
+        if(count($results) > 0) {
+            foreach($results as $row) {
+                if(password_verify($_POST['password'], $row['password'])) {
                     session_regenerate_id();
                     $_SESSION['loggedin'] = TRUE;
                     $_SESSION['user'] = $row['username'];
@@ -25,17 +28,48 @@
                     if($row["dmc"] > 0) {
                         $_SESSION['color'] = $row['dmc'] * 10000;
                     } else {
-                        $_SESSION['color'] = rand(0, 485);
+                        $_SESSION['color'] = rand(0,485);
                     }
                     session_message_init();
                     header('Location: ../home');
+                } else {
+                    echo "Invalid username or password";
                 }
             }
-        } else {
-            echo "0 results";
         }
+
+        $conn = null;
+
+        // $conn = new mysqli($configs->mysql_host, $configs->mysql_user, $configs->mysql_pass, $configs->mysql_db);
+        // if($conn->connect_error) {
+        //     die("Connection Failed: " . $conn->connect_error);
+        // }
+
+        // $sql = "SELECT id,username,password,dmc FROM accounts WHERE username = '" . $_POST['username'] . "'";
+        // $result = $conn->query($sql);
+
+        // if ($result->num_rows > 0) {
+        //     // output data of each row
+        //     while($row = $result->fetch_assoc()) {
+        //         if(password_verify($_POST["password"], $row["password"])) {
+        //             session_regenerate_id();
+        //             $_SESSION['loggedin'] = TRUE;
+        //             $_SESSION['user'] = $row['username'];
+        //             $_SESSION['id'] = $row['id'];
+        //             if($row["dmc"] > 0) {
+        //                 $_SESSION['color'] = $row['dmc'] * 10000;
+        //             } else {
+        //                 $_SESSION['color'] = rand(0, 485);
+        //             }
+        //             session_message_init();
+        //             header('Location: ../home');
+        //         }
+        //     }
+        // } else {
+        //     echo "0 results";
+        // }
           
-        $conn->close();
+        // $conn->close();
     }
 ?>
 

@@ -49,3 +49,7 @@ input {
     font-size: 18px;
     cursor: default;
 }
+
+#form-validation {
+    display: none;
+}
