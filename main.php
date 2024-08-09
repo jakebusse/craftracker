@@ -9,6 +9,33 @@
         $_SESSION['messageColor'] = 'black';
     }
 
+    function hex2rgb($hex) {
+        $hex = str_replace("#", "", $hex);
+    
+        if(strlen($hex) == 3) {
+            $r = hexdec(substr($hex,0,1).substr($hex,0,1));
+            $g = hexdec(substr($hex,1,1).substr($hex,1,1));
+            $b = hexdec(substr($hex,2,1).substr($hex,2,1));
+        } else {
+            $r = hexdec(substr($hex,0,2));
+            $g = hexdec(substr($hex,2,2));
+            $b = hexdec(substr($hex,4,2));
+        }
+        $rgb = array($r, $g, $b);
+        //return implode(",", $rgb); // returns the rgb values separated by commas
+        return $rgb; // returns an array with the rgb values
+    }
+
+    function dmcTextColor($hex, $opacity) {
+        $rgb = hex2rgb($hex);
+        $brightness = (0.2126 * $rgb[0]) + (0.7152 * $rgb[1]) + (0.0722 * $rgb[2]);
+        if($brightness >= 128) {
+            return 'rgba(0,0,0,' . (string)$opacity . ')';
+        } else {
+            return 'rgba(255,255,255,' . (string)$opacity . ')';
+        }
+    }
+
     function template_header($title) {
         $current_file_name = basename($_SERVER['PHP_SELF']);
         echo '<!DOCTYPE html>

@@ -1,3 +1,9 @@
+<?php
+    $main = include('../main.php');
+    $dmc_colors_json = file_get_contents('../lib/js/dmc_colors.json');
+    $dmc_colors = json_decode($dmc_colors_json, true); 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +36,13 @@
                 <input type="password" name="password" placeholder="••••••••••••••" id="password" required />
                 
                 <label for="favDmc">Favorite DMC Color</label>
-                <input type="number" name="favDmc" id="favDmc" />
+                <select name="favDmc" id="favDmc">
+                    <?php
+                        foreach($dmc_colors as $key => $value) {
+                            echo '<option value="'.$value['number'].'" style="background-color:#'.$value['hex'].';color:'.dmcTextColor($value['hex'],0.75).';">'.$value['number'].'</option>';
+                        }
+                    ?>
+                </select>
 
                 <input type="submit" value="Register">
             </form>
