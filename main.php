@@ -45,8 +45,10 @@
         <meta name="viewport" content="width=device-width,minimum-scale=1">
         <title>Craftracker - ' . $title . '</title>
         <link href="./lib/css/app.css" rel="stylesheet" type="text/css">
-        <script src="https://kit.fontawesome.com/99974eb84c.js" crossorigin="anonymous"></script>
+         <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
         <script src="../lib/js/dmc.js"></script>
+        <script src="../lib/js/main.js"></script>
     </head>
     <body onload="setAccentColor([\'header\',\'footer\'],' . $_SESSION['color'] . ')">
         <header class="header" id="header">
@@ -56,8 +58,15 @@
             </div>
 
             <div class="header-right">
-                <a href="" class="icon"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;' . $_SESSION['user'] . '</a>
-                <a href="./auth/logout" class="icon" title="Logout"><i class="fa-solid fa-right-from-bracket"></i></a>
+                <div class="dropdown">
+                    <button onclick="showDropdown()" class="icon profilebtn"><i class="bx bxs-user"></i>'.$_SESSION['user'].'</button>
+                    <div id="profileMenu" class="dropdown-menu">
+                        <a href="#home"><i class="bx bx-window-alt"></i>My Page <i>(beta)</i></a>
+                        <a href="#about"><i class="bx bxs-user-account"></i>My Account</a>
+                        <a href="./auth/logout"><i class="bx bx-log-out"></i>Logout</a>
+                    </div>
+                </div>
+                <!--- <a href="./auth/logout" class="icon" title="Logout"><i class="fa-solid fa-right-from-bracket"></i></a> -->
             </div>
         </header>
 
