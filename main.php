@@ -53,8 +53,8 @@
     <body onload="setAccentColor([\'header\',\'footer\'],' . $_SESSION['color'] . ')">
         <header class="header" id="header">
             <div class="header-left">
-                <a href="./home" class="' . ($current_file_name == 'home.php' ? 'active' : '') . '">Home</a>
-                <a href="./inventory" class="' . ($current_file_name == 'inventory.php' ? 'active' : '') . '">Inventory</a>
+                <a href="./home" id="' . ($current_file_name == 'home.php' ? 'active' : '') . '">Home</a>
+                <a href="./inventory" id="' . ($current_file_name == 'inventory.php' ? 'active' : '') . '">Inventory</a>
             </div>
 
             <div class="header-right">

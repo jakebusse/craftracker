@@ -36,11 +36,6 @@ body {
     vertical-align: middle;
 }
 
-.header a.active {
-    border: 1px solid white;
-}
-
-
 .content {
   order: 2;
   background-color: #f4f4fb;
