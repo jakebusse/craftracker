@@ -65,14 +65,14 @@
         <div class="inventory-actions">
             <div>
             <form>
-                <label for="filter"><i class="fa-solid fa-filter"></i>
+                <label for="filter"><i class="bx bxs-filter-alt"></i>
                 <input type="text" class="text" id="filter" name="filter" />
                 <input type="submit" id="submit" value="Search" />
             </form>
             </div>
             <div>
                 <form>
-                    <label for="quickadd"><i class="fa-solid fa-circle-plus"></i></label>
+                    <label for="quickadd"><i class="bx bxs-plus-circle"></i></label>
                     <input type="text" class="text" id="quickadd" name="quickadd" />
                     <input type="submit" id="submit" value="Add" />
                 </form>

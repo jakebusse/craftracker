@@ -53,15 +53,15 @@
     <body onload="setAccentColor([\'header\',\'footer\'],' . $_SESSION['color'] . ')">
         <header class="header" id="header">
             <div class="header-left">
-                <a href="./home" id="' . ($current_file_name == 'home.php' ? 'active' : '') . '">Home</a>
-                <a href="./inventory" id="' . ($current_file_name == 'inventory.php' ? 'active' : '') . '">Inventory</a>
+                <a href="./home" id="' . ($current_file_name == 'home.php' ? 'active' : '') . '"><i class="bx bx-home"></i>Home</a>
+                <a href="./inventory" id="' . ($current_file_name == 'inventory.php' ? 'active' : '') . '"><i class="bx bx-box"></i>Inventory</a>
             </div>
 
             <div class="header-right">
                 <div class="dropdown">
                     <button onclick="showDropdown()" class="icon profilebtn"><i class="bx bxs-user"></i>'.$_SESSION['user'].'</button>
                     <div id="profileMenu" class="dropdown-menu">
-                        <a href="#home"><i class="bx bx-window-alt"></i>My Page <i>(beta)</i></a>
+                        <!--- <a href="#home"><i class="bx bx-window-alt"></i>My Page <i>(beta)</i></a> -->
                         <a href="#about"><i class="bx bxs-user-account"></i>My Account</a>
                         <a href="./auth/logout"><i class="bx bx-log-out"></i>Logout</a>
                     </div>
