@@ -200,4 +200,14 @@ body {
     background-color: rgba(0,0,0,0.25);
   }
   
-  .show {display: block};
+  .show {
+    display: block;
+  }
+
+  .account-block {
+    margin: 25px;
+  }
+
+  .account-block form {
+    margin: 0px 75px;
+  }

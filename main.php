@@ -62,7 +62,7 @@
                     <button onclick="showDropdown()" class="icon profilebtn"><i class="bx bxs-user"></i>'.$_SESSION['user'].'</button>
                     <div id="profileMenu" class="dropdown-menu">
                         <!--- <a href="#home"><i class="bx bx-window-alt"></i>My Page <i>(beta)</i></a> -->
-                        <a href="#about"><i class="bx bxs-user-account"></i>My Account</a>
+                        <a href="./account"><i class="bx bxs-user-account"></i>My Account</a>
                         <a href="./auth/logout"><i class="bx bx-log-out"></i>Logout</a>
                     </div>
                 </div>

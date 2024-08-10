@@ -3,6 +3,9 @@ include '../main.php';
 $configs = include('../config.php');
 
 session_start();
+if($_SESSION['loggedin']) {
+    header('Location: ../home');
+}
 
 $response = ['status' => 'error', 'message' => ''];
 
