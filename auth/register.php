@@ -11,8 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Craftracker - Register</title>
     <link rel="stylesheet" href="../lib/css/auth.css">
-    <script src="../lib/js/dmc_colors.js"></script>
-    <script src="../lib/js/dmc_paint.js"></script>
+    <script src="../lib/js/dmc_colors.json"></script>
+    <script src="../lib/js/dmc.js"></script>
 </head>
 <body onload="setRanAuthBg()">
     <div id="page">
@@ -37,9 +37,10 @@
                 
                 <label for="favDmc">Favorite DMC Color</label>
                 <select name="favDmc" id="favDmc">
+                    <option selected value="-1"></option>
                     <?php
                         foreach($dmc_colors as $key => $value) {
-                            echo '<option value="'.$value['number'].'" style="background-color:#'.$value['hex'].';color:'.dmcTextColor($value['hex'],0.75).';">'.$value['number'].'</option>';
+                            echo '<option value="'.(string)$value['number'].'" style="background-color:'.$value['hex'].';color:'.dmcTextColor($value['hex'],0.75).';">'.$value['number'].'</option>';
                         }
                     ?>
                 </select>

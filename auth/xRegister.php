@@ -37,12 +37,7 @@
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['user'] = $_POST['username'];
             $_SESSION['id'] = $conn->lastInsertId();
-
-            if($dmc > 0) {
-                $_SESSION['color'] = $dmc * 10000;
-            } else {
-                $_SESSION['color'] = rand(0,485);
-            }
+            $_SESSION['color'] = $dmc;
 
             $response['status'] = 'success';
             $response['message'] = 'Registration successful!';

@@ -1,2738 +1,3922 @@
 {
+  "1": {
+    "number": 1,
+    "name": "White Tin",
+    "hex": "#E3E3E6",
+    "red": 227,
+    "green": 227,
+    "blue": 230
+  },
+  "2": {
+    "number": 2,
+    "name": "Tin",
+    "hex": "#D7D7D8",
+    "red": 215,
+    "green": 215,
+    "blue": 216
+  },
+  "3": {
+    "number": 3,
+    "name": "Tin Medium",
+    "hex": "#B8B8BB",
+    "red": 184,
+    "green": 184,
+    "blue": 187
+  },
+  "4": {
+    "number": 4,
+    "name": "Tin Dark",
+    "hex": "#AEAEB1",
+    "red": 174,
+    "green": 174,
+    "blue": 177
+  },
+  "5": {
+    "number": 5,
+    "name": "Driftwood Light",
+    "hex": "#E3CCBE",
+    "red": 227,
+    "green": 204,
+    "blue": 190
+  },
+  "6": {
+    "number": 6,
+    "name": "Driftwood Medium Light",
+    "hex": "#DCC6B8",
+    "red": 220,
+    "green": 198,
+    "blue": 184
+  },
+  "7": {
+    "number": 7,
+    "name": "Driftwood",
+    "hex": "#8F7B6E",
+    "red": 143,
+    "green": 123,
+    "blue": 110
+  },
+  "8": {
+    "number": 8,
+    "name": "Driftwood Dark",
+    "hex": "#6A5046",
+    "red": 106,
+    "green": 80,
+    "blue": 70
+  },
+  "9": {
+    "number": 9,
+    "name": "Cocoa Very Dark",
+    "hex": "#552014",
+    "red": 85,
+    "green": 32,
+    "blue": 14
+  },
+  "10": {
+    "number": 10,
+    "name": "Tender green Very Light",
+    "hex": "#EDFED9",
+    "red": 237,
+    "green": 254,
+    "blue": 217
+  },
+  "11": {
+    "number": 11,
+    "name": "Tender green Light",
+    "hex": "#E2EDB5",
+    "red": 226,
+    "green": 237,
+    "blue": 181
+  },
+  "12": {
+    "number": 12,
+    "name": "Tender green",
+    "hex": "#CDD99A",
+    "red": 205,
+    "green": 217,
+    "blue": 154
+  },
+  "13": {
+    "number": 13,
+    "name": "Nile green Medium Light",
+    "hex": "#BFF6E0",
+    "red": 191,
+    "green": 246,
+    "blue": 224
+  },
+  "14": {
+    "number": 14,
+    "name": "Apple green Pale",
+    "hex": "#D0FBB2",
+    "red": 208,
+    "green": 251,
+    "blue": 178
+  },
+  "15": {
+    "number": 15,
+    "name": "Apple green",
+    "hex": "#D1EDA4",
+    "red": 209,
+    "green": 237,
+    "blue": 164
+  },
+  "16": {
+    "number": 16,
+    "name": "Chartreuse Light",
+    "hex": "#C9C258",
+    "red": 201,
+    "green": 194,
+    "blue": 88
+  },
+  "17": {
+    "number": 17,
+    "name": "Yellow Plum Light",
+    "hex": "#E5E272",
+    "red": 229,
+    "green": 226,
+    "blue": 114
+  },
+  "18": {
+    "number": 18,
+    "name": "Yellow Plum",
+    "hex": "#D9D56D",
+    "red": 217,
+    "green": 213,
+    "blue": 109
+  },
+  "19": {
+    "number": 19,
+    "name": "Autumn Gold medium Light",
+    "hex": "#F7C95F",
+    "red": 247,
+    "green": 201,
+    "blue": 95
+  },
+  "20": {
+    "number": 20,
+    "name": "Shrimp",
+    "hex": "#F7AF93",
+    "red": 247,
+    "green": 175,
+    "blue": 147
+  },
+  "21": {
+    "number": 21,
+    "name": "Alizarin Light",
+    "hex": "#D79982",
+    "red": 215,
+    "green": 153,
+    "blue": 130
+  },
+  "22": {
+    "number": 22,
+    "name": "Alizarin",
+    "hex": "#BC604E",
+    "red": 188,
+    "green": 96,
+    "blue": 78
+  },
+  "23": {
+    "number": 23,
+    "name": "Apple Blossom",
+    "hex": "#EDE2ED",
+    "red": 237,
+    "green": 226,
+    "blue": 237
+  },
+  "24": {
+    "number": 24,
+    "name": "White Lavender",
+    "hex": "#E0D7EE",
+    "red": 224,
+    "green": 215,
+    "blue": 238
+  },
+  "25": {
+    "number": 25,
+    "name": "Lavender Ultra Light",
+    "hex": "#DAD2E9",
+    "red": 218,
+    "green": 210,
+    "blue": 233
+  },
+  "26": {
+    "number": 26,
+    "name": "Lavender Pale",
+    "hex": "#D7CAE6",
+    "red": 215,
+    "green": 202,
+    "blue": 230
+  },
+  "27": {
+    "number": 27,
+    "name": "White Violet",
+    "hex": "#F0EEF9",
+    "red": 240,
+    "green": 238,
+    "blue": 249
+  },
+  "28": {
+    "number": 28,
+    "name": "Eggplant Medium Light",
+    "hex": "#9086A9",
+    "red": 144,
+    "green": 134,
+    "blue": 169
+  },
+  "29": {
+    "number": 29,
+    "name": "Eggplant",
+    "hex": "#674076",
+    "red": 103,
+    "green": 64,
+    "blue": 118
+  },
+  "30": {
+    "number": 30,
+    "name": "blueberry Medium Light",
+    "hex": "#7D77A5",
+    "red": 125,
+    "green": 119,
+    "blue": 165
+  },
+  "31": {
+    "number": 31,
+    "name": "blueberry",
+    "hex": "#50518D",
+    "red": 80,
+    "green": 81,
+    "blue": 141
+  },
+  "32": {
+    "number": 32,
+    "name": "blueberry Dark",
+    "hex": "#4D2E8A",
+    "red": 77,
+    "green": 46,
+    "blue": 138
+  },
+  "33": {
+    "number": 33,
+    "name": "Fuschia",
+    "hex": "#9C599C",
+    "red": 156,
+    "green": 89,
+    "blue": 158
+  },
+  "34": {
+    "number": 34,
+    "name": "Fuschia Dark",
+    "hex": "#7D3064",
+    "red": 125,
+    "green": 48,
+    "blue": 100
+  },
+  "35": {
+    "number": 35,
+    "name": "Fuschia Very Dark",
+    "hex": "#46052D",
+    "red": 70,
+    "green": 5,
+    "blue": 45
+  },
   "150": {
-    "number": "150",
-    "readableName": "Red - BRIGHT",
-    "searchName": "red_-_bright",
-    "hex": "cf0053"
+    "number": 150,
+    "name": "Dusty Rose Ultra Very Dark",
+    "hex": "#AB0249",
+    "red": 171,
+    "green": 2,
+    "blue": 73
   },
   "151": {
-    "number": "151",
-    "readableName": "Pink",
-    "searchName": "pink",
-    "hex": "ffcbd7"
+    "number": 151,
+    "name": "Dusty Rose Very Light",
+    "hex": "#F0CED4",
+    "red": 240,
+    "green": 206,
+    "blue": 212
   },
   "152": {
-    "number": "152",
-    "readableName": "Tawny - DK",
-    "searchName": "tawny_-_dk",
-    "hex": "e1a1a1"
+    "number": 152,
+    "name": "Shell Pink Medium Light",
+    "hex": "#E2A099",
+    "red": 226,
+    "green": 160,
+    "blue": 153
   },
   "153": {
-    "number": "153",
-    "readableName": "Lilac",
-    "searchName": "lilac",
-    "hex": "eac5eb"
+    "number": 153,
+    "name": "Violet Very Light",
+    "hex": "#E6CCD9",
+    "red": 230,
+    "green": 204,
+    "blue": 217
   },
   "154": {
-    "number": "154",
-    "readableName": "Red - VY DK",
-    "searchName": "red_-_vy_dk",
-    "hex": "4b233a"
+    "number": 154,
+    "name": "Grape Very Dark",
+    "hex": "#572433",
+    "red": 87,
+    "green": 36,
+    "blue": 51
   },
   "155": {
-    "number": "155",
-    "readableName": "Forget-me-not Blue",
-    "searchName": "forget-me-not_blue",
-    "hex": "9774b6"
+    "number": 155,
+    "name": "blue Violet Medium Dark",
+    "hex": "#9891B6",
+    "red": 152,
+    "green": 145,
+    "blue": 182
   },
   "156": {
-    "number": "156",
-    "readableName": "Blue - MED",
-    "searchName": "blue_-_med",
-    "hex": "8577b4"
+    "number": 156,
+    "name": "blue Violet Medium Light",
+    "hex": "#A3AED1",
+    "red": 163,
+    "green": 174,
+    "blue": 209
   },
   "157": {
-    "number": "157",
-    "readableName": "Blue - LT",
-    "searchName": "blue_-_lt",
-    "hex": "b5b8ea"
+    "number": 157,
+    "name": "Cornflower blue Very Light",
+    "hex": "#BBC3D9",
+    "red": 187,
+    "green": 195,
+    "blue": 217
   },
   "158": {
-    "number": "158",
-    "readableName": "Blue - DK",
-    "searchName": "blue_-_dk",
-    "hex": "393068"
+    "number": 158,
+    "name": "Cornflower blue Very Dark",
+    "hex": "#4C526E",
+    "red": 76,
+    "green": 82,
+    "blue": 110
   },
   "159": {
-    "number": "159",
-    "readableName": "Petrol Blue - LT",
-    "searchName": "petrol_blue_-_lt",
-    "hex": "bcb5de"
+    "number": 159,
+    "name": "blue Gray Light",
+    "hex": "#C7CAD7",
+    "red": 199,
+    "green": 202,
+    "blue": 215
   },
   "160": {
-    "number": "160",
-    "readableName": "Petrol Blue - MED",
-    "searchName": "petrol_blue_-_med",
-    "hex": "8178a9"
+    "number": 160,
+    "name": "blue Gray Medium",
+    "hex": "#999FB7",
+    "red": 153,
+    "green": 159,
+    "blue": 183
   },
   "161": {
-    "number": "161",
-    "readableName": "Petrol Blue - DK",
-    "searchName": "petrol_blue_-_dk",
-    "hex": "60568b"
+    "number": 161,
+    "name": "blue Gray",
+    "hex": "#7880A4",
+    "red": 120,
+    "green": 128,
+    "blue": 164
   },
   "162": {
-    "number": "162",
-    "readableName": "Baby Blue - LT",
-    "searchName": "baby_blue_-_lt",
-    "hex": "cae7f0"
+    "number": 162,
+    "name": "blue Ultra Very Light",
+    "hex": "#DBECF5",
+    "red": 219,
+    "green": 236,
+    "blue": 245
   },
   "163": {
-    "number": "163",
-    "readableName": "Green",
-    "searchName": "green",
-    "hex": "557a60"
+    "number": 163,
+    "name": "Celadon green Medium",
+    "hex": "#4D8361",
+    "red": 77,
+    "green": 131,
+    "blue": 97
   },
   "164": {
-    "number": "164",
-    "readableName": "Green - LT",
-    "searchName": "green_-_lt",
-    "hex": "bae4b6"
+    "number": 164,
+    "name": "Forest green Light",
+    "hex": "#C8D8B8",
+    "red": 200,
+    "green": 216,
+    "blue": 184
   },
   "165": {
-    "number": "165",
-    "readableName": "Green - BRIGHT",
-    "searchName": "green_-_bright",
-    "hex": "e1f477"
+    "number": 165,
+    "name": "Moss green Very Light",
+    "hex": "#EFF4A4",
+    "red": 239,
+    "green": 244,
+    "blue": 164
   },
   "166": {
-    "number": "166",
-    "readableName": "Lime Green",
-    "searchName": "lime_green",
-    "hex": "adc238"
+    "number": 166,
+    "name": "Moss green Medium Light",
+    "hex": "#C0C840",
+    "red": 192,
+    "green": 200,
+    "blue": 64
   },
   "167": {
-    "number": "167",
-    "readableName": "Khaki Brown",
-    "searchName": "khaki_brown",
-    "hex": "855d31"
+    "number": 167,
+    "name": "Yellow Beige Very Dark",
+    "hex": "#A77C49",
+    "red": 167,
+    "green": 124,
+    "blue": 73
   },
   "168": {
-    "number": "168",
-    "readableName": "Silver Gray",
-    "searchName": "silver_gray",
-    "hex": "b1aeb7"
+    "number": 168,
+    "name": "Pewter Very Light",
+    "hex": "#D1D1D1",
+    "red": 209,
+    "green": 209,
+    "blue": 209
   },
   "169": {
-    "number": "169",
-    "readableName": "Pewter Gray",
-    "searchName": "pewter_gray",
-    "hex": "827d7d"
+    "number": 169,
+    "name": "Pewter Light",
+    "hex": "#848484",
+    "red": 132,
+    "green": 132,
+    "blue": 132
   },
   "208": {
-    "number": "208",
-    "readableName": "Lavender - VY DK",
-    "searchName": "lavender_-_vy_dk",
-    "hex": "9442a7"
+    "number": 208,
+    "name": "Lavender Very Dark",
+    "hex": "#835B8B",
+    "red": 131,
+    "green": 91,
+    "blue": 139
   },
   "209": {
-    "number": "209",
-    "readableName": "Lavender - DK",
-    "searchName": "lavender_-_dk",
-    "hex": "ba72c6"
+    "number": 209,
+    "name": "Lavender Dark",
+    "hex": "#A37BA7",
+    "red": 163,
+    "green": 123,
+    "blue": 167
   },
   "210": {
-    "number": "210",
-    "readableName": "Lavender - MED",
-    "searchName": "lavender_-_med",
-    "hex": "d49fe1"
+    "number": 210,
+    "name": "Lavender Medium",
+    "hex": "#D29FC3",
+    "red": 195,
+    "green": 159,
+    "blue": 195
   },
   "211": {
-    "number": "211",
-    "readableName": "Lavender - LT",
-    "searchName": "lavender_-_lt",
-    "hex": "e5bded"
+    "number": 211,
+    "name": "Lavender Light",
+    "hex": "#E3CBE3",
+    "red": 227,
+    "green": 203,
+    "blue": 227
   },
   "221": {
-    "number": "221",
-    "readableName": "Shell Pink - VY DK",
-    "searchName": "shell_pink_-_vy_dk",
-    "hex": "792631"
+    "number": 221,
+    "name": "Shell Pink Very Dark",
+    "hex": "#883E43",
+    "red": 136,
+    "green": 62,
+    "blue": 67
   },
   "223": {
-    "number": "223",
-    "readableName": "Shell Pink - LT",
-    "searchName": "shell_pink_-_lt",
-    "hex": "bb6864"
+    "number": 223,
+    "name": "Shell Pink Light",
+    "hex": "#CC847C",
+    "red": 204,
+    "green": 132,
+    "blue": 124
   },
   "224": {
-    "number": "224",
-    "readableName": "Shell Pink - VY LT",
-    "searchName": "shell_pink_-_vy_lt",
-    "hex": "e2a598"
+    "number": 224,
+    "name": "Shell Pink Very Light",
+    "hex": "#EBB7AF",
+    "red": 235,
+    "green": 183,
+    "blue": 175
   },
   "225": {
-    "number": "225",
-    "readableName": "Shell Pink - ULT VY LT",
-    "searchName": "shell_pink_-_ult_vy_lt",
-    "hex": "f8d9cd"
+    "number": 225,
+    "name": "Shell Pink Ultra Very Light",
+    "hex": "#FFDFD7",
+    "red": 255,
+    "green": 223,
+    "blue": 213
   },
   "300": {
-    "number": "300",
-    "readableName": "Mahogany - VY DK",
-    "searchName": "mahogany_-_vy_dk",
-    "hex": "6c3116"
+    "number": 300,
+    "name": "Mahogany Very Dark",
+    "hex": "#6F2F00",
+    "red": 111,
+    "green": 47,
+    "blue": 0
   },
   "301": {
-    "number": "301",
-    "readableName": "Mahogany - MED",
-    "searchName": "mahogany_-_med",
-    "hex": "aa5237"
+    "number": 301,
+    "name": "Mahogany Medium",
+    "hex": "#B35F2B",
+    "red": 179,
+    "green": 95,
+    "blue": 43
   },
   "304": {
-    "number": "304",
-    "readableName": "Red - MED",
-    "searchName": "red_-_med",
-    "hex": "a10c39"
+    "number": 304,
+    "name": "red Medium",
+    "hex": "#B71F33",
+    "red": 183,
+    "green": 31,
+    "blue": 51
   },
   "307": {
-    "number": "307",
-    "readableName": "Lemon",
-    "searchName": "lemon",
-    "hex": "fde949"
+    "number": 307,
+    "name": "Lemon",
+    "hex": "#FDED54",
+    "red": 253,
+    "green": 237,
+    "blue": 84
   },
   "309": {
-    "number": "309",
-    "readableName": "Rose - DK",
-    "searchName": "rose_-_dk",
-    "hex": "ba2044"
+    "number": 309,
+    "name": "Rose Dark",
+    "hex": "#BA4A4A",
+    "red": 86,
+    "green": 74,
+    "blue": 74
   },
   "310": {
-    "number": "310",
-    "readableName": "Black",
-    "searchName": "black",
-    "hex": "000000"
+    "number": 310,
+    "name": "Black",
+    "hex": "#000000",
+    "red": 0,
+    "green": 0,
+    "blue": 0
   },
   "311": {
-    "number": "311",
-    "readableName": "Blue - MED",
-    "searchName": "blue_-_med",
-    "hex": "002a64"
+    "number": 311,
+    "name": "Wedgewood Ultra Very Dark",
+    "hex": "#1C5066",
+    "red": 28,
+    "green": 80,
+    "blue": 102
   },
   "312": {
-    "number": "312",
-    "readableName": "Baby Blue - VY DK",
-    "searchName": "baby_blue_-_vy_dk",
-    "hex": "1f3279"
+    "number": 312,
+    "name": "Baby blue Very Dark",
+    "hex": "#35668B",
+    "red": 53,
+    "green": 102,
+    "blue": 139
   },
   "315": {
-    "number": "315",
-    "readableName": "Antique Mauve - MED DK",
-    "searchName": "antique_mauve_-_med_dk",
-    "hex": "7d4246"
+    "number": 315,
+    "name": "Antique Mauve Medium Dark",
+    "hex": "#814952",
+    "red": 129,
+    "green": 73,
+    "blue": 82
   },
   "316": {
-    "number": "316",
-    "readableName": "Antique Mauve - MED",
-    "searchName": "antique_mauve_-_med",
-    "hex": "bc757f"
+    "number": 316,
+    "name": "Antique Mauve Medium",
+    "hex": "#B7737F",
+    "red": 183,
+    "green": 115,
+    "blue": 127
   },
   "317": {
-    "number": "317",
-    "readableName": "Pewter Gray",
-    "searchName": "pewter_gray",
-    "hex": "6d6469"
+    "number": 317,
+    "name": "Pewter Gray",
+    "hex": "#6C6C6C",
+    "red": 108,
+    "green": 108,
+    "blue": 108
   },
   "318": {
-    "number": "318",
-    "readableName": "Steel Gray - LT",
-    "searchName": "steel_gray_-_lt",
-    "hex": "999b9d"
+    "number": 318,
+    "name": "Steel Gray Light",
+    "hex": "#ABABAB",
+    "red": 171,
+    "green": 171,
+    "blue": 171
   },
   "319": {
-    "number": "319",
-    "readableName": "Pistachio Green - VY DK",
-    "searchName": "pistachio_green_-_vy_dk",
-    "hex": "3a553b"
+    "number": 319,
+    "name": "Pistachio Grn Very Dark",
+    "hex": "#205F2E",
+    "red": 32,
+    "green": 95,
+    "blue": 46
   },
   "320": {
-    "number": "320",
-    "readableName": "Pistachio Green - MED",
-    "searchName": "pistachio_green_-_med",
-    "hex": "608c59"
+    "number": 320,
+    "name": "Pistachio green Medium",
+    "hex": "#69885A",
+    "red": 105,
+    "green": 136,
+    "blue": 90
   },
   "321": {
-    "number": "321",
-    "readableName": "Red",
-    "searchName": "red",
-    "hex": "bd1136"
+    "number": 321,
+    "name": "red",
+    "hex": "#C72B3B",
+    "red": 199,
+    "green": 43,
+    "blue": 59
   },
   "322": {
-    "number": "322",
-    "readableName": "Baby Blue",
-    "searchName": "baby_blue",
-    "hex": "3a609d"
+    "number": 322,
+    "name": "Baby blue Dark",
+    "hex": "#5A8FB8",
+    "red": 90,
+    "green": 143,
+    "blue": 184
   },
   "326": {
-    "number": "326",
-    "readableName": "Rose - VY DK",
-    "searchName": "rose_-_vy_dk",
-    "hex": "ac1c37"
+    "number": 326,
+    "name": "Rose Very Dark",
+    "hex": "#B33B4B",
+    "red": 179,
+    "green": 59,
+    "blue": 75
   },
   "327": {
-    "number": "327",
-    "readableName": "Violet",
-    "searchName": "violet",
-    "hex": "5e0f77"
+    "number": 327,
+    "name": "Violet Dark",
+    "hex": "#633666",
+    "red": 99,
+    "green": 54,
+    "blue": 102
   },
   "333": {
-    "number": "333",
-    "readableName": "Blue Violet - VY DK",
-    "searchName": "blue_violet_-_vy_dk",
-    "hex": "6e2e9b"
+    "number": 333,
+    "name": "blue Violet Very Dark",
+    "hex": "#5C5478",
+    "red": 92,
+    "green": 84,
+    "blue": 120
   },
   "334": {
-    "number": "334",
-    "readableName": "Baby Blue - MED",
-    "searchName": "baby_blue_-_med",
-    "hex": "6085b8"
+    "number": 334,
+    "name": "Baby blue Medium",
+    "hex": "#739FC1",
+    "red": 115,
+    "green": 159,
+    "blue": 193
   },
   "335": {
-    "number": "335",
-    "readableName": "Rose",
-    "searchName": "rose",
-    "hex": "d63d57"
+    "number": 335,
+    "name": "Rose",
+    "hex": "#EE546E",
+    "red": 238,
+    "green": 84,
+    "blue": 110
   },
   "336": {
-    "number": "336",
-    "readableName": "Blue",
-    "searchName": "blue",
-    "hex": "0c275e"
+    "number": 336,
+    "name": "Navy blue",
+    "hex": "#253B73",
+    "red": 37,
+    "green": 59,
+    "blue": 115
   },
   "340": {
-    "number": "340",
-    "readableName": "Blue Violet - MED",
-    "searchName": "blue_violet_-_med",
-    "hex": "996dc3"
+    "number": 340,
+    "name": "blue Violet Medium",
+    "hex": "#ADA7C7",
+    "red": 173,
+    "green": 167,
+    "blue": 199
   },
   "341": {
-    "number": "341",
-    "readableName": "Blue Violet - LT",
-    "searchName": "blue_violet_-_lt",
-    "hex": "a39ad7"
+    "number": 341,
+    "name": "blue Violet Light",
+    "hex": "#B7BFDD",
+    "red": 183,
+    "green": 191,
+    "blue": 221
   },
   "347": {
-    "number": "347",
-    "readableName": "Salmon - VY DK",
-    "searchName": "salmon_-_vy_dk",
-    "hex": "ab1b33"
+    "number": 347,
+    "name": "Salmon Very Dark",
+    "hex": "#BF2D2D",
+    "red": 191,
+    "green": 45,
+    "blue": 45
   },
   "349": {
-    "number": "349",
-    "readableName": "Coral - DK",
-    "searchName": "coral_-_dk",
-    "hex": "c62c38"
+    "number": 349,
+    "name": "Coral Dark",
+    "hex": "#D21035",
+    "red": 210,
+    "green": 16,
+    "blue": 53
   },
   "350": {
-    "number": "350",
-    "readableName": "Coral - MED",
-    "searchName": "coral_-_med",
-    "hex": "de3f40"
+    "number": 350,
+    "name": "Coral Medium",
+    "hex": "#E04848",
+    "red": 224,
+    "green": 72,
+    "blue": 72
   },
   "351": {
-    "number": "351",
-    "readableName": "Coral",
-    "searchName": "coral",
-    "hex": "ed625b"
+    "number": 351,
+    "name": "Coral",
+    "hex": "#E96A67",
+    "red": 233,
+    "green": 106,
+    "blue": 103
   },
   "352": {
-    "number": "352",
-    "readableName": "Coral - LT",
-    "searchName": "coral_-_lt",
-    "hex": "f78372"
+    "number": 352,
+    "name": "Coral Light",
+    "hex": "#FD9C97",
+    "red": 253,
+    "green": 156,
+    "blue": 151
   },
   "353": {
-    "number": "353",
-    "readableName": "Peach",
-    "searchName": "peach",
-    "hex": "fdb4a1"
+    "number": 353,
+    "name": "Peach",
+    "hex": "#FED7CC",
+    "red": 254,
+    "green": 215,
+    "blue": 204
   },
   "355": {
-    "number": "355",
-    "readableName": "Terra Cotta - DK",
-    "searchName": "terra_cotta_-_dk",
-    "hex": "97382b"
+    "number": 355,
+    "name": "Terra Cotta Dark",
+    "hex": "#984436",
+    "red": 152,
+    "green": 68,
+    "blue": 54
   },
   "356": {
-    "number": "356",
-    "readableName": "Terra Cotta - MED",
-    "searchName": "terra_cotta_-_med",
-    "hex": "be5c4b"
+    "number": 356,
+    "name": "Terra Cotta Medium",
+    "hex": "#C56A5B",
+    "red": 197,
+    "green": 106,
+    "blue": 91
   },
   "367": {
-    "number": "367",
-    "readableName": "Pistachio Green - DK",
-    "searchName": "pistachio_green_-_dk",
-    "hex": "446b45"
+    "number": 367,
+    "name": "Pistachio green Dark",
+    "hex": "#617A52",
+    "red": 97,
+    "green": 122,
+    "blue": 82
   },
   "368": {
-    "number": "368",
-    "readableName": "Pistachio Green - LT",
-    "searchName": "pistachio_green_-_lt",
-    "hex": "7fc66d"
+    "number": 368,
+    "name": "Pistachio green Light",
+    "hex": "#A6C298",
+    "red": 166,
+    "green": 194,
+    "blue": 152
   },
   "369": {
-    "number": "369",
-    "readableName": "Pistachio Green - VY LT",
-    "searchName": "pistachio_green_-_vy_lt",
-    "hex": "cdefa6"
+    "number": 369,
+    "name": "Pistachio green Very Light",
+    "hex": "#D7EDCC",
+    "red": 215,
+    "green": 237,
+    "blue": 204
   },
   "370": {
-    "number": "370",
-    "readableName": "Mustard - MED",
-    "searchName": "mustard_-_med",
-    "hex": "917245"
+    "number": 370,
+    "name": "Mustard Medium",
+    "hex": "#B89D64",
+    "red": 184,
+    "green": 157,
+    "blue": 100
   },
   "371": {
-    "number": "371",
-    "readableName": "Mustard",
-    "searchName": "mustard",
-    "hex": "9f8352"
+    "number": 371,
+    "name": "Mustard",
+    "hex": "#BFA671",
+    "red": 191,
+    "green": 166,
+    "blue": 113
   },
   "372": {
-    "number": "372",
-    "readableName": "Mustard - LT",
-    "searchName": "mustard_-_lt",
-    "hex": "ad9564"
+    "number": 372,
+    "name": "Mustard Light",
+    "hex": "#CCB784",
+    "red": 204,
+    "green": 183,
+    "blue": 132
   },
   "400": {
-    "number": "400",
-    "readableName": "Mahogany - DK",
-    "searchName": "mahogany_-_dk",
-    "hex": "813718"
+    "number": 400,
+    "name": "Mahogany Dark",
+    "hex": "#8F430F",
+    "red": 143,
+    "green": 67,
+    "blue": 15
   },
   "402": {
-    "number": "402",
-    "readableName": "Mahogany - VY LT",
-    "searchName": "mahogany_-_vy_lt",
-    "hex": "ef9e74"
+    "number": 402,
+    "name": "Mahogany Very Light",
+    "hex": "#F7A777",
+    "red": 247,
+    "green": 167,
+    "blue": 119
   },
   "407": {
-    "number": "407",
-    "readableName": "Desert Sand - DK",
-    "searchName": "desert_sand_-_dk",
-    "hex": "b77159"
+    "number": 407,
+    "name": "Desert Sand Medium",
+    "hex": "#BB8161",
+    "red": 187,
+    "green": 129,
+    "blue": 97
   },
   "413": {
-    "number": "413",
-    "readableName": "Pewter Gray - DK",
-    "searchName": "pewter_gray_-_dk",
-    "hex": "4a4749"
+    "number": 413,
+    "name": "Pewter Gray Dark",
+    "hex": "#565656",
+    "red": 86,
+    "green": 86,
+    "blue": 86
   },
   "414": {
-    "number": "414",
-    "readableName": "Steel Gray - DK",
-    "searchName": "steel_gray_-_dk",
-    "hex": "766e72"
+    "number": 414,
+    "name": "Steel Gray Dark",
+    "hex": "#8C8C8C",
+    "red": 140,
+    "green": 140,
+    "blue": 140
   },
   "415": {
-    "number": "415",
-    "readableName": "Pearl Gray",
-    "searchName": "pearl_gray",
-    "hex": "b8b9bd"
+    "number": 415,
+    "name": "Pearl Gray",
+    "hex": "#D3D3D6",
+    "red": 211,
+    "green": 211,
+    "blue": 214
   },
   "420": {
-    "number": "420",
-    "readableName": "Hazelnut Brown - DK",
-    "searchName": "hazelnut_brown_-_dk",
-    "hex": "855a30"
+    "number": 420,
+    "name": "Hazelnut Brown Dark",
+    "hex": "#A07042",
+    "red": 160,
+    "green": 112,
+    "blue": 66
   },
   "422": {
-    "number": "422",
-    "readableName": "Hazelnut Brown - LT",
-    "searchName": "hazelnut_brown_-_lt",
-    "hex": "c99a67"
+    "number": 422,
+    "name": "Hazelnut Brown Light",
+    "hex": "#C69F7B",
+    "red": 198,
+    "green": 159,
+    "blue": 123
   },
   "433": {
-    "number": "433",
-    "readableName": "Brown - MED",
-    "searchName": "brown_-_med",
-    "hex": "73421e"
+    "number": 433,
+    "name": "Brown Medium",
+    "hex": "#7A451F",
+    "red": 122,
+    "green": 69,
+    "blue": 31
   },
   "434": {
-    "number": "434",
-    "readableName": "Brown - LT",
-    "searchName": "brown_-_lt",
-    "hex": "8f5332"
+    "number": 434,
+    "name": "Brown Light",
+    "hex": "#985E33",
+    "red": 152,
+    "green": 94,
+    "blue": 51
   },
   "435": {
-    "number": "435",
-    "readableName": "Brown - VY LT",
-    "searchName": "brown_-_vy_lt",
-    "hex": "a96538"
+    "number": 435,
+    "name": "Brown Very Light",
+    "hex": "#B87748",
+    "red": 184,
+    "green": 119,
+    "blue": 72
   },
   "436": {
-    "number": "436",
-    "readableName": "Tan",
-    "searchName": "tan",
-    "hex": "c78559"
+    "number": 436,
+    "name": "Tan",
+    "hex": "#CB9051",
+    "red": 203,
+    "green": 144,
+    "blue": 81
   },
   "437": {
-    "number": "437",
-    "readableName": "Tan - LT",
-    "searchName": "tan_-_lt",
-    "hex": "daa26f"
+    "number": 437,
+    "name": "Tan Light",
+    "hex": "#E4BB8E",
+    "red": 228,
+    "green": 187,
+    "blue": 142
   },
   "444": {
-    "number": "444",
-    "readableName": "Lemon - DK",
-    "searchName": "lemon_-_dk",
-    "hex": "f5bc13"
+    "number": 444,
+    "name": "Lemon Dark",
+    "hex": "#FFD600",
+    "red": 255,
+    "green": 214,
+    "blue": 0
   },
   "445": {
-    "number": "445",
-    "readableName": "Lemon - LT",
-    "searchName": "lemon_-_lt",
-    "hex": "fcf999"
+    "number": 445,
+    "name": "Lemon Light",
+    "hex": "#FFFB8B",
+    "red": 255,
+    "green": 251,
+    "blue": 139
   },
   "451": {
-    "number": "451",
-    "readableName": "Shell Gray - DK",
-    "searchName": "shell_gray_-_dk",
-    "hex": "887773"
+    "number": 451,
+    "name": "Shell Gray Dark",
+    "hex": "#917B73",
+    "red": 145,
+    "green": 123,
+    "blue": 115
   },
   "452": {
-    "number": "452",
-    "readableName": "Shell Gray - MED",
-    "searchName": "shell_gray_-_med",
-    "hex": "ad9994"
+    "number": 452,
+    "name": "Shell Gray Medium",
+    "hex": "#C0B3AE",
+    "red": 192,
+    "green": 179,
+    "blue": 174
   },
   "453": {
-    "number": "453",
-    "readableName": "Shell Gray - LT",
-    "searchName": "shell_gray_-_lt",
-    "hex": "ccb8aa"
+    "number": 453,
+    "name": "Shell Gray Light",
+    "hex": "#D7CECB",
+    "red": 215,
+    "green": 206,
+    "blue": 203
   },
   "469": {
-    "number": "469",
-    "readableName": "Avocado Green",
-    "searchName": "avocado_green",
-    "hex": "5b6533"
+    "number": 469,
+    "name": "Avocado green",
+    "hex": "#72843C",
+    "red": 114,
+    "green": 132,
+    "blue": 60
   },
   "470": {
-    "number": "470",
-    "readableName": "Avocado Green - LT",
-    "searchName": "avocado_green_-_lt",
-    "hex": "72813e"
+    "number": 470,
+    "name": "Avocado Grn Light",
+    "hex": "#94AB4F",
+    "red": 148,
+    "green": 171,
+    "blue": 79
   },
   "471": {
-    "number": "471",
-    "readableName": "Avocado Green - VY LT",
-    "searchName": "avocado_green_-_vy_lt",
-    "hex": "9eb357"
+    "number": 471,
+    "name": "Avocado Grn Very Light",
+    "hex": "#AEBF79",
+    "red": 174,
+    "green": 191,
+    "blue": 121
   },
   "472": {
-    "number": "472",
-    "readableName": "Avocado Green - ULT LT",
-    "searchName": "avocado_green_-_ult_lt",
-    "hex": "d1de75"
+    "number": 472,
+    "name": "Avocado green Ultra Light",
+    "hex": "#D8E498",
+    "red": 216,
+    "green": 228,
+    "blue": 152
   },
   "498": {
-    "number": "498",
-    "readableName": "Red - DK",
-    "searchName": "red_-_dk",
-    "hex": "970b2c"
+    "number": 498,
+    "name": "red Dark",
+    "hex": "#A7132B",
+    "red": 167,
+    "green": 19,
+    "blue": 43
   },
   "500": {
-    "number": "500",
-    "readableName": "Blue Green - VY DK",
-    "searchName": "blue_green_-_vy_dk",
-    "hex": "1d362a"
+    "number": 500,
+    "name": "blue green Very Dark",
+    "hex": "#044D33",
+    "red": 4,
+    "green": 77,
+    "blue": 51
   },
   "501": {
-    "number": "501",
-    "readableName": "Blue Green - DK",
-    "searchName": "blue_green_-_dk",
-    "hex": "2f5446"
+    "number": 501,
+    "name": "blue green Dark",
+    "hex": "#396F52",
+    "red": 57,
+    "green": 111,
+    "blue": 82
   },
   "502": {
-    "number": "502",
-    "readableName": "Blue Green",
-    "searchName": "blue_green",
-    "hex": "57826e"
+    "number": 502,
+    "name": "blue green",
+    "hex": "#5B9071",
+    "red": 91,
+    "green": 144,
+    "blue": 113
   },
   "503": {
-    "number": "503",
-    "readableName": "Blue Green - MED",
-    "searchName": "blue_green_-_med",
-    "hex": "89b89f"
+    "number": 503,
+    "name": "blue green Medium",
+    "hex": "#7BAC94",
+    "red": 123,
+    "green": 172,
+    "blue": 148
   },
   "504": {
-    "number": "504",
-    "readableName": "Blue Green - VY LT",
-    "searchName": "blue_green_-_vy_lt",
-    "hex": "acdac1"
+    "number": 504,
+    "name": "blue green Very Light",
+    "hex": "#C4DECC",
+    "red": 196,
+    "green": 222,
+    "blue": 204
   },
   "505": {
-    "number": "505",
-    "readableName": "Grass Green - DK",
-    "searchName": "grass_green_-_dk",
-    "hex": "ceddc1"
+    "number": 505,
+    "name": "Jade green",
+    "hex": "#338362",
+    "red": 51,
+    "green": 131,
+    "blue": 98
   },
   "517": {
-    "number": "517",
-    "readableName": "Wedgewood - DK",
-    "searchName": "wedgewood_-_dk",
-    "hex": "216285"
+    "number": 517,
+    "name": "Wedgewood Dark",
+    "hex": "#3B768F",
+    "red": 59,
+    "green": 118,
+    "blue": 143
   },
   "518": {
-    "number": "518",
-    "readableName": "Wedgewood - LT",
-    "searchName": "wedgewood_-_lt",
-    "hex": "50819c"
+    "number": 518,
+    "name": "Wedgewood Light",
+    "hex": "#4F93A7",
+    "red": 79,
+    "green": 147,
+    "blue": 167
   },
   "519": {
-    "number": "519",
-    "readableName": "Sky Blue",
-    "searchName": "sky_blue",
-    "hex": "94b7cb"
+    "number": 519,
+    "name": "Sky blue",
+    "hex": "#7EB1C8",
+    "red": 126,
+    "green": 177,
+    "blue": 200
   },
   "520": {
-    "number": "520",
-    "readableName": "Fern Green - DK",
-    "searchName": "fern_green_-_dk",
-    "hex": "384526"
+    "number": 520,
+    "name": "Fern green Dark",
+    "hex": "#666D4F",
+    "red": 102,
+    "green": 109,
+    "blue": 79
   },
   "522": {
-    "number": "522",
-    "readableName": "Fern Green",
-    "searchName": "fern_green",
-    "hex": "808b6e"
+    "number": 522,
+    "name": "Fern green",
+    "hex": "#969E7E",
+    "red": 150,
+    "green": 158,
+    "blue": 126
   },
   "523": {
-    "number": "523",
-    "readableName": "Fern Green - LT",
-    "searchName": "fern_green_-_lt",
-    "hex": "959f7a"
+    "number": 523,
+    "name": "Fern green Light",
+    "hex": "#ABB197",
+    "red": 171,
+    "green": 177,
+    "blue": 151
   },
   "524": {
-    "number": "524",
-    "readableName": "Fern Green - VY LT",
-    "searchName": "fern_green_-_vy_lt",
-    "hex": "aea78e"
+    "number": 524,
+    "name": "Fern green Very Light",
+    "hex": "#C4CDAC",
+    "red": 196,
+    "green": 205,
+    "blue": 172
   },
   "535": {
-    "number": "535",
-    "readableName": "Ash Gray - VY LT",
-    "searchName": "ash_gray_-_vy_lt",
-    "hex": "4b4b49"
+    "number": 535,
+    "name": "Ash Gray Very Light",
+    "hex": "#636458",
+    "red": 99,
+    "green": 100,
+    "blue": 88
   },
   "543": {
-    "number": "543",
-    "readableName": "Beige Brown - ULT VY LT",
-    "searchName": "beige_brown_-_ult_vy_lt",
-    "hex": "ead0b5"
+    "number": 543,
+    "name": "Beige Brown Ultra Very Light",
+    "hex": "#F2E3CE",
+    "red": 242,
+    "green": 227,
+    "blue": 206
   },
   "550": {
-    "number": "550",
-    "readableName": "Violet - VY DK",
-    "searchName": "violet_-_vy_dk",
-    "hex": "580e5c"
+    "number": 550,
+    "name": "Violet Very Dark",
+    "hex": "#5C184E",
+    "red": 92,
+    "green": 24,
+    "blue": 78
   },
   "552": {
-    "number": "552",
-    "readableName": "Violet - MED",
-    "searchName": "violet_-_med",
-    "hex": "902f99"
+    "number": 552,
+    "name": "Violet Medium",
+    "hex": "#803A6B",
+    "red": 128,
+    "green": 58,
+    "blue": 107
   },
   "553": {
-    "number": "553",
-    "readableName": "Violet",
-    "searchName": "violet",
-    "hex": "a449ac"
+    "number": 553,
+    "name": "Violet",
+    "hex": "#A3638B",
+    "red": 163,
+    "green": 99,
+    "blue": 139
   },
   "554": {
-    "number": "554",
-    "readableName": "Violet - LT",
-    "searchName": "violet_-_lt",
-    "hex": "dc9cde"
+    "number": 554,
+    "name": "Violet Light",
+    "hex": "#DBB3CB",
+    "red": 219,
+    "green": 179,
+    "blue": 203
   },
   "561": {
-    "number": "561",
-    "readableName": "Jade - VY DK",
-    "searchName": "jade_-_vy_dk",
-    "hex": "285e48"
+    "number": 561,
+    "name": "Celadon green VD",
+    "hex": "#2C6A45",
+    "red": 44,
+    "green": 106,
+    "blue": 69
   },
   "562": {
-    "number": "562",
-    "readableName": "Jade - MED",
-    "searchName": "jade_-_med",
-    "hex": "3b8c5a"
+    "number": 562,
+    "name": "Jade Medium",
+    "hex": "#53976A",
+    "red": 83,
+    "green": 151,
+    "blue": 106
   },
   "563": {
-    "number": "563",
-    "readableName": "Jade - LT",
-    "searchName": "jade_-_lt",
-    "hex": "6ed39a"
+    "number": 563,
+    "name": "Jade Light",
+    "hex": "#8FC098",
+    "red": 143,
+    "green": 192,
+    "blue": 152
   },
   "564": {
-    "number": "564",
-    "readableName": "Jade - VY LT",
-    "searchName": "jade_-_vy_lt",
-    "hex": "95e4af"
+    "number": 564,
+    "name": "Jade Very Light",
+    "hex": "#A7CDAF",
+    "red": 167,
+    "green": 205,
+    "blue": 175
   },
   "580": {
-    "number": "580",
-    "readableName": "Moss Green - DK",
-    "searchName": "moss_green_-_dk",
-    "hex": "355f0b"
+    "number": 580,
+    "name": "Moss green Dark",
+    "hex": "#888D33",
+    "red": 136,
+    "green": 141,
+    "blue": 51
   },
   "581": {
-    "number": "581",
-    "readableName": "Moss Green",
-    "searchName": "moss_green",
-    "hex": "838a29"
+    "number": 581,
+    "name": "Moss green",
+    "hex": "#A7AE38",
+    "red": 167,
+    "green": 174,
+    "blue": 56
   },
   "597": {
-    "number": "597",
-    "readableName": "Turquoise",
-    "searchName": "turquoise",
-    "hex": "52adab"
+    "number": 597,
+    "name": "Turquoise",
+    "hex": "#5BA3B3",
+    "red": 91,
+    "green": 163,
+    "blue": 179
   },
   "598": {
-    "number": "598",
-    "readableName": "Turquoise - LT",
-    "searchName": "turquoise_-_lt",
-    "hex": "97d8d3"
+    "number": 598,
+    "name": "Turquoise Light",
+    "hex": "#90C3CC",
+    "red": 144,
+    "green": 195,
+    "blue": 204
   },
   "600": {
-    "number": "600",
-    "readableName": "Cranberry - VY DK",
-    "searchName": "cranberry_-_vy_dk",
-    "hex": "bf1c48"
+    "number": 600,
+    "name": "Cranberry Very Dark",
+    "hex": "#CD2F63",
+    "red": 205,
+    "green": 47,
+    "blue": 99
   },
   "601": {
-    "number": "601",
-    "readableName": "Cranberry - DK",
-    "searchName": "cranberry_-_dk",
-    "hex": "c62a53"
+    "number": 601,
+    "name": "Cranberry Dark",
+    "hex": "#D1286A",
+    "red": 209,
+    "green": 40,
+    "blue": 106
   },
   "602": {
-    "number": "602",
-    "readableName": "Cranberry - MED",
-    "searchName": "cranberry_-_med",
-    "hex": "d63f68"
+    "number": 602,
+    "name": "Cranberry Medium",
+    "hex": "#E24874",
+    "red": 226,
+    "green": 72,
+    "blue": 116
   },
   "603": {
-    "number": "603",
-    "readableName": "Cranberry",
-    "searchName": "cranberry",
-    "hex": "ed5d84"
+    "number": 603,
+    "name": "Cranberry",
+    "hex": "#FFA4BE",
+    "red": 255,
+    "green": 164,
+    "blue": 190
   },
   "604": {
-    "number": "604",
-    "readableName": "Cranberry - LT",
-    "searchName": "cranberry_-_lt",
-    "hex": "f793b2"
+    "number": 604,
+    "name": "Cranberry Light",
+    "hex": "#FFB0BE",
+    "red": 255,
+    "green": 176,
+    "blue": 190
   },
   "605": {
-    "number": "605",
-    "readableName": "Cranberry - VY LT",
-    "searchName": "cranberry_-_vy_lt",
-    "hex": "fbacc4"
+    "number": 605,
+    "name": "Cranberry Very Light",
+    "hex": "#FFC0CD",
+    "red": 255,
+    "green": 192,
+    "blue": 205
   },
   "606": {
-    "number": "606",
-    "readableName": "Orange-red - BRIGHT",
-    "searchName": "orange-red_-_bright",
-    "hex": "f70f00"
+    "number": 606,
+    "name": "Orange red Bright",
+    "hex": "#FA3203",
+    "red": 250,
+    "green": 50,
+    "blue": 3
   },
   "608": {
-    "number": "608",
-    "readableName": "Orange - BRIGHT",
-    "searchName": "orange_-_bright",
-    "hex": "fd480c"
+    "number": 608,
+    "name": "Burnt Orange Bright",
+    "hex": "#FD5D35",
+    "red": 253,
+    "green": 93,
+    "blue": 53
   },
   "610": {
-    "number": "610",
-    "readableName": "Drab Brown - DK",
-    "searchName": "drab_brown_-_dk",
-    "hex": "6b5039"
+    "number": 610,
+    "name": "Drab Brown Dark",
+    "hex": "#796047",
+    "red": 121,
+    "green": 96,
+    "blue": 71
   },
   "611": {
-    "number": "611",
-    "readableName": "Drab Brown",
-    "searchName": "drab_brown",
-    "hex": "7c5f46"
+    "number": 611,
+    "name": "Drab Brown",
+    "hex": "#967656",
+    "red": 150,
+    "green": 118,
+    "blue": 86
   },
   "612": {
-    "number": "612",
-    "readableName": "Drab Brown - LT",
-    "searchName": "drab_brown_-_lt",
-    "hex": "a6885e"
+    "number": 612,
+    "name": "Drab Brown Light",
+    "hex": "#BC9A78",
+    "red": 188,
+    "green": 154,
+    "blue": 120
   },
   "613": {
-    "number": "613",
-    "readableName": "Drab Brown - VY LT",
-    "searchName": "drab_brown_-_vy_lt",
-    "hex": "b99f72"
+    "number": 613,
+    "name": "Drab Brown Very Light",
+    "hex": "#DCC4AA",
+    "red": 220,
+    "green": 196,
+    "blue": 170
   },
   "632": {
-    "number": "632",
-    "readableName": "Desert Sand - ULT VY DK",
-    "searchName": "desert_sand_-_ult_vy_dk",
-    "hex": "7f4232"
+    "number": 632,
+    "name": "Desert Sand Ultra Very Dark",
+    "hex": "#875539",
+    "red": 135,
+    "green": 85,
+    "blue": 57
   },
   "640": {
-    "number": "640",
-    "readableName": "Beige Gray - VY DK",
-    "searchName": "beige_gray_-_vy_dk",
-    "hex": "817868"
+    "number": 640,
+    "name": "Beige Gray Very Dark",
+    "hex": "#857B61",
+    "red": 133,
+    "green": 123,
+    "blue": 97
   },
   "642": {
-    "number": "642",
-    "readableName": "Beige Gray - DK",
-    "searchName": "beige_gray_-_dk",
-    "hex": "958d79"
+    "number": 642,
+    "name": "Beige Gray Dark",
+    "hex": "#A49878",
+    "red": 164,
+    "green": 152,
+    "blue": 120
   },
   "644": {
-    "number": "644",
-    "readableName": "Beige Gray - MED",
-    "searchName": "beige_gray_-_med",
-    "hex": "c4bea6"
+    "number": 644,
+    "name": "Beige Gray Medium",
+    "hex": "#DDD8CB",
+    "red": 221,
+    "green": 216,
+    "blue": 203
   },
   "645": {
-    "number": "645",
-    "readableName": "Beaver Gray - VY DK",
-    "searchName": "beaver_gray_-_vy_dk",
-    "hex": "5d5d54"
+    "number": 645,
+    "name": "Beaver Gray Very Dark",
+    "hex": "#6E655C",
+    "red": 110,
+    "green": 101,
+    "blue": 92
   },
   "646": {
-    "number": "646",
-    "readableName": "Beaver Gray - DK",
-    "searchName": "beaver_gray_-_dk",
-    "hex": "6b6860"
+    "number": 646,
+    "name": "Beaver Gray Dark",
+    "hex": "#877D73",
+    "red": 135,
+    "green": 125,
+    "blue": 115
   },
   "647": {
-    "number": "647",
-    "readableName": "Beaver Gray - MED",
-    "searchName": "beaver_gray_-_med",
-    "hex": "908e85"
+    "number": 647,
+    "name": "Beaver Gray Medium",
+    "hex": "#B0A69C",
+    "red": 176,
+    "green": 166,
+    "blue": 156
   },
   "648": {
-    "number": "648",
-    "readableName": "Beaver Gray - LT",
-    "searchName": "beaver_gray_-_lt",
-    "hex": "a7a69f"
+    "number": 648,
+    "name": "Beaver Gray Light",
+    "hex": "#BCB4AC",
+    "red": 188,
+    "green": 180,
+    "blue": 172
   },
   "666": {
-    "number": "666",
-    "readableName": "Red - BRIGHT",
-    "searchName": "red_-_bright",
-    "hex": "ce1b33"
+    "number": 666,
+    "name": "Bright red",
+    "hex": "#E31D42",
+    "red": 227,
+    "green": 29,
+    "blue": 66
   },
   "676": {
-    "number": "676",
-    "readableName": "Old Gold - LT",
-    "searchName": "old_gold_-_lt",
-    "hex": "ecbf7d"
+    "number": 676,
+    "name": "Old Gold Light",
+    "hex": "#E5CE97",
+    "red": 229,
+    "green": 206,
+    "blue": 151
   },
   "677": {
-    "number": "677",
-    "readableName": "Old Gold - VY LT",
-    "searchName": "old_gold_-_vy_lt",
-    "hex": "f2dc9f"
+    "number": 677,
+    "name": "Old Gold Very Light",
+    "hex": "#F5ECCB",
+    "red": 245,
+    "green": 236,
+    "blue": 203
   },
   "680": {
-    "number": "680",
-    "readableName": "Old Gold - DK",
-    "searchName": "old_gold_-_dk",
-    "hex": "b07b46"
+    "number": 680,
+    "name": "Old Gold Dark",
+    "hex": "#BC8D0E",
+    "red": 188,
+    "green": 141,
+    "blue": 14
   },
   "699": {
-    "number": "699",
-    "readableName": "Green",
-    "searchName": "green",
-    "hex": "075b26"
+    "number": 699,
+    "name": "green",
+    "hex": "#056517",
+    "red": 5,
+    "green": 101,
+    "blue": 23
   },
   "700": {
-    "number": "700",
-    "readableName": "Green - BRIGHT",
-    "searchName": "green_-_bright",
-    "hex": "076c34"
+    "number": 700,
+    "name": "green Bright",
+    "hex": "#07731B",
+    "red": 7,
+    "green": 115,
+    "blue": 27
   },
   "701": {
-    "number": "701",
-    "readableName": "Green - LT",
-    "searchName": "green_-_lt",
-    "hex": "217c36"
+    "number": 701,
+    "name": "green Light",
+    "hex": "#3F8F29",
+    "red": 63,
+    "green": 143,
+    "blue": 41
   },
   "702": {
-    "number": "702",
-    "readableName": "Kelly Green",
-    "searchName": "kelly_green",
-    "hex": "379130"
+    "number": 702,
+    "name": "Kelly green",
+    "hex": "#47A72F",
+    "red": 71,
+    "green": 167,
+    "blue": 47
   },
   "703": {
-    "number": "703",
-    "readableName": "Chartreuse",
-    "searchName": "chartreuse",
-    "hex": "63b330"
+    "number": 703,
+    "name": "Chartreuse",
+    "hex": "#7BB547",
+    "red": 123,
+    "green": 181,
+    "blue": 71
   },
   "704": {
-    "number": "704",
-    "readableName": "Chartreuse - BRIGHT",
-    "searchName": "chartreuse_-_bright",
-    "hex": "88c53a"
+    "number": 704,
+    "name": "Chartreuse Bright",
+    "hex": "#9ECF34",
+    "red": 158,
+    "green": 207,
+    "blue": 52
   },
   "712": {
-    "number": "712",
-    "readableName": "Cream",
-    "searchName": "cream",
-    "hex": "f6efda"
+    "number": 712,
+    "name": "Cream",
+    "hex": "#FFFBEF",
+    "red": 255,
+    "green": 251,
+    "blue": 239
   },
   "718": {
-    "number": "718",
-    "readableName": "Plum",
-    "searchName": "plum",
-    "hex": "cb2089"
+    "number": 718,
+    "name": "Plum",
+    "hex": "#9C2462",
+    "red": 156,
+    "green": 36,
+    "blue": 98
   },
   "720": {
-    "number": "720",
-    "readableName": "Orange Spice - DK",
-    "searchName": "orange_spice_-_dk",
-    "hex": "c83a24"
+    "number": 720,
+    "name": "Orange Spice Dark",
+    "hex": "#E55C1F",
+    "red": 229,
+    "green": 92,
+    "blue": 31
   },
   "721": {
-    "number": "721",
-    "readableName": "Orange Spice - MED",
-    "searchName": "orange_spice_-_med",
-    "hex": "f46440"
+    "number": 721,
+    "name": "Orange Spice Medium",
+    "hex": "#F27842",
+    "red": 242,
+    "green": 120,
+    "blue": 66
   },
   "722": {
-    "number": "722",
-    "readableName": "Orange Spice - LT",
-    "searchName": "orange_spice_-_lt",
-    "hex": "f98756"
+    "number": 722,
+    "name": "Orange Spice Light",
+    "hex": "#F7976F",
+    "red": 247,
+    "green": 151,
+    "blue": 111
   },
   "725": {
-    "number": "725",
-    "readableName": "Topaz",
-    "searchName": "topaz",
-    "hex": "f9c15b"
+    "number": 725,
+    "name": "Topaz Medium Light",
+    "hex": "#FFC840",
+    "red": 255,
+    "green": 200,
+    "blue": 64
   },
   "726": {
-    "number": "726",
-    "readableName": "Topaz - LT",
-    "searchName": "topaz_-_lt",
-    "hex": "fddb63"
+    "number": 726,
+    "name": "Topaz Light",
+    "hex": "#FDD755",
+    "red": 253,
+    "green": 215,
+    "blue": 85
   },
   "727": {
-    "number": "727",
-    "readableName": "Topaz - VY LT",
-    "searchName": "topaz_-_vy_lt",
-    "hex": "fde98b"
+    "number": 727,
+    "name": "Topaz Very Light",
+    "hex": "#FFF1AF",
+    "red": 255,
+    "green": 241,
+    "blue": 175
   },
   "728": {
-    "number": "728",
-    "readableName": "Golden Yellow",
-    "searchName": "golden_yellow",
-    "hex": "f2ae3f"
+    "number": 728,
+    "name": "Topaz",
+    "hex": "#E4B468",
+    "red": 228,
+    "green": 180,
+    "blue": 104
   },
   "729": {
-    "number": "729",
-    "readableName": "Old Gold - MED",
-    "searchName": "old_gold_-_med",
-    "hex": "ce9657"
+    "number": 729,
+    "name": "Old Gold Medium",
+    "hex": "#D0A53E",
+    "red": 208,
+    "green": 165,
+    "blue": 62
   },
   "730": {
-    "number": "730",
-    "readableName": "Olive Green - VY DK",
-    "searchName": "olive_green_-_vy_dk",
-    "hex": "63520b"
+    "number": 730,
+    "name": "Olive green Very Dark",
+    "hex": "#827B30",
+    "red": 130,
+    "green": 123,
+    "blue": 48
   },
   "731": {
-    "number": "731",
-    "readableName": "Olive Green - DK",
-    "searchName": "olive_green_-_dk",
-    "hex": "6b580b"
+    "number": 731,
+    "name": "Olive green Dark",
+    "hex": "#938B37",
+    "red": 147,
+    "green": 139,
+    "blue": 55
   },
   "732": {
-    "number": "732",
-    "readableName": "Olive Green",
-    "searchName": "olive_green",
-    "hex": "725c0c"
+    "number": 732,
+    "name": "Olive green",
+    "hex": "#948C36",
+    "red": 148,
+    "green": 140,
+    "blue": 54
   },
   "733": {
-    "number": "733",
-    "readableName": "Olive Green - MED",
-    "searchName": "olive_green_-_med",
-    "hex": "a78a44"
+    "number": 733,
+    "name": "Olive green Medium",
+    "hex": "#BCB34C",
+    "red": 188,
+    "green": 179,
+    "blue": 76
   },
   "734": {
-    "number": "734",
-    "readableName": "Olive Green - LT",
-    "searchName": "olive_green_-_lt",
-    "hex": "bb9c54"
+    "number": 734,
+    "name": "Olive green Light",
+    "hex": "#C7C077",
+    "red": 199,
+    "green": 192,
+    "blue": 119
   },
   "738": {
-    "number": "738",
-    "readableName": "Tan - VY LT",
-    "searchName": "tan_-_vy_lt",
-    "hex": "e2b783"
+    "number": 738,
+    "name": "Tan Very Light",
+    "hex": "#ECCC9E",
+    "red": 236,
+    "green": 204,
+    "blue": 158
   },
   "739": {
-    "number": "739",
-    "readableName": "Tan - ULT VY LT",
-    "searchName": "tan_-_ult_vy_lt",
-    "hex": "f2deb9"
+    "number": 739,
+    "name": "Tan Ultra Very Light",
+    "hex": "#F8E4C8",
+    "red": 248,
+    "green": 228,
+    "blue": 200
   },
   "740": {
-    "number": "740",
-    "readableName": "Tangerine",
-    "searchName": "tangerine",
-    "hex": "fd6f1a"
+    "number": 740,
+    "name": "Tangerine",
+    "hex": "#FF8B00",
+    "red": 255,
+    "green": 139,
+    "blue": 0
   },
   "741": {
-    "number": "741",
-    "readableName": "Tangerine - MED",
-    "searchName": "tangerine_-_med",
-    "hex": "fc8b10"
+    "number": 741,
+    "name": "Tangerine Medium",
+    "hex": "#FFA32B",
+    "red": 255,
+    "green": 163,
+    "blue": 43
   },
   "742": {
-    "number": "742",
-    "readableName": "Tangerine - LT",
-    "searchName": "tangerine_-_lt",
-    "hex": "fdae3c"
+    "number": 742,
+    "name": "Tangerine Light",
+    "hex": "#FFBF57",
+    "red": 255,
+    "green": 191,
+    "blue": 87
   },
   "743": {
-    "number": "743",
-    "readableName": "Yellow - MED",
-    "searchName": "yellow_-_med",
-    "hex": "fdd769"
+    "number": 743,
+    "name": "Yellow Medium",
+    "hex": "#FED376",
+    "red": 254,
+    "green": 211,
+    "blue": 118
   },
   "744": {
-    "number": "744",
-    "readableName": "Yellow - PALE",
-    "searchName": "yellow_-_pale",
-    "hex": "fee88d"
+    "number": 744,
+    "name": "Yellow Pale",
+    "hex": "#FFE793",
+    "red": 255,
+    "green": 231,
+    "blue": 147
   },
   "745": {
-    "number": "745",
-    "readableName": "Yellow - LT PALE",
-    "searchName": "yellow_-_lt_pale",
-    "hex": "feeba5"
+    "number": 745,
+    "name": "Yellow Pale Light",
+    "hex": "#FFE9AD",
+    "red": 255,
+    "green": 233,
+    "blue": 173
   },
   "746": {
-    "number": "746",
-    "readableName": "Off White",
-    "searchName": "off_white",
-    "hex": "faf2d5"
+    "number": 746,
+    "name": "Off White",
+    "hex": "#FCFCEE",
+    "red": 252,
+    "green": 252,
+    "blue": 238
   },
   "747": {
-    "number": "747",
-    "readableName": "Sky Blue - VY LT",
-    "searchName": "sky_blue_-_vy_lt",
-    "hex": "cee9ea"
+    "number": 747,
+    "name": "Peacock blue Very Light",
+    "hex": "#E5FCFD",
+    "red": 229,
+    "green": 252,
+    "blue": 253
   },
   "754": {
-    "number": "754",
-    "readableName": "Peach - LT",
-    "searchName": "peach_-_lt",
-    "hex": "f7c9b0"
+    "number": 754,
+    "name": "Peach Light",
+    "hex": "#F7CBBF",
+    "red": 247,
+    "green": 203,
+    "blue": 191
   },
   "758": {
-    "number": "758",
-    "readableName": "Terra Cotta - VY LT",
-    "searchName": "terra_cotta_-_vy_lt",
-    "hex": "e99f83"
+    "number": 758,
+    "name": "Terra Cotta Very Light",
+    "hex": "#EEAA9B",
+    "red": 238,
+    "green": 170,
+    "blue": 155
   },
   "760": {
-    "number": "760",
-    "readableName": "Salmon",
-    "searchName": "salmon",
-    "hex": "ec8880"
+    "number": 760,
+    "name": "Salmon",
+    "hex": "#F5ADAD",
+    "red": 245,
+    "green": 173,
+    "blue": 173
   },
   "761": {
-    "number": "761",
-    "readableName": "Salmon - LT",
-    "searchName": "salmon_-_lt",
-    "hex": "f8b4ad"
+    "number": 761,
+    "name": "Salmon Light",
+    "hex": "#FFC9C9",
+    "red": 255,
+    "green": 201,
+    "blue": 201
   },
   "762": {
-    "number": "762",
-    "readableName": "Pearl Gray - VY LT",
-    "searchName": "pearl_gray_-_vy_lt",
-    "hex": "d1d0d2"
+    "number": 762,
+    "name": "Pearl Gray Very Light",
+    "hex": "#ECECEC",
+    "red": 236,
+    "green": 236,
+    "blue": 236
   },
   "772": {
-    "number": "772",
-    "readableName": "Yellow Green - VY LT",
-    "searchName": "yellow_green_-_vy_lt",
-    "hex": "d7efa7"
+    "number": 772,
+    "name": "Yellow green Very Light",
+    "hex": "#E4ECD4",
+    "red": 228,
+    "green": 236,
+    "blue": 212
   },
   "775": {
-    "number": "775",
-    "readableName": "Baby Blue - VY LT",
-    "searchName": "baby_blue_-_vy_lt",
-    "hex": "d4e3ef"
+    "number": 775,
+    "name": "Baby blue Very Light",
+    "hex": "#D9EBF1",
+    "red": 217,
+    "green": 235,
+    "blue": 241
   },
   "776": {
-    "number": "776",
-    "readableName": "Pink - MED",
-    "searchName": "pink_-_med",
-    "hex": "fca8ad"
+    "number": 776,
+    "name": "Pink Medium",
+    "hex": "#FCB0B9",
+    "red": 252,
+    "green": 176,
+    "blue": 185
   },
   "777": {
-    "number": "777",
-    "readableName": "Red - DEEP",
-    "searchName": "red_-_deep",
-    "hex": "9b0042"
+    "number": 777,
+    "name": "Raspberry Very Dark",
+    "hex": "#913546",
+    "red": 145,
+    "green": 53,
+    "blue": 70
   },
   "778": {
-    "number": "778",
-    "readableName": "Antique Mauve - VY LT",
-    "searchName": "antique_mauve_-_vy_lt",
-    "hex": "dca6a4"
+    "number": 778,
+    "name": "Antique Mauve Very Light",
+    "hex": "#DFB3BB",
+    "red": 223,
+    "green": 179,
+    "blue": 187
   },
   "779": {
-    "number": "779",
-    "readableName": "Brown",
-    "searchName": "brown",
-    "hex": "53332d"
+    "number": 779,
+    "name": "Cocoa Dark",
+    "hex": "#624B45",
+    "red": 98,
+    "green": 75,
+    "blue": 69
   },
   "780": {
-    "number": "780",
-    "readableName": "Topaz - ULT VY DK",
-    "searchName": "topaz_-_ult_vy_dk",
-    "hex": "945026"
+    "number": 780,
+    "name": "Topaz Ultra Very Dark",
+    "hex": "#94631A",
+    "red": 148,
+    "green": 99,
+    "blue": 26
   },
   "781": {
-    "number": "781",
-    "readableName": "Topaz - VY DK",
-    "searchName": "topaz_-_vy_dk",
-    "hex": "a25f1f"
+    "number": 781,
+    "name": "Topaz Very Dark",
+    "hex": "#A26D20",
+    "red": 162,
+    "green": 109,
+    "blue": 32
   },
   "782": {
-    "number": "782",
-    "readableName": "Topaz - DK",
-    "searchName": "topaz_-_dk",
-    "hex": "b26923"
+    "number": 782,
+    "name": "Topaz Dark",
+    "hex": "#AE7720",
+    "red": 174,
+    "green": 119,
+    "blue": 32
   },
   "783": {
-    "number": "783",
-    "readableName": "Topaz - MED",
-    "searchName": "topaz_-_med",
-    "hex": "d0883d"
+    "number": 783,
+    "name": "Topaz Medium",
+    "hex": "#CE9124",
+    "red": 206,
+    "green": 145,
+    "blue": 36
   },
   "791": {
-    "number": "791",
-    "readableName": "Cornflower Blue - VY DK",
-    "searchName": "cornflower_blue_-_vy_dk",
-    "hex": "2d2068"
+    "number": 791,
+    "name": "Cornflower blue Very Dark",
+    "hex": "#464563",
+    "red": 70,
+    "green": 69,
+    "blue": 99
   },
   "792": {
-    "number": "792",
-    "readableName": "Cornflower Blue - DK",
-    "searchName": "cornflower_blue_-_dk",
-    "hex": "454b8b"
+    "number": 792,
+    "name": "Cornflower blue Dark",
+    "hex": "#555B7B",
+    "red": 85,
+    "green": 91,
+    "blue": 123
   },
   "793": {
-    "number": "793",
-    "readableName": "Cornflower Blue - MED",
-    "searchName": "cornflower_blue_-_med",
-    "hex": "7c82b5"
+    "number": 793,
+    "name": "Cornflower blue Medium",
+    "hex": "#707DA2",
+    "red": 112,
+    "green": 125,
+    "blue": 162
   },
   "794": {
-    "number": "794",
-    "readableName": "Cornflower Blue - LT",
-    "searchName": "cornflower_blue_-_lt",
-    "hex": "a0b2d7"
+    "number": 794,
+    "name": "Cornflower blue Light",
+    "hex": "#8F9CC1",
+    "red": 143,
+    "green": 156,
+    "blue": 193
   },
   "796": {
-    "number": "796",
-    "readableName": "Royal Blue - DK",
-    "searchName": "royal_blue_-_dk",
-    "hex": "272276"
+    "number": 796,
+    "name": "Royal blue Dark",
+    "hex": "#11416D",
+    "red": 17,
+    "green": 65,
+    "blue": 109
   },
   "797": {
-    "number": "797",
-    "readableName": "Royal Blue",
-    "searchName": "royal_blue",
-    "hex": "2b3288"
+    "number": 797,
+    "name": "Royal blue",
+    "hex": "#13477D",
+    "red": 19,
+    "green": 71,
+    "blue": 125
   },
   "798": {
-    "number": "798",
-    "readableName": "Delft Blue - DK",
-    "searchName": "delft_blue_-_dk",
-    "hex": "4e5ca7"
+    "number": 798,
+    "name": "Delft blue Dark",
+    "hex": "#466A8E",
+    "red": 70,
+    "green": 106,
+    "blue": 142
   },
   "799": {
-    "number": "799",
-    "readableName": "Delft Blue - MED",
-    "searchName": "delft_blue_-_med",
-    "hex": "6b7fc0"
+    "number": 799,
+    "name": "Delft blue Medium",
+    "hex": "#748EB6",
+    "red": 116,
+    "green": 142,
+    "blue": 182
   },
   "800": {
-    "number": "800",
-    "readableName": "Delft Blue - PALE",
-    "searchName": "delft_blue_-_pale",
-    "hex": "b5c7e9"
+    "number": 800,
+    "name": "Delft blue Pale",
+    "hex": "#C0CCDE",
+    "red": 192,
+    "green": 204,
+    "blue": 222
   },
   "801": {
-    "number": "801",
-    "readableName": "Coffee Brown - DK",
-    "searchName": "coffee_brown_-_dk",
-    "hex": "60391d"
+    "number": 801,
+    "name": "Coffee Brown Dark",
+    "hex": "#653919",
+    "red": 101,
+    "green": 57,
+    "blue": 25
   },
   "803": {
-    "number": "803",
-    "readableName": "Blue - DEEP",
-    "searchName": "blue_-_deep",
-    "hex": "202754"
+    "number": 803,
+    "name": "Baby blue Ultra Very Dark",
+    "hex": "#2C597C",
+    "red": 44,
+    "green": 89,
+    "blue": 124
   },
   "806": {
-    "number": "806",
-    "readableName": "Peacock Blue - DK",
-    "searchName": "peacock_blue_-_dk",
-    "hex": "1d6c87"
+    "number": 806,
+    "name": "Peacock blue Dark",
+    "hex": "#3D95A5",
+    "red": 61,
+    "green": 149,
+    "blue": 165
   },
   "807": {
-    "number": "807",
-    "readableName": "Peacock Blue",
-    "searchName": "peacock_blue",
-    "hex": "558b9e"
+    "number": 807,
+    "name": "Peacock blue",
+    "hex": "#64ABBA",
+    "red": 100,
+    "green": 171,
+    "blue": 186
   },
   "809": {
-    "number": "809",
-    "readableName": "Delft Blue",
-    "searchName": "delft_blue",
-    "hex": "919fd5"
+    "number": 809,
+    "name": "Delft blue",
+    "hex": "#94A8C6",
+    "red": 148,
+    "green": 168,
+    "blue": 198
   },
   "813": {
-    "number": "813",
-    "readableName": "Blue - LT",
-    "searchName": "blue_-_lt",
-    "hex": "7fa0c6"
+    "number": 813,
+    "name": "blue Light",
+    "hex": "#A1C2D7",
+    "red": 161,
+    "green": 194,
+    "blue": 215
   },
   "814": {
-    "number": "814",
-    "readableName": "Garnet - DK",
-    "searchName": "garnet_-_dk",
-    "hex": "711033"
+    "number": 814,
+    "name": "Garnet Dark",
+    "hex": "#7B001B",
+    "red": 123,
+    "green": 0,
+    "blue": 27
   },
   "815": {
-    "number": "815",
-    "readableName": "Garnet - MED",
-    "searchName": "garnet_-_med",
-    "hex": "800b34"
+    "number": 815,
+    "name": "Garnet Medium",
+    "hex": "#87071F",
+    "red": 135,
+    "green": 7,
+    "blue": 31
   },
   "816": {
-    "number": "816",
-    "readableName": "Garnet",
-    "searchName": "garnet",
-    "hex": "921238"
+    "number": 816,
+    "name": "Garnet",
+    "hex": "#970B23",
+    "red": 151,
+    "green": 11,
+    "blue": 35
   },
   "817": {
-    "number": "817",
-    "readableName": "Coral Red - VY DK",
-    "searchName": "coral_red_-_vy_dk",
-    "hex": "bb1630"
+    "number": 817,
+    "name": "Coral red Very Dark",
+    "hex": "#BB051F",
+    "red": 187,
+    "green": 5,
+    "blue": 31
   },
   "818": {
-    "number": "818",
-    "readableName": "Baby Pink",
-    "searchName": "baby_pink",
-    "hex": "fededd"
+    "number": 818,
+    "name": "Baby Pink",
+    "hex": "#FFDFD9",
+    "red": 255,
+    "green": 223,
+    "blue": 217
   },
   "819": {
-    "number": "819",
-    "readableName": "Baby Pink - LT",
-    "searchName": "baby_pink_-_lt",
-    "hex": "fcebde"
+    "number": 819,
+    "name": "Baby Pink Light",
+    "hex": "#FFEEEB",
+    "red": 255,
+    "green": 238,
+    "blue": 235
   },
   "820": {
-    "number": "820",
-    "readableName": "Royal Blue - VY DK",
-    "searchName": "royal_blue_-_vy_dk",
-    "hex": "151264"
+    "number": 820,
+    "name": "Royal blue Very Dark",
+    "hex": "#0E365C",
+    "red": 14,
+    "green": 54,
+    "blue": 92
   },
   "822": {
-    "number": "822",
-    "readableName": "Beige Gray - LT",
-    "searchName": "beige_gray_-_lt",
-    "hex": "e8dfc7"
+    "number": 822,
+    "name": "Beige Gray Light",
+    "hex": "#E7E2D3",
+    "red": 231,
+    "green": 226,
+    "blue": 211
   },
   "823": {
-    "number": "823",
-    "readableName": "Blue - DK",
-    "searchName": "blue_-_dk",
-    "hex": "000b44"
+    "number": 823,
+    "name": "Navy blue Dark",
+    "hex": "#213063",
+    "red": 33,
+    "green": 48,
+    "blue": 99
   },
   "824": {
-    "number": "824",
-    "readableName": "Blue - VY DK",
-    "searchName": "blue_-_vy_dk",
-    "hex": "284779"
+    "number": 824,
+    "name": "blue Very Dark",
+    "hex": "#396987",
+    "red": 57,
+    "green": 105,
+    "blue": 135
   },
   "825": {
-    "number": "825",
-    "readableName": "Blue - DK",
-    "searchName": "blue_-_dk",
-    "hex": "34588f"
+    "number": 825,
+    "name": "blue Dark",
+    "hex": "#4781A5",
+    "red": 71,
+    "green": 129,
+    "blue": 165
   },
   "826": {
-    "number": "826",
-    "readableName": "Blue - MED",
-    "searchName": "blue_-_med",
-    "hex": "5075a7"
+    "number": 826,
+    "name": "blue Medium",
+    "hex": "#6B9EBF",
+    "red": 107,
+    "green": 158,
+    "blue": 191
   },
   "827": {
-    "number": "827",
-    "readableName": "Blue - VY LT",
-    "searchName": "blue_-_vy_lt",
-    "hex": "a4c1de"
+    "number": 827,
+    "name": "blue Very Light",
+    "hex": "#BDDDED",
+    "red": 189,
+    "green": 221,
+    "blue": 237
   },
   "828": {
-    "number": "828",
-    "readableName": "Blue - ULT VY LT",
-    "searchName": "blue_-_ult_vy_lt",
-    "hex": "c3d7e6"
+    "number": 828,
+    "name": "Sky blue Very Light",
+    "hex": "#C5E8ED",
+    "red": 197,
+    "green": 232,
+    "blue": 237
   },
   "829": {
-    "number": "829",
-    "readableName": "Golden Olive - VY DK",
-    "searchName": "golden_olive_-_vy_dk",
-    "hex": "64480c"
+    "number": 829,
+    "name": "Golden Olive Very Dark",
+    "hex": "#7E6B42",
+    "red": 126,
+    "green": 107,
+    "blue": 66
   },
   "830": {
-    "number": "830",
-    "readableName": "Golden Olive - DK",
-    "searchName": "golden_olive_-_dk",
-    "hex": "6e501d"
+    "number": 830,
+    "name": "Golden Olive Dark",
+    "hex": "#8D784B",
+    "red": 141,
+    "green": 120,
+    "blue": 75
   },
   "831": {
-    "number": "831",
-    "readableName": "Golden Olive - MED",
-    "searchName": "golden_olive_-_med",
-    "hex": "7c5f20"
+    "number": 831,
+    "name": "Golden Olive Medium",
+    "hex": "#AA8F56",
+    "red": 170,
+    "green": 143,
+    "blue": 86
   },
   "832": {
-    "number": "832",
-    "readableName": "Golden Olive",
-    "searchName": "golden_olive",
-    "hex": "9c7230"
+    "number": 832,
+    "name": "Golden Olive",
+    "hex": "#BD9B51",
+    "red": 189,
+    "green": 155,
+    "blue": 81
   },
   "833": {
-    "number": "833",
-    "readableName": "Golden Olive - LT",
-    "searchName": "golden_olive_-_lt",
-    "hex": "b99956"
+    "number": 833,
+    "name": "Golden Olive Light",
+    "hex": "#C8AB6C",
+    "red": 200,
+    "green": 171,
+    "blue": 108
   },
   "834": {
-    "number": "834",
-    "readableName": "Golden Olive - VY LT",
-    "searchName": "golden_olive_-_vy_lt",
-    "hex": "d2b468"
+    "number": 834,
+    "name": "Golden Olive Very Light",
+    "hex": "#DBBE7F",
+    "red": 219,
+    "green": 190,
+    "blue": 127
   },
   "838": {
-    "number": "838",
-    "readableName": "Beige Brown - VY DK",
-    "searchName": "beige_brown_-_vy_dk",
-    "hex": "4a3021"
+    "number": 838,
+    "name": "Beige Brown Very Dark",
+    "hex": "#594937",
+    "red": 89,
+    "green": 73,
+    "blue": 55
   },
   "839": {
-    "number": "839",
-    "readableName": "Beige Brown - DK",
-    "searchName": "beige_brown_-_dk",
-    "hex": "5a3c2d"
+    "number": 839,
+    "name": "Beige Brown Dark",
+    "hex": "#675541",
+    "red": 103,
+    "green": 85,
+    "blue": 65
   },
   "840": {
-    "number": "840",
-    "readableName": "Beige Brown - MED",
-    "searchName": "beige_brown_-_med",
-    "hex": "7a5939"
+    "number": 840,
+    "name": "Beige Brown Medium",
+    "hex": "#9A7C5C",
+    "red": 154,
+    "green": 124,
+    "blue": 92
   },
   "841": {
-    "number": "841",
-    "readableName": "Beige Brown - LT",
-    "searchName": "beige_brown_-_lt",
-    "hex": "a37d64"
+    "number": 841,
+    "name": "Beige Brown Light",
+    "hex": "#B69B7E",
+    "red": 182,
+    "green": 155,
+    "blue": 126
   },
   "842": {
-    "number": "842",
-    "readableName": "Beige Brown - VY LT",
-    "searchName": "beige_brown_-_vy_lt",
-    "hex": "cbb094"
+    "number": 842,
+    "name": "Beige Brown Very Light",
+    "hex": "#D1BAA1",
+    "red": 209,
+    "green": 186,
+    "blue": 161
   },
   "844": {
-    "number": "844",
-    "readableName": "Beaver Gray - ULT DK",
-    "searchName": "beaver_gray_-_ult_dk",
-    "hex": "494842"
-  },
-  "868": {
-    "number": "868",
-    "readableName": "Hazel Nut Brown",
-    "searchName": "hazel_nut_brown",
-    "hex": "995c30"
+    "number": 844,
+    "name": "Beaver Gray Ultra Dark",
+    "hex": "#484848",
+    "red": 72,
+    "green": 72,
+    "blue": 72
   },
   "869": {
-    "number": "869",
-    "readableName": "Hazelnut Brown - VY DK",
-    "searchName": "hazelnut_brown_-_vy_dk",
-    "hex": "784c28"
+    "number": 869,
+    "name": "Hazelnut Brown Very Dark",
+    "hex": "#835E39",
+    "red": 131,
+    "green": 94,
+    "blue": 57
   },
   "890": {
-    "number": "890",
-    "readableName": "Pistachio Green - ULT DK",
-    "searchName": "pistachio_green_-_ult_dk",
-    "hex": "324233"
+    "number": 890,
+    "name": "Pistachio Grn Ultra Very Dark",
+    "hex": "#184923",
+    "red": 23,
+    "green": 73,
+    "blue": 35
   },
   "891": {
-    "number": "891",
-    "readableName": "Carnation - DK",
-    "searchName": "carnation_-_dk",
-    "hex": "ee3246"
+    "number": 891,
+    "name": "Carnation Dark",
+    "hex": "#FF5773",
+    "red": 255,
+    "green": 87,
+    "blue": 115
   },
   "892": {
-    "number": "892",
-    "readableName": "Carnation - MED",
-    "searchName": "carnation_-_med",
-    "hex": "f44753"
+    "number": 892,
+    "name": "Carnation Medium",
+    "hex": "#FF798C",
+    "red": 255,
+    "green": 121,
+    "blue": 140
   },
   "893": {
-    "number": "893",
-    "readableName": "Carnation - LT",
-    "searchName": "carnation_-_lt",
-    "hex": "f66879"
+    "number": 893,
+    "name": "Carnation Light",
+    "hex": "#FC90A2",
+    "red": 252,
+    "green": 144,
+    "blue": 162
   },
   "894": {
-    "number": "894",
-    "readableName": "Carnation - VY LT",
-    "searchName": "carnation_-_vy_lt",
-    "hex": "fd95a3"
+    "number": 894,
+    "name": "Carnation Very Light",
+    "hex": "#FFB2BB",
+    "red": 255,
+    "green": 178,
+    "blue": 187
   },
   "895": {
-    "number": "895",
-    "readableName": "Hunter Green - VY DK",
-    "searchName": "hunter_green_-_vy_dk",
-    "hex": "344b2e"
+    "number": 895,
+    "name": "Hunter green Very Dark",
+    "hex": "#1B5300",
+    "red": 27,
+    "green": 83,
+    "blue": 0
   },
   "898": {
-    "number": "898",
-    "readableName": "Coffee Brown - VY DK",
-    "searchName": "coffee_brown_-_vy_dk",
-    "hex": "532f1b"
+    "number": 898,
+    "name": "Coffee Brown Very Dark",
+    "hex": "#492A13",
+    "red": 73,
+    "green": 42,
+    "blue": 19
   },
   "899": {
-    "number": "899",
-    "readableName": "Rose - MED",
-    "searchName": "rose_-_med",
-    "hex": "ea6b78"
+    "number": 899,
+    "name": "Rose Medium",
+    "hex": "#F27688",
+    "red": 242,
+    "green": 118,
+    "blue": 136
   },
   "900": {
-    "number": "900",
-    "readableName": "Burnt Orange - DK",
-    "searchName": "burnt_orange_-_dk",
-    "hex": "c63117"
+    "number": 900,
+    "name": "Burnt Orange Dark",
+    "hex": "#D15807",
+    "red": 209,
+    "green": 88,
+    "blue": 7
   },
   "902": {
-    "number": "902",
-    "readableName": "Garnet - VY DK",
-    "searchName": "garnet_-_vy_dk",
-    "hex": "651329"
+    "number": 902,
+    "name": "Garnet Very Dark",
+    "hex": "#822637",
+    "red": 130,
+    "green": 38,
+    "blue": 55
   },
   "904": {
-    "number": "904",
-    "readableName": "Parrot Green - VY DK",
-    "searchName": "parrot_green_-_vy_dk",
-    "hex": "386324"
+    "number": 904,
+    "name": "Parrot green Very Dark",
+    "hex": "#557822",
+    "red": 85,
+    "green": 120,
+    "blue": 34
   },
   "905": {
-    "number": "905",
-    "readableName": "Parrot Green - DK",
-    "searchName": "parrot_green_-_dk",
-    "hex": "467924"
+    "number": 905,
+    "name": "Parrot green Dark",
+    "hex": "#628A28",
+    "red": 98,
+    "green": 138,
+    "blue": 40
   },
   "906": {
-    "number": "906",
-    "readableName": "Parrot Green - MED",
-    "searchName": "parrot_green_-_med",
-    "hex": "6c9e29"
+    "number": 906,
+    "name": "Parrot green Medium",
+    "hex": "#7FB335",
+    "red": 127,
+    "green": 179,
+    "blue": 53
   },
   "907": {
-    "number": "907",
-    "readableName": "Parrot Green - LT",
-    "searchName": "parrot_green_-_lt",
-    "hex": "9dc72d"
+    "number": 907,
+    "name": "Parrot green Light",
+    "hex": "#C7E666",
+    "red": 199,
+    "green": 230,
+    "blue": 102
   },
   "909": {
-    "number": "909",
-    "readableName": "Emerald Green - VY DK",
-    "searchName": "emerald_green_-_vy_dk",
-    "hex": "106b43"
+    "number": 909,
+    "name": "Emerald green Very Dark",
+    "hex": "#156F49",
+    "red": 21,
+    "green": 111,
+    "blue": 73
   },
   "910": {
-    "number": "910",
-    "readableName": "Emerald Green - DK",
-    "searchName": "emerald_green_-_dk",
-    "hex": "10814e"
+    "number": 910,
+    "name": "Emerald green Dark",
+    "hex": "#187E56",
+    "red": 24,
+    "green": 126,
+    "blue": 86
   },
   "911": {
-    "number": "911",
-    "readableName": "Emerald Green - MED",
-    "searchName": "emerald_green_-_med",
-    "hex": "109256"
+    "number": 911,
+    "name": "Emerald green Medium",
+    "hex": "#189065",
+    "red": 24,
+    "green": 144,
+    "blue": 101
   },
   "912": {
-    "number": "912",
-    "readableName": "Emerald Green - LT",
-    "searchName": "emerald_green_-_lt",
-    "hex": "36b26b"
+    "number": 912,
+    "name": "Emerald green Light",
+    "hex": "#1B9D6B",
+    "red": 27,
+    "green": 157,
+    "blue": 107
   },
   "913": {
-    "number": "913",
-    "readableName": "Nile Green - MED",
-    "searchName": "nile_green_-_med",
-    "hex": "55ca7d"
+    "number": 913,
+    "name": "Nile green Medium",
+    "hex": "#6DAB77",
+    "red": 109,
+    "green": 171,
+    "blue": 119
   },
   "915": {
-    "number": "915",
-    "readableName": "Plum - DK",
-    "searchName": "plum_-_dk",
-    "hex": "95085a"
+    "number": 915,
+    "name": "Plum Dark",
+    "hex": "#820043",
+    "red": 130,
+    "green": 0,
+    "blue": 67
   },
   "917": {
-    "number": "917",
-    "readableName": "Plum - MED",
-    "searchName": "plum_-_med",
-    "hex": "ac1071"
+    "number": 917,
+    "name": "Plum Medium",
+    "hex": "#9B1359",
+    "red": 155,
+    "green": 19,
+    "blue": 89
   },
   "918": {
-    "number": "918",
-    "readableName": "Red Copper - DK",
-    "searchName": "red_copper_-_dk",
-    "hex": "883630"
+    "number": 918,
+    "name": "red Copper Dark",
+    "hex": "#82340A",
+    "red": 130,
+    "green": 52,
+    "blue": 10
   },
   "919": {
-    "number": "919",
-    "readableName": "Red Copper",
-    "searchName": "red_copper",
-    "hex": "9b371b"
+    "number": 919,
+    "name": "red Copper",
+    "hex": "#A64510",
+    "red": 166,
+    "green": 69,
+    "blue": 16
   },
   "920": {
-    "number": "920",
-    "readableName": "Copper - MED",
-    "searchName": "copper_-_med",
-    "hex": "ab4836"
+    "number": 920,
+    "name": "Copper Medium",
+    "hex": "#AC5414",
+    "red": 172,
+    "green": 84,
+    "blue": 20
   },
   "921": {
-    "number": "921",
-    "readableName": "Copper",
-    "searchName": "copper",
-    "hex": "c0573d"
+    "number": 921,
+    "name": "Copper",
+    "hex": "#C66218",
+    "red": 198,
+    "green": 98,
+    "blue": 24
   },
   "922": {
-    "number": "922",
-    "readableName": "Copper - LT",
-    "searchName": "copper_-_lt",
-    "hex": "dd6e4c"
+    "number": 922,
+    "name": "Copper Light",
+    "hex": "#E27323",
+    "red": 226,
+    "green": 115,
+    "blue": 35
   },
   "924": {
-    "number": "924",
-    "readableName": "Gray Green - VY DK",
-    "searchName": "gray_green_-_vy_dk",
-    "hex": "384a4a"
+    "number": 924,
+    "name": "Gray green Vy Dark",
+    "hex": "#566A6A",
+    "red": 86,
+    "green": 106,
+    "blue": 106
   },
   "926": {
-    "number": "926",
-    "readableName": "Gray Green - MED",
-    "searchName": "gray_green_-_med",
-    "hex": "617674"
+    "number": 926,
+    "name": "Gray green Medium",
+    "hex": "#98AEAE",
+    "red": 152,
+    "green": 174,
+    "blue": 174
   },
   "927": {
-    "number": "927",
-    "readableName": "Gray Green - LT",
-    "searchName": "gray_green_-_lt",
-    "hex": "9fa8a5"
+    "number": 927,
+    "name": "Gray green Light",
+    "hex": "#BDCBCB",
+    "red": 189,
+    "green": 203,
+    "blue": 203
   },
   "928": {
-    "number": "928",
-    "readableName": "Gray Green - VY LT",
-    "searchName": "gray_green_-_vy_lt",
-    "hex": "c0c6c0"
+    "number": 928,
+    "name": "Gray green Very Light",
+    "hex": "#DDE3E3",
+    "red": 221,
+    "green": 227,
+    "blue": 227
   },
   "930": {
-    "number": "930",
-    "readableName": "Antique Blue - DK",
-    "searchName": "antique_blue_-_dk",
-    "hex": "495c6b"
+    "number": 930,
+    "name": "Antique blue Dark",
+    "hex": "#455C71",
+    "red": 69,
+    "green": 92,
+    "blue": 113
   },
   "931": {
-    "number": "931",
-    "readableName": "Antique Blue - MED",
-    "searchName": "antique_blue_-_med",
-    "hex": "667684"
+    "number": 931,
+    "name": "Antique blue Medium",
+    "hex": "#6A859E",
+    "red": 106,
+    "green": 133,
+    "blue": 158
   },
   "932": {
-    "number": "932",
-    "readableName": "Antique Blue - LT",
-    "searchName": "antique_blue_-_lt",
-    "hex": "93a0af"
+    "number": 932,
+    "name": "Antique blue Light",
+    "hex": "#A2B5C6",
+    "red": 162,
+    "green": 181,
+    "blue": 198
   },
   "934": {
-    "number": "934",
-    "readableName": "Avocado Green - BLACK",
-    "searchName": "avocado_green_-_black",
-    "hex": "323324"
+    "number": 934,
+    "name": "Avocado Grn Black",
+    "hex": "#313919",
+    "red": 49,
+    "green": 57,
+    "blue": 25
   },
   "935": {
-    "number": "935",
-    "readableName": "Avocado Green - DK",
-    "searchName": "avocado_green_-_dk",
-    "hex": "383a2a"
+    "number": 935,
+    "name": "Avocado green Dark",
+    "hex": "#424D21",
+    "red": 66,
+    "green": 77,
+    "blue": 33
   },
   "936": {
-    "number": "936",
-    "readableName": "Avocado Green - VY DK",
-    "searchName": "avocado_green_-_vy_dk",
-    "hex": "3f4227"
+    "number": 936,
+    "name": "Avocado green Very Dark",
+    "hex": "#4C5826",
+    "red": 76,
+    "green": 88,
+    "blue": 38
   },
   "937": {
-    "number": "937",
-    "readableName": "Avocado Green - MED",
-    "searchName": "avocado_green_-_med",
-    "hex": "434f2c"
+    "number": 937,
+    "name": "Avocado green Medium",
+    "hex": "#627133",
+    "red": 98,
+    "green": 113,
+    "blue": 51
   },
   "938": {
-    "number": "938",
-    "readableName": "Coffee Brown - ULT DK",
-    "searchName": "coffee_brown_-_ult_dk",
-    "hex": "45271a"
+    "number": 938,
+    "name": "Coffee Brown Ultra Dark",
+    "hex": "#361F0E",
+    "red": 54,
+    "green": 31,
+    "blue": 14
   },
   "939": {
-    "number": "939",
-    "readableName": "Blue - VY DK",
-    "searchName": "blue_-_vy_dk",
-    "hex": "09092f"
+    "number": 939,
+    "name": "Navy blue Very Dark",
+    "hex": "#1B2853",
+    "red": 27,
+    "green": 40,
+    "blue": 83
   },
   "943": {
-    "number": "943",
-    "readableName": "Aquamarine - MED",
-    "searchName": "aquamarine_-_med",
-    "hex": "009a77"
+    "number": 943,
+    "name": "green Bright Medium",
+    "hex": "#3D9384",
+    "red": 61,
+    "green": 147,
+    "blue": 132
   },
   "945": {
-    "number": "945",
-    "readableName": "Tawny",
-    "searchName": "tawny",
-    "hex": "f6c19a"
+    "number": 945,
+    "name": "Tawny",
+    "hex": "#FBD5BB",
+    "red": 251,
+    "green": 213,
+    "blue": 187
   },
   "946": {
-    "number": "946",
-    "readableName": "Burnt Orange - MED",
-    "searchName": "burnt_orange_-_med",
-    "hex": "ed4115"
+    "number": 946,
+    "name": "Burnt Orange Medium",
+    "hex": "#EB6307",
+    "red": 235,
+    "green": 99,
+    "blue": 7
   },
   "947": {
-    "number": "947",
-    "readableName": "Burnt Orange",
-    "searchName": "burnt_orange",
-    "hex": "fc4f16"
+    "number": 947,
+    "name": "Burnt Orange",
+    "hex": "#FF7B4D",
+    "red": 255,
+    "green": 123,
+    "blue": 77
   },
   "948": {
-    "number": "948",
-    "readableName": "Peach - VY LT",
-    "searchName": "peach_-_vy_lt",
-    "hex": "fde6d3"
+    "number": 948,
+    "name": "Peach Very Light",
+    "hex": "#FEE7DA",
+    "red": 254,
+    "green": 231,
+    "blue": 218
   },
   "950": {
-    "number": "950",
-    "readableName": "Desert Sand - LT",
-    "searchName": "desert_sand_-_lt",
-    "hex": "e5ac8d"
+    "number": 950,
+    "name": "Desert Sand Light",
+    "hex": "#EED3C4",
+    "red": 238,
+    "green": 211,
+    "blue": 196
   },
   "951": {
-    "number": "951",
-    "readableName": "Tawny - LT",
-    "searchName": "tawny_-_lt",
-    "hex": "faddb6"
+    "number": 951,
+    "name": "Tawny Light",
+    "hex": "#FFE2CF",
+    "red": 255,
+    "green": 226,
+    "blue": 207
   },
   "954": {
-    "number": "954",
-    "readableName": "Nile Green",
-    "searchName": "nile_green",
-    "hex": "6fda8a"
+    "number": 954,
+    "name": "Nile green",
+    "hex": "#88BA91",
+    "red": 136,
+    "green": 186,
+    "blue": 145
   },
   "955": {
-    "number": "955",
-    "readableName": "Nile Green - LT",
-    "searchName": "nile_green_-_lt",
-    "hex": "a8ebad"
+    "number": 955,
+    "name": "Nile green Light",
+    "hex": "#A2D6AD",
+    "red": 162,
+    "green": 214,
+    "blue": 173
   },
   "956": {
-    "number": "956",
-    "readableName": "Geranium",
-    "searchName": "geranium",
-    "hex": "f7566d"
+    "number": 956,
+    "name": "Geranium",
+    "hex": "#FF9191",
+    "red": 255,
+    "green": 145,
+    "blue": 145
   },
   "957": {
-    "number": "957",
-    "readableName": "Geranium - PALE",
-    "searchName": "geranium_-_pale",
-    "hex": "fd99af"
+    "number": 957,
+    "name": "Geranium Pale",
+    "hex": "#FDB5B5",
+    "red": 253,
+    "green": 181,
+    "blue": 181
   },
   "958": {
-    "number": "958",
-    "readableName": "Seagreen - DK",
-    "searchName": "seagreen_-_dk",
-    "hex": "0db294"
+    "number": 958,
+    "name": "Sea green Dark",
+    "hex": "#3EB6A1",
+    "red": 62,
+    "green": 182,
+    "blue": 161
   },
   "959": {
-    "number": "959",
-    "readableName": "Seagreen - MED",
-    "searchName": "seagreen_-_med",
-    "hex": "72d0b7"
+    "number": 959,
+    "name": "Sea green Medium",
+    "hex": "#59C7B4",
+    "red": 89,
+    "green": 199,
+    "blue": 180
   },
   "961": {
-    "number": "961",
-    "readableName": "Dusty Rose - DK",
-    "searchName": "dusty_rose_-_dk",
-    "hex": "de586c"
+    "number": 961,
+    "name": "Dusty Rose Dark",
+    "hex": "#CF7373",
+    "red": 207,
+    "green": 115,
+    "blue": 115
   },
   "962": {
-    "number": "962",
-    "readableName": "Dusty Rose - MED",
-    "searchName": "dusty_rose_-_med",
-    "hex": "eb7183"
+    "number": 962,
+    "name": "Dusty Rose Medium",
+    "hex": "#E68A8A",
+    "red": 230,
+    "green": 138,
+    "blue": 138
   },
   "963": {
-    "number": "963",
-    "readableName": "Dusty Rose - ULT VY LT",
-    "searchName": "dusty_rose_-_ult_vy_lt",
-    "hex": "fdccd1"
+    "number": 963,
+    "name": "Dusty Rose Ultra Very Light",
+    "hex": "#FFD7D7",
+    "red": 255,
+    "green": 215,
+    "blue": 215
   },
   "964": {
-    "number": "964",
-    "readableName": "Seagreen - LT",
-    "searchName": "seagreen_-_lt",
-    "hex": "a5e4d4"
+    "number": 964,
+    "name": "Sea green Light",
+    "hex": "#A9E2D8",
+    "red": 169,
+    "green": 226,
+    "blue": 216
   },
   "966": {
-    "number": "966",
-    "readableName": "Baby Green - MED",
-    "searchName": "baby_green_-_med",
-    "hex": "94d28a"
+    "number": 966,
+    "name": "Jade Ultra Very Light",
+    "hex": "#B9D7C0",
+    "red": 185,
+    "green": 215,
+    "blue": 192
   },
   "967": {
-    "number": "967",
-    "readableName": "Peach - LT",
-    "searchName": "peach_-_lt",
-    "hex": "ffc2ac"
+    "number": 967,
+    "name": "Apricot Very Light",
+    "hex": "#FFDED5",
+    "red": 255,
+    "green": 222,
+    "blue": 213
   },
   "970": {
-    "number": "970",
-    "readableName": "Pumpkin - LT",
-    "searchName": "pumpkin_-_lt",
-    "hex": "fb6721"
+    "number": 970,
+    "name": "Pumpkin Light",
+    "hex": "#F78B13",
+    "red": 247,
+    "green": 139,
+    "blue": 19
   },
   "971": {
-    "number": "971",
-    "readableName": "Pumpkin",
-    "searchName": "pumpkin",
-    "hex": "fc670d"
+    "number": 971,
+    "name": "Pumpkin",
+    "hex": "#F67F00",
+    "red": 246,
+    "green": 127,
+    "blue": 0
   },
   "972": {
-    "number": "972",
-    "readableName": "Canary - DEEP",
-    "searchName": "canary_-_deep",
-    "hex": "fb9f11"
+    "number": 972,
+    "name": "Canary Deep",
+    "hex": "#FFB515",
+    "red": 255,
+    "green": 181,
+    "blue": 21
   },
   "973": {
-    "number": "973",
-    "readableName": "Canary - BRIGHT",
-    "searchName": "canary_-_bright",
-    "hex": "fccd2d"
+    "number": 973,
+    "name": "Canary Bright",
+    "hex": "#FFE300",
+    "red": 255,
+    "green": 227,
+    "blue": 0
   },
   "975": {
-    "number": "975",
-    "readableName": "Golden Brown - DK",
-    "searchName": "golden_brown_-_dk",
-    "hex": "813c11"
+    "number": 975,
+    "name": "Golden Brown Dark",
+    "hex": "#914F12",
+    "red": 145,
+    "green": 79,
+    "blue": 18
   },
   "976": {
-    "number": "976",
-    "readableName": "Golden Brown - MED",
-    "searchName": "golden_brown_-_med",
-    "hex": "cf7532"
+    "number": 976,
+    "name": "Golden Brown Medium",
+    "hex": "#C28142",
+    "red": 194,
+    "green": 129,
+    "blue": 66
   },
   "977": {
-    "number": "977",
-    "readableName": "Golden Brown - LT",
-    "searchName": "golden_brown_-_lt",
-    "hex": "ec8f43"
+    "number": 977,
+    "name": "Golden Brown Light",
+    "hex": "#DC9C56",
+    "red": 220,
+    "green": 156,
+    "blue": 86
   },
   "986": {
-    "number": "986",
-    "readableName": "Forest Green - VY DK",
-    "searchName": "forest_green_-_vy_dk",
-    "hex": "2e5230"
+    "number": 986,
+    "name": "Forest green Very Dark",
+    "hex": "#405230",
+    "red": 64,
+    "green": 82,
+    "blue": 48
   },
   "987": {
-    "number": "987",
-    "readableName": "Forest Green - DK",
-    "searchName": "forest_green_-_dk",
-    "hex": "436838"
+    "number": 987,
+    "name": "Forest green Dark",
+    "hex": "#587141",
+    "red": 88,
+    "green": 113,
+    "blue": 65
   },
   "988": {
-    "number": "988",
-    "readableName": "Forest Green - MED",
-    "searchName": "forest_green_-_med",
-    "hex": "66924a"
+    "number": 988,
+    "name": "Forest green Medium",
+    "hex": "#738B5B",
+    "red": 115,
+    "green": 139,
+    "blue": 91
   },
   "989": {
-    "number": "989",
-    "readableName": "Forest Green",
-    "searchName": "forest_green",
-    "hex": "71a74e"
+    "number": 989,
+    "name": "Forest green",
+    "hex": "#8DA675",
+    "red": 141,
+    "green": 166,
+    "blue": 117
   },
   "991": {
-    "number": "991",
-    "readableName": "Aquamarine - DK",
-    "searchName": "aquamarine_-_dk",
-    "hex": "135f55"
+    "number": 991,
+    "name": "Aquamarine Dark",
+    "hex": "#477B6E",
+    "red": 71,
+    "green": 123,
+    "blue": 110
   },
   "992": {
-    "number": "992",
-    "readableName": "Aquamarine - LT",
-    "searchName": "aquamarine_-_lt",
-    "hex": "42b59e"
+    "number": 992,
+    "name": "Aquamarine Light",
+    "hex": "#6FAE9F",
+    "red": 111,
+    "green": 174,
+    "blue": 159
   },
   "993": {
-    "number": "993",
-    "readableName": "Aquamarine - VY LT",
-    "searchName": "aquamarine_-_vy_lt",
-    "hex": "62d8b6"
+    "number": 993,
+    "name": "Aquamarine Very Light",
+    "hex": "#90C0B4",
+    "red": 144,
+    "green": 192,
+    "blue": 180
   },
   "995": {
-    "number": "995",
-    "readableName": "Electric Blue - DK",
-    "searchName": "electric_blue_-_dk",
-    "hex": "0061b0"
+    "number": 995,
+    "name": "Electric blue Dark",
+    "hex": "#2696B6",
+    "red": 38,
+    "green": 150,
+    "blue": 182
   },
   "996": {
-    "number": "996",
-    "readableName": "Electric Blue - MED",
-    "searchName": "electric_blue_-_med",
-    "hex": "49a8eb"
+    "number": 996,
+    "name": "Electric blue Medium",
+    "hex": "#30C2EC",
+    "red": 48,
+    "green": 194,
+    "blue": 236
   },
   "3011": {
-    "number": "3011",
-    "readableName": "Khaki Green - DK",
-    "searchName": "khaki_green_-_dk",
-    "hex": "655935"
+    "number": 3011,
+    "name": "Khaki green Dark",
+    "hex": "#898A58",
+    "red": 137,
+    "green": 138,
+    "blue": 88
   },
   "3012": {
-    "number": "3012",
-    "readableName": "Khaki Green - MED",
-    "searchName": "khaki_green_-_med",
-    "hex": "8b7b4e"
+    "number": 3012,
+    "name": "Khaki green Medium",
+    "hex": "#A6A75D",
+    "red": 166,
+    "green": 167,
+    "blue": 93
   },
   "3013": {
-    "number": "3013",
-    "readableName": "Khaki Green - LT",
-    "searchName": "khaki_green_-_lt",
-    "hex": "afa97b"
+    "number": 3013,
+    "name": "Khaki green Light",
+    "hex": "#B9B982",
+    "red": 185,
+    "green": 185,
+    "blue": 130
   },
   "3021": {
-    "number": "3021",
-    "readableName": "Brown Gray - VY DK",
-    "searchName": "brown_gray_-_vy_dk",
-    "hex": "50403b"
+    "number": 3021,
+    "name": "Brown Gray Very Dark",
+    "hex": "#4F4B41",
+    "red": 79,
+    "green": 75,
+    "blue": 65
   },
   "3022": {
-    "number": "3022",
-    "readableName": "Brown Gray - MED",
-    "searchName": "brown_gray_-_med",
-    "hex": "848274"
+    "number": 3022,
+    "name": "Brown Gray Medium",
+    "hex": "#8E9078",
+    "red": 142,
+    "green": 144,
+    "blue": 120
   },
   "3023": {
-    "number": "3023",
-    "readableName": "Brown Gray - LT",
-    "searchName": "brown_gray_-_lt",
-    "hex": "a29b86"
+    "number": 3023,
+    "name": "Brown Gray Light",
+    "hex": "#B1AA97",
+    "red": 177,
+    "green": 170,
+    "blue": 151
   },
   "3024": {
-    "number": "3024",
-    "readableName": "Brown Gray - VY LT",
-    "searchName": "brown_gray_-_vy_lt",
-    "hex": "beb8ac"
+    "number": 3024,
+    "name": "Brown Gray Very Light",
+    "hex": "#EBEAE7",
+    "red": 235,
+    "green": 234,
+    "blue": 231
   },
   "3031": {
-    "number": "3031",
-    "readableName": "Mocha Brown - VY DK",
-    "searchName": "mocha_brown_-_vy_dk",
-    "hex": "423014"
+    "number": 3031,
+    "name": "Mocha Brown Very Dark",
+    "hex": "#4B3C2A",
+    "red": 75,
+    "green": 60,
+    "blue": 42
   },
   "3032": {
-    "number": "3032",
-    "readableName": "Mocha Brown - MED",
-    "searchName": "mocha_brown_-_med",
-    "hex": "9d8868"
+    "number": 3032,
+    "name": "Mocha Brown Medium",
+    "hex": "#B39F8B",
+    "red": 179,
+    "green": 159,
+    "blue": 139
   },
   "3033": {
-    "number": "3033",
-    "readableName": "Mocha Brown - VY LT",
-    "searchName": "mocha_brown_-_vy_lt",
-    "hex": "dbc7ad"
+    "number": 3033,
+    "name": "Mocha Brown Very Light",
+    "hex": "#E3D8CC",
+    "red": 227,
+    "green": 216,
+    "blue": 204
   },
   "3041": {
-    "number": "3041",
-    "readableName": "Antique Violet - MED",
-    "searchName": "antique_violet_-_med",
-    "hex": "866a76"
+    "number": 3041,
+    "name": "Antique Violet Medium",
+    "hex": "#956F7C",
+    "red": 149,
+    "green": 111,
+    "blue": 124
   },
   "3042": {
-    "number": "3042",
-    "readableName": "Antique Violet - LT",
-    "searchName": "antique_violet_-_lt",
-    "hex": "af98a0"
+    "number": 3042,
+    "name": "Antique Violet Light",
+    "hex": "#B79DA7",
+    "red": 183,
+    "green": 157,
+    "blue": 167
   },
   "3045": {
-    "number": "3045",
-    "readableName": "Yellow Beige - DK",
-    "searchName": "yellow_beige_-_dk",
-    "hex": "af8152"
+    "number": 3045,
+    "name": "Yellow Beige Dark",
+    "hex": "#BC966A",
+    "red": 188,
+    "green": 150,
+    "blue": 106
   },
   "3046": {
-    "number": "3046",
-    "readableName": "Yellow Beige - MED",
-    "searchName": "yellow_beige_-_med",
-    "hex": "ceb074"
+    "number": 3046,
+    "name": "Yellow Beige Medium",
+    "hex": "#D8BC9A",
+    "red": 216,
+    "green": 188,
+    "blue": 154
   },
   "3047": {
-    "number": "3047",
-    "readableName": "Yellow Beige - LT",
-    "searchName": "yellow_beige_-_lt",
-    "hex": "ead8ab"
+    "number": 3047,
+    "name": "Yellow Beige Light",
+    "hex": "#E7D6C1",
+    "red": 231,
+    "green": 214,
+    "blue": 193
   },
   "3051": {
-    "number": "3051",
-    "readableName": "Green Gray - DK",
-    "searchName": "green_gray_-_dk",
-    "hex": "4c4c1e"
+    "number": 3051,
+    "name": "green Gray Dark",
+    "hex": "#5F6648",
+    "red": 95,
+    "green": 102,
+    "blue": 72
   },
   "3052": {
-    "number": "3052",
-    "readableName": "Green Gray - MED",
-    "searchName": "green_gray_-_med",
-    "hex": "787e5c"
+    "number": 3052,
+    "name": "green Gray Medium",
+    "hex": "#889268",
+    "red": 136,
+    "green": 146,
+    "blue": 104
   },
   "3053": {
-    "number": "3053",
-    "readableName": "Green Gray",
-    "searchName": "green_gray",
-    "hex": "999d75"
+    "number": 3053,
+    "name": "green Gray",
+    "hex": "#9CA482",
+    "red": 156,
+    "green": 164,
+    "blue": 130
   },
   "3064": {
-    "number": "3064",
-    "readableName": "Desert Sand",
-    "searchName": "desert_sand",
-    "hex": "ba7056"
+    "number": 3064,
+    "name": "Desert Sand",
+    "hex": "#C48E70",
+    "red": 196,
+    "green": 142,
+    "blue": 112
   },
   "3072": {
-    "number": "3072",
-    "readableName": "Beaver Gray - VY LT",
-    "searchName": "beaver_gray_-_vy_lt",
-    "hex": "d2d2ca"
+    "number": 3072,
+    "name": "Beaver Gray Very Light",
+    "hex": "#E6E8E8",
+    "red": 230,
+    "green": 232,
+    "blue": 232
   },
   "3078": {
-    "number": "3078",
-    "readableName": "Golden Yellow - VY LT",
-    "searchName": "golden_yellow_-_vy_lt",
-    "hex": "fcf6b6"
+    "number": 3078,
+    "name": "Golden Yellow Very Light",
+    "hex": "#FDF9CD",
+    "red": 253,
+    "green": 249,
+    "blue": 205
   },
   "3325": {
-    "number": "3325",
-    "readableName": "Baby Blue - LT",
-    "searchName": "baby_blue_-_lt",
-    "hex": "adcde7"
+    "number": 3325,
+    "name": "Baby blue Light",
+    "hex": "#B8D2E6",
+    "red": 184,
+    "green": 210,
+    "blue": 230
   },
   "3326": {
-    "number": "3326",
-    "readableName": "Rose - LT",
-    "searchName": "rose_-_lt",
-    "hex": "f9979c"
+    "number": 3326,
+    "name": "Rose Light",
+    "hex": "#FBADB4",
+    "red": 251,
+    "green": 173,
+    "blue": 180
   },
   "3328": {
-    "number": "3328",
-    "readableName": "Salmon - DK",
-    "searchName": "salmon_-_dk",
-    "hex": "be444a"
+    "number": 3328,
+    "name": "Salmon Dark",
+    "hex": "#E36D6D",
+    "red": 227,
+    "green": 109,
+    "blue": 109
   },
   "3340": {
-    "number": "3340",
-    "readableName": "Apricot - MED",
-    "searchName": "apricot_-_med",
-    "hex": "fd6b4f"
+    "number": 3340,
+    "name": "Apricot Medium",
+    "hex": "#FF836F",
+    "red": 255,
+    "green": 131,
+    "blue": 111
   },
   "3341": {
-    "number": "3341",
-    "readableName": "Apricot",
-    "searchName": "apricot",
-    "hex": "fd8e78"
+    "number": 3341,
+    "name": "Apricot",
+    "hex": "#FCAB98",
+    "red": 252,
+    "green": 171,
+    "blue": 152
   },
   "3345": {
-    "number": "3345",
-    "readableName": "Hunter Green - DK",
-    "searchName": "hunter_green_-_dk",
-    "hex": "40552e"
+    "number": 3345,
+    "name": "Hunter green Dark",
+    "hex": "#1B5915",
+    "red": 27,
+    "green": 89,
+    "blue": 21
   },
   "3346": {
-    "number": "3346",
-    "readableName": "Hunter Green",
-    "searchName": "hunter_green",
-    "hex": "56743b"
+    "number": 3346,
+    "name": "Hunter green",
+    "hex": "#406A3A",
+    "red": 64,
+    "green": 106,
+    "blue": 58
   },
   "3347": {
-    "number": "3347",
-    "readableName": "Yellow Green - MED",
-    "searchName": "yellow_green_-_med",
-    "hex": "6d9646"
+    "number": 3347,
+    "name": "Yellow green Medium",
+    "hex": "#71935C",
+    "red": 113,
+    "green": 147,
+    "blue": 92
   },
   "3348": {
-    "number": "3348",
-    "readableName": "Yellow Green - LT",
-    "searchName": "yellow_green_-_lt",
-    "hex": "bedf74"
+    "number": 3348,
+    "name": "Yellow green Light",
+    "hex": "#CCD9B1",
+    "red": 204,
+    "green": 217,
+    "blue": 177
   },
   "3350": {
-    "number": "3350",
-    "readableName": "Dusty Rose - ULT DK",
-    "searchName": "dusty_rose_-_ult_dk",
-    "hex": "aa3949"
+    "number": 3350,
+    "name": "Dusty Rose Ultra Dark",
+    "hex": "#BC4365",
+    "red": 188,
+    "green": 67,
+    "blue": 101
   },
   "3354": {
-    "number": "3354",
-    "readableName": "Dusty Rose - LT",
-    "searchName": "dusty_rose_-_lt",
-    "hex": "efa5ac"
+    "number": 3354,
+    "name": "Dusty Rose Light",
+    "hex": "#E4A6AC",
+    "red": 228,
+    "green": 166,
+    "blue": 172
   },
   "3362": {
-    "number": "3362",
-    "readableName": "Pine Green - DK",
-    "searchName": "pine_green_-_dk",
-    "hex": "49523c"
+    "number": 3362,
+    "name": "Pine green Dark",
+    "hex": "#5E6B47",
+    "red": 94,
+    "green": 107,
+    "blue": 71
   },
   "3363": {
-    "number": "3363",
-    "readableName": "Pine Green - MED",
-    "searchName": "pine_green_-_med",
-    "hex": "617451"
+    "number": 3363,
+    "name": "Pine green Medium",
+    "hex": "#728256",
+    "red": 114,
+    "green": 130,
+    "blue": 86
   },
   "3364": {
-    "number": "3364",
-    "readableName": "Pine Green",
-    "searchName": "pine_green",
-    "hex": "8e9b6d"
+    "number": 3364,
+    "name": "Pine green",
+    "hex": "#83975F",
+    "red": 131,
+    "green": 151,
+    "blue": 95
   },
   "3371": {
-    "number": "3371",
-    "readableName": "Black Brown",
-    "searchName": "black_brown",
-    "hex": "36220e"
+    "number": 3371,
+    "name": "Black Brown",
+    "hex": "#1E1108",
+    "red": 30,
+    "green": 17,
+    "blue": 8
   },
   "3607": {
-    "number": "3607",
-    "readableName": "Plum - LT",
-    "searchName": "plum_-_lt",
-    "hex": "d94c9d"
+    "number": 3607,
+    "name": "Plum Light",
+    "hex": "#C54989",
+    "red": 197,
+    "green": 73,
+    "blue": 137
   },
   "3608": {
-    "number": "3608",
-    "readableName": "Plum - VY LT",
-    "searchName": "plum_-_vy_lt",
-    "hex": "ec81be"
+    "number": 3608,
+    "name": "Plum Very Light",
+    "hex": "#EA9CC4",
+    "red": 234,
+    "green": 156,
+    "blue": 196
   },
   "3609": {
-    "number": "3609",
-    "readableName": "Plum - ULT LT",
-    "searchName": "plum_-_ult_lt",
-    "hex": "f6b0df"
+    "number": 3609,
+    "name": "Plum Ultra Light",
+    "hex": "#F4AED7",
+    "red": 244,
+    "green": 174,
+    "blue": 213
   },
   "3685": {
-    "number": "3685",
-    "readableName": "Mauve - VY DK",
-    "searchName": "mauve_-_vy_dk",
-    "hex": "79263b"
+    "number": 3685,
+    "name": "Mauve Very Dark",
+    "hex": "#881531",
+    "red": 136,
+    "green": 21,
+    "blue": 49
   },
   "3687": {
-    "number": "3687",
-    "readableName": "Mauve",
-    "searchName": "mauve",
-    "hex": "b5455d"
+    "number": 3687,
+    "name": "Mauve",
+    "hex": "#C96B70",
+    "red": 201,
+    "green": 107,
+    "blue": 112
   },
   "3688": {
-    "number": "3688",
-    "readableName": "Mauve - MED",
-    "searchName": "mauve_-_med",
-    "hex": "dc7c86"
+    "number": 3688,
+    "name": "Mauve Medium",
+    "hex": "#E7A9AC",
+    "red": 231,
+    "green": 169,
+    "blue": 172
   },
   "3689": {
-    "number": "3689",
-    "readableName": "Mauve - LT",
-    "searchName": "mauve_-_lt",
-    "hex": "f8bbc8"
+    "number": 3689,
+    "name": "Mauve Light",
+    "hex": "#FBBFC2",
+    "red": 251,
+    "green": 191,
+    "blue": 194
   },
   "3705": {
-    "number": "3705",
-    "readableName": "Melon - DK",
-    "searchName": "melon_-_dk",
-    "hex": "f2494f"
+    "number": 3705,
+    "name": "Melon Dark",
+    "hex": "#FF7992",
+    "red": 255,
+    "green": 121,
+    "blue": 146
   },
   "3706": {
-    "number": "3706",
-    "readableName": "Melon - MED",
-    "searchName": "melon_-_med",
-    "hex": "fd6e70"
+    "number": 3706,
+    "name": "Melon Medium",
+    "hex": "#FFADBC",
+    "red": 255,
+    "green": 173,
+    "blue": 188
   },
   "3708": {
-    "number": "3708",
-    "readableName": "Melon - LT",
-    "searchName": "melon_-_lt",
-    "hex": "fda0ae"
+    "number": 3708,
+    "name": "Melon Light",
+    "hex": "#FFCBD5",
+    "red": 255,
+    "green": 203,
+    "blue": 213
   },
   "3712": {
-    "number": "3712",
-    "readableName": "Salmon - MED",
-    "searchName": "salmon_-_med",
-    "hex": "d95d5d"
+    "number": 3712,
+    "name": "Salmon Medium",
+    "hex": "#F18787",
+    "red": 241,
+    "green": 135,
+    "blue": 135
   },
   "3713": {
-    "number": "3713",
-    "readableName": "Salmon - VY LT",
-    "searchName": "salmon_-_vy_lt",
-    "hex": "fdd5d0"
+    "number": 3713,
+    "name": "Salmon Very Light",
+    "hex": "#FFE2E2",
+    "red": 255,
+    "green": 226,
+    "blue": 226
   },
   "3716": {
-    "number": "3716",
-    "readableName": "Dusty Rose - VY LT",
-    "searchName": "dusty_rose_-_vy_lt",
-    "hex": "fcafb9"
+    "number": 3716,
+    "name": "Dusty Rose Medium Very Light",
+    "hex": "#FFBDBD",
+    "red": 255,
+    "green": 189,
+    "blue": 189
   },
   "3721": {
-    "number": "3721",
-    "readableName": "Shell Pink - DK",
-    "searchName": "shell_pink_-_dk",
-    "hex": "933b3d"
+    "number": 3721,
+    "name": "Shell Pink Dark",
+    "hex": "#A14B51",
+    "red": 161,
+    "green": 75,
+    "blue": 81
   },
   "3722": {
-    "number": "3722",
-    "readableName": "Shell Pink - MED",
-    "searchName": "shell_pink_-_med",
-    "hex": "a04b4c"
+    "number": 3722,
+    "name": "Shell Pink Medium",
+    "hex": "#BC6C64",
+    "red": 188,
+    "green": 108,
+    "blue": 100
   },
   "3726": {
-    "number": "3726",
-    "readableName": "Antique Mauve - DK",
-    "searchName": "antique_mauve_-_dk",
-    "hex": "95565c"
+    "number": 3726,
+    "name": "Antique Mauve Dark",
+    "hex": "#9B5B66",
+    "red": 155,
+    "green": 91,
+    "blue": 102
   },
   "3727": {
-    "number": "3727",
-    "readableName": "Antique Mauve - LT",
-    "searchName": "antique_mauve_-_lt",
-    "hex": "da9ea6"
+    "number": 3727,
+    "name": "Antique Mauve Light",
+    "hex": "#DBA9B2",
+    "red": 219,
+    "green": 169,
+    "blue": 178
   },
   "3731": {
-    "number": "3731",
-    "readableName": "Dusty Rose - VY DK",
-    "searchName": "dusty_rose_-_vy_dk",
-    "hex": "c34c5c"
+    "number": 3731,
+    "name": "Dusty Rose Very Dark",
+    "hex": "#DA6783",
+    "red": 218,
+    "green": 103,
+    "blue": 131
   },
   "3733": {
-    "number": "3733",
-    "readableName": "Dusty Rose",
-    "searchName": "dusty_rose",
-    "hex": "ea7e86"
+    "number": 3733,
+    "name": "Dusty Rose",
+    "hex": "#E8879B",
+    "red": 232,
+    "green": 135,
+    "blue": 155
   },
   "3740": {
-    "number": "3740",
-    "readableName": "Antique Violet - DK",
-    "searchName": "antique_violet_-_dk",
-    "hex": "71535d"
+    "number": 3740,
+    "name": "Antique Violet Dark",
+    "hex": "#785762",
+    "red": 120,
+    "green": 87,
+    "blue": 98
   },
   "3743": {
-    "number": "3743",
-    "readableName": "Antique Violet - VY LT",
-    "searchName": "antique_violet_-_vy_lt",
-    "hex": "cfc2c9"
+    "number": 3743,
+    "name": "Antique Violet Very Light",
+    "hex": "#D7CBD3",
+    "red": 215,
+    "green": 203,
+    "blue": 211
   },
   "3746": {
-    "number": "3746",
-    "readableName": "Blue Violet - DK",
-    "searchName": "blue_violet_-_dk",
-    "hex": "844ab5"
+    "number": 3746,
+    "name": "blue Violet Dark",
+    "hex": "#776B98",
+    "red": 119,
+    "green": 107,
+    "blue": 152
   },
   "3747": {
-    "number": "3747",
-    "readableName": "Blue Violet - VY LT",
-    "searchName": "blue_violet_-_vy_lt",
-    "hex": "d0c5ec"
+    "number": 3747,
+    "name": "blue Violet Very Light",
+    "hex": "#D3D7ED",
+    "red": 211,
+    "green": 215,
+    "blue": 237
   },
   "3750": {
-    "number": "3750",
-    "readableName": "Antique Blue - VY DK",
-    "searchName": "antique_blue_-_vy_dk",
-    "hex": "1d4552"
+    "number": 3750,
+    "name": "Antique blue Very Dark",
+    "hex": "#384C5E",
+    "red": 56,
+    "green": 76,
+    "blue": 94
   },
   "3752": {
-    "number": "3752",
-    "readableName": "Antique Blue - VY LT",
-    "searchName": "antique_blue_-_vy_lt",
-    "hex": "bac9cc"
+    "number": 3752,
+    "name": "Antique blue Very Light",
+    "hex": "#C7D1DB",
+    "red": 199,
+    "green": 209,
+    "blue": 219
   },
   "3753": {
-    "number": "3753",
-    "readableName": "Antique Blue - ULT VY LT",
-    "searchName": "antique_blue_-_ult_vy_lt",
-    "hex": "d9e6ec"
+    "number": 3753,
+    "name": "Antique blue Ultra Very Light",
+    "hex": "#DBE2E9",
+    "red": 219,
+    "green": 226,
+    "blue": 233
   },
   "3755": {
-    "number": "3755",
-    "readableName": "Baby Blue (?)",
-    "searchName": "baby_blue_(?)",
-    "hex": "81a5d8"
+    "number": 3755,
+    "name": "Baby blue",
+    "hex": "#92B4CE",
+    "red": 147,
+    "green": 180,
+    "blue": 206
   },
   "3756": {
-    "number": "3756",
-    "readableName": "Baby Blue",
-    "searchName": "baby_blue",
-    "hex": "e9f4fa"
+    "number": 3756,
+    "name": "Baby blue Ultra Very Light",
+    "hex": "#EEFCFC",
+    "red": 238,
+    "green": 252,
+    "blue": 252
   },
   "3760": {
-    "number": "3760",
-    "readableName": "Wedgewood - MED",
-    "searchName": "wedgewood_-_med",
-    "hex": "467293"
+    "number": 3760,
+    "name": "Wedgewood Medium",
+    "hex": "#3E85A2",
+    "red": 62,
+    "green": 133,
+    "blue": 162
   },
   "3761": {
-    "number": "3761",
-    "readableName": "Sky Blue - LT",
-    "searchName": "sky_blue_-_lt",
-    "hex": "b1d0df"
+    "number": 3761,
+    "name": "Sky blue Light",
+    "hex": "#ACD8E2",
+    "red": 172,
+    "green": 216,
+    "blue": 226
   },
   "3765": {
-    "number": "3765",
-    "readableName": "Peacock Blue - VY DK",
-    "searchName": "peacock_blue_-_vy_dk",
-    "hex": "175e78"
+    "number": 3765,
+    "name": "Peacock blue Very Dark",
+    "hex": "#347F8C",
+    "red": 52,
+    "green": 127,
+    "blue": 140
   },
   "3766": {
-    "number": "3766",
-    "readableName": "Peacock Blue - LT",
-    "searchName": "peacock_blue_-_lt",
-    "hex": "4b8aa1"
+    "number": 3766,
+    "name": "Peacock blue Light",
+    "hex": "#99CFD9",
+    "red": 153,
+    "green": 207,
+    "blue": 217
   },
   "3768": {
-    "number": "3768",
-    "readableName": "Gray Green - DK",
-    "searchName": "gray_green_-_dk",
-    "hex": "4c605f"
+    "number": 3768,
+    "name": "Gray green Dark",
+    "hex": "#657F7F",
+    "red": 101,
+    "green": 127,
+    "blue": 127
   },
   "3770": {
-    "number": "3770",
-    "readableName": "Tawny - VY LT",
-    "searchName": "tawny_-_vy_lt",
-    "hex": "fef1d8"
+    "number": 3770,
+    "name": "Tawny Vy Light",
+    "hex": "#FFEEE3",
+    "red": 255,
+    "green": 238,
+    "blue": 227
   },
   "3771": {
-    "number": "3771",
-    "readableName": "Peach - DK",
-    "searchName": "peach_-_dk",
-    "hex": "e8ac9b"
+    "number": 3771,
+    "name": "Terra Cotta Ultra Very Light",
+    "hex": "#F4BBA9",
+    "red": 244,
+    "green": 187,
+    "blue": 169
   },
   "3772": {
-    "number": "3772",
-    "readableName": "Desert Sand - VY DK",
-    "searchName": "desert_sand_-_vy_dk",
-    "hex": "995744"
+    "number": 3772,
+    "name": "Desert Sand Very Dark",
+    "hex": "#A06C50",
+    "red": 160,
+    "green": 108,
+    "blue": 80
   },
   "3773": {
-    "number": "3773",
-    "readableName": "Desert Sand - MED",
-    "searchName": "desert_sand_-_med",
-    "hex": "cf866d"
+    "number": 3773,
+    "name": "Desert Sand Dark",
+    "hex": "#B67552",
+    "red": 182,
+    "green": 117,
+    "blue": 82
   },
   "3774": {
-    "number": "3774",
-    "readableName": "Desert Sand - VY LT",
-    "searchName": "desert_sand_-_vy_lt",
-    "hex": "f3cfb4"
+    "number": 3774,
+    "name": "Desert Sand Very Light",
+    "hex": "#F3E1D7",
+    "red": 243,
+    "green": 225,
+    "blue": 215
   },
   "3776": {
-    "number": "3776",
-    "readableName": "Mahogany - LT",
-    "searchName": "mahogany_-_lt",
-    "hex": "c96444"
+    "number": 3776,
+    "name": "Mahogany Light",
+    "hex": "#CF7939",
+    "red": 207,
+    "green": 121,
+    "blue": 57
   },
   "3777": {
-    "number": "3777",
-    "readableName": "Terra Cotta - VY DK",
-    "searchName": "terra_cotta_-_vy_dk",
-    "hex": "922f25"
+    "number": 3777,
+    "name": "Terra Cotta Very Dark",
+    "hex": "#863022",
+    "red": 134,
+    "green": 48,
+    "blue": 34
   },
   "3778": {
-    "number": "3778",
-    "readableName": "Terra Cotta - LT",
-    "searchName": "terra_cotta_-_lt",
-    "hex": "d2705c"
+    "number": 3778,
+    "name": "Terra Cotta Light",
+    "hex": "#D98978",
+    "red": 217,
+    "green": 137,
+    "blue": 120
   },
   "3779": {
-    "number": "3779",
-    "readableName": "Terra Cotta - ULT VY LT",
-    "searchName": "terra_cotta_-_ult_vy_lt",
-    "hex": "f2ab95"
+    "number": 3779,
+    "name": "Rosewood Ultra Very Light",
+    "hex": "#F8CAC8",
+    "red": 248,
+    "green": 202,
+    "blue": 200
   },
   "3781": {
-    "number": "3781",
-    "readableName": "Mocha Brown - DK",
-    "searchName": "mocha_brown_-_dk",
-    "hex": "593f2b"
+    "number": 3781,
+    "name": "Mocha Brown Dark",
+    "hex": "#6B5743",
+    "red": 107,
+    "green": 87,
+    "blue": 67
   },
   "3782": {
-    "number": "3782",
-    "readableName": "Mocha Brown - LT",
-    "searchName": "mocha_brown_-_lt",
-    "hex": "b69d80"
+    "number": 3782,
+    "name": "Mocha Brown Light",
+    "hex": "#D2BCA6",
+    "red": 210,
+    "green": 188,
+    "blue": 166
   },
   "3787": {
-    "number": "3787",
-    "readableName": "Brown Gray - DK",
-    "searchName": "brown_gray_-_dk",
-    "hex": "62524c"
+    "number": 3787,
+    "name": "Brown Gray Dark",
+    "hex": "#625D50",
+    "red": 98,
+    "green": 93,
+    "blue": 80
   },
   "3790": {
-    "number": "3790",
-    "readableName": "Beige Gray - ULT DK",
-    "searchName": "beige_gray_-_ult_dk",
-    "hex": "6d5a4b"
+    "number": 3790,
+    "name": "Beige Gray Ultra Dark",
+    "hex": "#7F6A55",
+    "red": 127,
+    "green": 106,
+    "blue": 85
   },
   "3799": {
-    "number": "3799",
-    "readableName": "Pewter Gray - VY DK",
-    "searchName": "pewter_gray_-_vy_dk",
-    "hex": "39393d"
+    "number": 3799,
+    "name": "Pewter Gray Very Dark",
+    "hex": "#424242",
+    "red": 66,
+    "green": 66,
+    "blue": 66
   },
   "3801": {
-    "number": "3801",
-    "readableName": "Melon - VY DK",
-    "searchName": "melon_-_vy_dk",
-    "hex": "e4353d"
+    "number": 3801,
+    "name": "Melon Very Dark",
+    "hex": "#E74967",
+    "red": 231,
+    "green": 73,
+    "blue": 103
   },
   "3802": {
-    "number": "3802",
-    "readableName": "Antique Mauve - VY DK",
-    "searchName": "antique_mauve_-_vy_dk",
-    "hex": "672a33"
+    "number": 3802,
+    "name": "Antique Mauve Very Darkv",
+    "hex": "#714149",
+    "red": 113,
+    "green": 65,
+    "blue": 73
   },
   "3803": {
-    "number": "3803",
-    "readableName": "Mauve - DK",
-    "searchName": "mauve_-_dk",
-    "hex": "872a43"
+    "number": 3803,
+    "name": "Mauve Dark",
+    "hex": "#AB3357",
+    "red": 171,
+    "green": 51,
+    "blue": 87
   },
   "3804": {
-    "number": "3804",
-    "readableName": "Cyclamen Pink - DK",
-    "searchName": "cyclamen_pink_-_dk",
-    "hex": "ce2b63"
+    "number": 3804,
+    "name": "Cyclamen Pink Dark",
+    "hex": "#E02876",
+    "red": 224,
+    "green": 40,
+    "blue": 118
   },
   "3805": {
-    "number": "3805",
-    "readableName": "Cyclamen Pink",
-    "searchName": "cyclamen_pink",
-    "hex": "df3c73"
+    "number": 3805,
+    "name": "Cyclamen Pink",
+    "hex": "#F3478B",
+    "red": 243,
+    "green": 71,
+    "blue": 139
   },
   "3806": {
-    "number": "3806",
-    "readableName": "Cyclamen Pink - LT",
-    "searchName": "cyclamen_pink_-_lt",
-    "hex": "f15a91"
+    "number": 3806,
+    "name": "Cyclamen Pink Light",
+    "hex": "#FF8CAE",
+    "red": 255,
+    "green": 140,
+    "blue": 174
   },
   "3807": {
-    "number": "3807",
-    "readableName": "Cornflower Blue",
-    "searchName": "cornflower_blue",
-    "hex": "4b599e"
+    "number": 3807,
+    "name": "Cornflower blue",
+    "hex": "#60678C",
+    "red": 96,
+    "green": 103,
+    "blue": 140
   },
   "3808": {
-    "number": "3808",
-    "readableName": "Turquoise - ULT VY DK",
-    "searchName": "turquoise_-_ult_vy_dk",
-    "hex": "03535c"
+    "number": 3808,
+    "name": "Turquoise Ultra Very Dark",
+    "hex": "#366970",
+    "red": 54,
+    "green": 105,
+    "blue": 112
   },
   "3809": {
-    "number": "3809",
-    "readableName": "Turquoise - VY DK",
-    "searchName": "turquoise_-_vy_dk",
-    "hex": "136a75"
+    "number": 3809,
+    "name": "Turquoise Vy Dark",
+    "hex": "#3F7C85",
+    "red": 63,
+    "green": 124,
+    "blue": 133
   },
   "3810": {
-    "number": "3810",
-    "readableName": "Turquoise - DK",
-    "searchName": "turquoise_-_dk",
-    "hex": "2d8d98"
+    "number": 3810,
+    "name": "Turquoise Dark",
+    "hex": "#488E9A",
+    "red": 72,
+    "green": 142,
+    "blue": 154
   },
   "3811": {
-    "number": "3811",
-    "readableName": "Turquoise - VY LT",
-    "searchName": "turquoise_-_vy_lt",
-    "hex": "a8e2e5"
+    "number": 3811,
+    "name": "Turquoise Very Light",
+    "hex": "#BCE3E6",
+    "red": 188,
+    "green": 227,
+    "blue": 230
   },
   "3812": {
-    "number": "3812",
-    "readableName": "Seagreen - VY DK",
-    "searchName": "seagreen_-_vy_dk",
-    "hex": "07a184"
+    "number": 3812,
+    "name": "Sea green Very Dark",
+    "hex": "#2F8C84",
+    "red": 47,
+    "green": 140,
+    "blue": 132
   },
   "3813": {
-    "number": "3813",
-    "readableName": "Blue Green - LT",
-    "searchName": "blue_green_-_lt",
-    "hex": "86c3ab"
+    "number": 3813,
+    "name": "blue green Light",
+    "hex": "#B2D4BD",
+    "red": 178,
+    "green": 212,
+    "blue": 189
   },
   "3814": {
-    "number": "3814",
-    "readableName": "Aquamarine",
-    "searchName": "aquamarine",
-    "hex": "0b8673"
+    "number": 3814,
+    "name": "Aquamarine",
+    "hex": "#508B7D",
+    "red": 80,
+    "green": 139,
+    "blue": 125
   },
   "3815": {
-    "number": "3815",
-    "readableName": "Celadon Green - DK",
-    "searchName": "celadon_green_-_dk",
-    "hex": "437259"
+    "number": 3815,
+    "name": "Celadon green Dark",
+    "hex": "#477759",
+    "red": 71,
+    "green": 119,
+    "blue": 89
   },
   "3816": {
-    "number": "3816",
-    "readableName": "Celadon Green",
-    "searchName": "celadon_green",
-    "hex": "60937a"
+    "number": 3816,
+    "name": "Celadon green",
+    "hex": "#65A57D",
+    "red": 101,
+    "green": 165,
+    "blue": 125
   },
   "3817": {
-    "number": "3817",
-    "readableName": "Celadon Green - LT",
-    "searchName": "celadon_green_-_lt",
-    "hex": "81c6a4"
+    "number": 3817,
+    "name": "Celadon green Light",
+    "hex": "#99C3AA",
+    "red": 153,
+    "green": 195,
+    "blue": 170
   },
   "3818": {
-    "number": "3818",
-    "readableName": "Emerald Green - ULT VY DK",
-    "searchName": "emerald_green_-_ult_vy_dk",
-    "hex": "005d2e"
+    "number": 3818,
+    "name": "Emerald green Ultra Very Dark",
+    "hex": "#115A3B",
+    "red": 17,
+    "green": 90,
+    "blue": 59
   },
   "3819": {
-    "number": "3819",
-    "readableName": "Moss Green - LT",
-    "searchName": "moss_green_-_lt",
-    "hex": "ccc959"
+    "number": 3819,
+    "name": "Moss green Light",
+    "hex": "#E0E868",
+    "red": 224,
+    "green": 232,
+    "blue": 104
   },
   "3820": {
-    "number": "3820",
-    "readableName": "Straw - DK",
-    "searchName": "straw_-_dk",
-    "hex": "dba53e"
+    "number": 3820,
+    "name": "Straw Dark",
+    "hex": "#DFB65F",
+    "red": 223,
+    "green": 182,
+    "blue": 95
   },
   "3821": {
-    "number": "3821",
-    "readableName": "Straw",
-    "searchName": "straw",
-    "hex": "ebbb52"
+    "number": 3821,
+    "name": "Straw",
+    "hex": "#F3CE75",
+    "red": 243,
+    "green": 206,
+    "blue": 117
   },
   "3822": {
-    "number": "3822",
-    "readableName": "Straw - LT",
-    "searchName": "straw_-_lt",
-    "hex": "f7d169"
+    "number": 3822,
+    "name": "Straw Light",
+    "hex": "#F6DC98",
+    "red": 246,
+    "green": 220,
+    "blue": 152
   },
   "3823": {
-    "number": "3823",
-    "readableName": "Yellow - ULT PALE",
-    "searchName": "yellow_-_ult_pale",
-    "hex": "fef5cd"
+    "number": 3823,
+    "name": "Yellow Ultra Pale",
+    "hex": "#FFFDE3",
+    "red": 255,
+    "green": 253,
+    "blue": 227
   },
   "3824": {
-    "number": "3824",
-    "readableName": "Apricot - LT",
-    "searchName": "apricot_-_lt",
-    "hex": "fcae99"
+    "number": 3824,
+    "name": "Apricot Light",
+    "hex": "#FECDC2",
+    "red": 254,
+    "green": 205,
+    "blue": 194
   },
   "3825": {
-    "number": "3825",
-    "readableName": "Pumpkin - PALE",
-    "searchName": "pumpkin_-_pale",
-    "hex": "fea370"
+    "number": 3825,
+    "name": "Pumpkin Pale",
+    "hex": "#FDBD96",
+    "red": 253,
+    "green": 189,
+    "blue": 150
   },
   "3826": {
-    "number": "3826",
-    "readableName": "Golden Brown",
-    "searchName": "golden_brown",
-    "hex": "b16633"
+    "number": 3826,
+    "name": "Golden Brown",
+    "hex": "#AD7239",
+    "red": 173,
+    "green": 114,
+    "blue": 57
   },
   "3827": {
-    "number": "3827",
-    "readableName": "Golden Brown - PALE",
-    "searchName": "golden_brown_-_pale",
-    "hex": "eaa664"
+    "number": 3827,
+    "name": "Golden Brown Pale",
+    "hex": "#F7BB77",
+    "red": 247,
+    "green": 187,
+    "blue": 119
   },
   "3828": {
-    "number": "3828",
-    "readableName": "Hazelnut Brown",
-    "searchName": "hazelnut_brown",
-    "hex": "aa7c43"
+    "number": 3828,
+    "name": "Hazelnut Brown",
+    "hex": "#B78B61",
+    "red": 183,
+    "green": 139,
+    "blue": 97
   },
   "3829": {
-    "number": "3829",
-    "readableName": "Old Gold - VY DK",
-    "searchName": "old_gold_-_vy_dk",
-    "hex": "a7671d"
+    "number": 3829,
+    "name": "Old Gold Vy Dark",
+    "hex": "#A98204",
+    "red": 169,
+    "green": 130,
+    "blue": 4
   },
   "3830": {
-    "number": "3830",
-    "readableName": "Terra Cotta",
-    "searchName": "terra_cotta",
-    "hex": "a94138"
+    "number": 3830,
+    "name": "Terra Cotta",
+    "hex": "#BC5544",
+    "red": 185,
+    "green": 85,
+    "blue": 68
   },
   "3831": {
-    "number": "3831",
-    "readableName": "Raspberry - DK",
-    "searchName": "raspberry_-_dk",
-    "hex": "c12b52"
+    "number": 3831,
+    "name": "Raspberry Dark",
+    "hex": "#B32F48",
+    "red": 179,
+    "green": 47,
+    "blue": 72
   },
   "3832": {
-    "number": "3832",
-    "readableName": "Raspberry - MED",
-    "searchName": "raspberry_-_med",
-    "hex": "e36370"
+    "number": 3832,
+    "name": "Raspberry Medium",
+    "hex": "#DB556E",
+    "red": 219,
+    "green": 85,
+    "blue": 110
   },
   "3833": {
-    "number": "3833",
-    "readableName": "Raspberry - LT",
-    "searchName": "raspberry_-_lt",
-    "hex": "ea8b96"
+    "number": 3833,
+    "name": "Raspberry Light",
+    "hex": "#EA8699",
+    "red": 234,
+    "green": 134,
+    "blue": 153
   },
   "3834": {
-    "number": "3834",
-    "readableName": "Grape - DK",
-    "searchName": "grape_-_dk",
-    "hex": "6a2258"
+    "number": 3834,
+    "name": "Grape Dark",
+    "hex": "#72375D",
+    "red": 114,
+    "green": 55,
+    "blue": 93
   },
   "3835": {
-    "number": "3835",
-    "readableName": "Grape - MED",
-    "searchName": "grape_-_med",
-    "hex": "924d78"
+    "number": 3835,
+    "name": "Grape Medium",
+    "hex": "#946083",
+    "red": 148,
+    "green": 96,
+    "blue": 131
   },
   "3836": {
-    "number": "3836",
-    "readableName": "Grape - LT",
-    "searchName": "grape_-_lt",
-    "hex": "c597b9"
+    "number": 3836,
+    "name": "Grape Light",
+    "hex": "#BA91AA",
+    "red": 186,
+    "green": 145,
+    "blue": 170
   },
   "3837": {
-    "number": "3837",
-    "readableName": "Lavender - ULT DK",
-    "searchName": "lavender_-_ult_dk",
-    "hex": "8a2a8f"
+    "number": 3837,
+    "name": "Lavender Ultra Dark",
+    "hex": "#6C3A6E",
+    "red": 108,
+    "green": 58,
+    "blue": 110
   },
   "3838": {
-    "number": "3838",
-    "readableName": "Lavender Blue - DK",
-    "searchName": "lavender_blue_-_dk",
-    "hex": "606bad"
+    "number": 3838,
+    "name": "Lavender blue Dark",
+    "hex": "#5C7294",
+    "red": 92,
+    "green": 114,
+    "blue": 148
   },
   "3839": {
-    "number": "3839",
-    "readableName": "Lavender Blue - MED",
-    "searchName": "lavender_blue_-_med",
-    "hex": "7a7ec5"
+    "number": 3839,
+    "name": "Lavender blue Medium",
+    "hex": "#7B8EAB",
+    "red": 123,
+    "green": 142,
+    "blue": 171
   },
   "3840": {
-    "number": "3840",
-    "readableName": "Lavender Blue - LT",
-    "searchName": "lavender_blue_-_lt",
-    "hex": "b2bdea"
+    "number": 3840,
+    "name": "Lavender blue Light",
+    "hex": "#B0C0DA",
+    "red": 176,
+    "green": 192,
+    "blue": 218
   },
   "3841": {
-    "number": "3841",
-    "readableName": "Baby Blue - PALE",
-    "searchName": "baby_blue_-_pale",
-    "hex": "d9eaf2"
+    "number": 3841,
+    "name": "Baby blue Pale",
+    "hex": "#CDDFED",
+    "red": 205,
+    "green": 223,
+    "blue": 237
   },
   "3842": {
-    "number": "3842",
-    "readableName": "Wedgewood - DK",
-    "searchName": "wedgewood_-_dk",
-    "hex": "06506a"
+    "number": 3842,
+    "name": "Wedgewood Very Dark",
+    "hex": "#32667C",
+    "red": 50,
+    "green": 102,
+    "blue": 124
   },
   "3843": {
-    "number": "3843",
-    "readableName": "Electric Blue",
-    "searchName": "electric_blue",
-    "hex": "28a3de"
+    "number": 3843,
+    "name": "Electric blue",
+    "hex": "#14AAD0",
+    "red": 20,
+    "green": 170,
+    "blue": 208
   },
   "3844": {
-    "number": "3844",
-    "readableName": "Bright Turquoise - DK",
-    "searchName": "bright_turquoise_-_dk",
-    "hex": "1f7fa0"
+    "number": 3844,
+    "name": "Turquoise Bright Dark",
+    "hex": "#12AEBA",
+    "red": 18,
+    "green": 174,
+    "blue": 186
   },
   "3845": {
-    "number": "3845",
-    "readableName": "Bright Turquoise - MED",
-    "searchName": "bright_turquoise_-_med",
-    "hex": "2badd1"
+    "number": 3845,
+    "name": "Turquoise Bright Medium",
+    "hex": "#04C4CA",
+    "red": 4,
+    "green": 196,
+    "blue": 202
   },
   "3846": {
-    "number": "3846",
-    "readableName": "Bright Turquoise - LT",
-    "searchName": "bright_turquoise_-_lt",
-    "hex": "5eccec"
+    "number": 3846,
+    "name": "Turquoise Bright Light",
+    "hex": "#06E3E6",
+    "red": 6,
+    "green": 227,
+    "blue": 230
   },
   "3847": {
-    "number": "3847",
-    "readableName": "Teal Green - DK",
-    "searchName": "teal_green_-_dk",
-    "hex": "186358"
+    "number": 3847,
+    "name": "Teal green Dark",
+    "hex": "#347D75",
+    "red": 52,
+    "green": 125,
+    "blue": 117
   },
   "3848": {
-    "number": "3848",
-    "readableName": "Teal Green - MED",
-    "searchName": "teal_green_-_med",
-    "hex": "207e72"
+    "number": 3848,
+    "name": "Teal green Medium",
+    "hex": "#419392",
+    "red": 85,
+    "green": 147,
+    "blue": 146
   },
   "3849": {
-    "number": "3849",
-    "readableName": "Teal Green - LT",
-    "searchName": "teal_green_-_lt",
-    "hex": "35b193"
+    "number": 3849,
+    "name": "Teal green Light",
+    "hex": "#52B3AE",
+    "red": 82,
+    "green": 179,
+    "blue": 164
   },
   "3850": {
-    "number": "3850",
-    "readableName": "Bright Green - DK",
-    "searchName": "bright_green_-_dk",
-    "hex": "208b46"
+    "number": 3850,
+    "name": "green Bright Dark",
+    "hex": "#378477",
+    "red": 55,
+    "green": 132,
+    "blue": 119
   },
   "3851": {
-    "number": "3851",
-    "readableName": "Bright Green - LT",
-    "searchName": "bright_green_-_lt",
-    "hex": "61bb84"
+    "number": 3851,
+    "name": "green Bright Light",
+    "hex": "#49B3A1",
+    "red": 73,
+    "green": 179,
+    "blue": 161
   },
   "3852": {
-    "number": "3852",
-    "readableName": "Straw - VY DK",
-    "searchName": "straw_-_vy_dk",
-    "hex": "e3a730"
+    "number": 3852,
+    "name": "Straw Very Dark",
+    "hex": "#CD9D37",
+    "red": 205,
+    "green": 157,
+    "blue": 55
   },
   "3853": {
-    "number": "3853",
-    "readableName": "Autumn Gold - DK",
-    "searchName": "autumn_gold_-_dk",
-    "hex": "ef8125"
+    "number": 3853,
+    "name": "Autumn Gold Dark",
+    "hex": "#F29746",
+    "red": 242,
+    "green": 151,
+    "blue": 70
   },
   "3854": {
-    "number": "3854",
-    "readableName": "Autumn Gold - MED",
-    "searchName": "autumn_gold_-_med",
-    "hex": "fbac56"
+    "number": 3854,
+    "name": "Autumn Gold Medium",
+    "hex": "#F2AF68",
+    "red": 242,
+    "green": 175,
+    "blue": 104
   },
   "3855": {
-    "number": "3855",
-    "readableName": "Autumn Gold - LT",
-    "searchName": "autumn_gold_-_lt",
-    "hex": "fddfa0"
+    "number": 3855,
+    "name": "Autumn Gold Light",
+    "hex": "#FAD396",
+    "red": 250,
+    "green": 211,
+    "blue": 150
   },
   "3856": {
-    "number": "3856",
-    "readableName": "Mahogany - ULT VY LT",
-    "searchName": "mahogany_-_ult_vy_lt",
-    "hex": "fdbe8e"
+    "number": 3856,
+    "name": "Mahogany Ultra Very Light",
+    "hex": "#FFD3B5",
+    "red": 255,
+    "green": 211,
+    "blue": 181
   },
   "3857": {
-    "number": "3857",
-    "readableName": "Rosewood - DK",
-    "searchName": "rosewood_-_dk",
-    "hex": "6a2f26"
+    "number": 3857,
+    "name": "Rosewood Dark",
+    "hex": "#68251A",
+    "red": 104,
+    "green": 37,
+    "blue": 26
   },
   "3858": {
-    "number": "3858",
-    "readableName": "Rosewood - MED",
-    "searchName": "rosewood_-_med",
-    "hex": "803a32"
+    "number": 3858,
+    "name": "Rosewood Medium",
+    "hex": "#964A3F",
+    "red": 150,
+    "green": 74,
+    "blue": 63
   },
   "3859": {
-    "number": "3859",
-    "readableName": "Rosewood - LT",
-    "searchName": "rosewood_-_lt",
-    "hex": "ba7a6c"
+    "number": 3859,
+    "name": "Rosewood Light",
+    "hex": "#BA8B7C",
+    "red": 186,
+    "green": 139,
+    "blue": 124
   },
   "3860": {
-    "number": "3860",
-    "readableName": "Cocoa",
-    "searchName": "cocoa",
-    "hex": "896362"
+    "number": 3860,
+    "name": "Cocoa",
+    "hex": "#7D5D57",
+    "red": 125,
+    "green": 93,
+    "blue": 87
   },
   "3861": {
-    "number": "3861",
-    "readableName": "Cocoa - LT",
-    "searchName": "cocoa_-_lt",
-    "hex": "ac8583"
+    "number": 3861,
+    "name": "Cocoa Light",
+    "hex": "#A68881",
+    "red": 166,
+    "green": 136,
+    "blue": 129
   },
   "3862": {
-    "number": "3862",
-    "readableName": "Mocha Beige - DK",
-    "searchName": "mocha_beige_-_dk",
-    "hex": "6e492a"
+    "number": 3862,
+    "name": "Mocha Beige Dark",
+    "hex": "#8A6E4E",
+    "red": 138,
+    "green": 110,
+    "blue": 78
   },
   "3863": {
-    "number": "3863",
-    "readableName": "Mocha Beige - MED",
-    "searchName": "mocha_beige_-_med",
-    "hex": "94725d"
+    "number": 3863,
+    "name": "Mocha Beige Medium",
+    "hex": "#A4835C",
+    "red": 164,
+    "green": 131,
+    "blue": 92
   },
   "3864": {
-    "number": "3864",
-    "readableName": "Mocha Beige - LT",
-    "searchName": "mocha_beige_-_lt",
-    "hex": "c9aa92"
+    "number": 3864,
+    "name": "Mocha Beige Light",
+    "hex": "#CBB69C",
+    "red": 203,
+    "green": 182,
+    "blue": 156
   },
   "3865": {
-    "number": "3865",
-    "readableName": "Winter White",
-    "searchName": "winter_white",
-    "hex": "fffdf9"
+    "number": 3865,
+    "name": "Winter White",
+    "hex": "#F9F7F1",
+    "red": 249,
+    "green": 247,
+    "blue": 241
   },
   "3866": {
-    "number": "3866",
-    "readableName": "Mocha Brown - ULT VY LT",
-    "searchName": "mocha_brown_-_ult_vy_lt",
-    "hex": "f0e6d7"
+    "number": 3866,
+    "name": "Mocha Brown Ultra Very Light",
+    "hex": "#FAF6F0",
+    "red": 250,
+    "green": 246,
+    "blue": 240
   },
   "ecru": {
     "number": "ecru",
-    "readableName": "Ecru/off-white",
-    "searchName": "ecru/off-white",
-    "hex": "fff7e7"
+    "name": "Off White",
+    "hex": "#FFF7E7",
+    "red": 255,
+    "green": 247,
+    "blue": 231
   },
   "blanc": {
     "number": "blanc",
-    "readableName": "White",
-    "searchName": "white",
-    "hex": "eeeeee"
+    "name": "White",
+    "hex": "#EEEEEE",
+    "red": 238,
+    "green": 238,
+    "blue": 238
   },
   "b5200": {
     "number": "b5200",
-    "readableName": "Snow White",
-    "searchName": "snow_white",
-    "hex": "fcfcff"
+    "name": "Snow White",
+    "hex": "#FCFCFF",
+    "red": 252,
+    "green": 252,
+    "blue": 255
   },
   "white": {
     "number": "white",
-    "readableName": "White",
-    "searchName": "white",
-    "hex": "ffffff"
+    "name": "White",
+    "hex": "#FFFFFF",
+    "red": 255,
+    "green": 255,
+    "blue": 255
   }
 }
