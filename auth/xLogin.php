@@ -29,11 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $_SESSION['loggedin'] = TRUE;
                 $_SESSION['user'] = $row['username'];
                 $_SESSION['id'] = $row['id'];
-                if ($row["dmc"] > 0) {
-                    $_SESSION['color'] = $row['dmc'] * 10000;
-                } else {
-                    $_SESSION['color'] = rand(0, 485);
-                }
+                $_SESSION['color'] = $row['dmc'];
                 session_message_init();
                 $response['status'] = 'success';
                 $response['redirect'] = '../home';

@@ -118,17 +118,20 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 25px;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 50px;
+    align-items: center;
   }
 
   .inventory-actions form {
     padding: 0px 7.5px 0px 15px;;
     border: 1px solid #555;
     border-radius: 50px;
+    height: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: baseline;
+    align-items: center;
   }
 
   .inventory-actions label {
@@ -158,4 +161,5 @@ body {
     color: white;
     background-color: darkblue;
     border: none;
+    height: 50px;
   }

@@ -46,8 +46,7 @@
         <title>Craftracker - ' . $title . '</title>
         <link href="./lib/css/app.css" rel="stylesheet" type="text/css">
         <script src="https://kit.fontawesome.com/99974eb84c.js" crossorigin="anonymous"></script>
-        <script src="../lib/js/dmc_colors.js"></script>
-        <script src="../lib/js/dmc_paint.js"></script>
+        <script src="../lib/js/dmc.js"></script>
     </head>
     <body onload="setAccentColor([\'header\',\'footer\'],' . $_SESSION['color'] . ')">
         <header class="header" id="header">
