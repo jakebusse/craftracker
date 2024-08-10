@@ -57,157 +57,53 @@ body {
     padding: 0px 30px 0px 30px;
 }
 
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-end;
-  }
-  
-  /* Style the buttons inside the tab */
-  .tablinks {
-    background-color: inherit;
-    border: 1px solid #ccc !important;
-    border-radius: 10px 10px 0px 0px;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-  }
+.profilebtn {
+  background-color: inherit;
+  color: inherit;
+  padding: 16px;
+  font-size: inherit;
+  border: none;
+  cursor: pointer;
+  vertical-align: middle;
+}
 
-  .fillertab {
-    flex-grow: 100;
-    margin-right: 10px;
-    background-color: inherit;
-    border-bottom: 1px solid #ccc !important;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tablinks:hover {
-    background-color: #ddd;
-  }
-  
-  /* Create an active/current tablink class */
-  .tablinks.active {
-    background-color: #fff;
-    border-bottom: none !important;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    background-color: #fff;
-    border-radius: 0px 10px 10px 10px;
-    z-index: 99;
-  }
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 25px;
+}
 
-  .inventory-actions {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 25px;
-    justify-content: flex-start;
-    gap: 50px;
-    align-items: center;
-  }
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0px;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  min-width: 200px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
-  .inventory-actions form {
-    padding: 0px 7.5px 0px 15px;;
-    border: 1px solid #555;
-    border-radius: 50px;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
-  .inventory-actions label {
-    margin-top: 3px;
-  }
+.dropdown-menu a:hover {
+  background-color: rgba(0,0,0,0.25);
+}
 
-  .inventory-actions input.text {
-    flex-grow: 100;
-    padding: 15px 10px;
-    border: none;
-    outline: none !important;
-  }
+.show {
+  display: block;
+}
 
-  .inventory-actions input#submit {
-    border: none;
-    border-radius: 50px;
-    padding: 10px;
-    background: linear-gradient(50deg, darkblue,dodgerblue);
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-  }
+.account-block {
+  margin: 25px;
+}
 
-  button.new {
-    border-radius: 50px;
-    padding: 5px 25px;
-    color: white;
-    background-color: darkblue;
-    border: none;
-    height: 50px;
-  }
-
-  .profilebtn {
-    background-color: inherit;
-    color: inherit;
-    padding: 16px;
-    font-size: inherit;
-    border: none;
-    cursor: pointer;
-    vertical-align: middle;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    margin-right: 25px;
-  }
-  
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    right: 0px;
-    background-color: #f1f1f1;
-    border-radius: 15px;
-    min-width: 200px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-menu a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .dropdown-menu a:hover {
-    background-color: rgba(0,0,0,0.25);
-  }
-  
-  .show {
-    display: block;
-  }
-
-  .account-block {
-    margin: 25px;
-  }
-
-  .account-block form {
-    margin: 0px 75px;
-  }
+.account-block form {
+  margin: 0px 75px;
+}
