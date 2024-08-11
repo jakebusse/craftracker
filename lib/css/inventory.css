@@ -62,6 +62,13 @@
   }
 
   .inventory-actions form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .inventory-actions fieldset {
     padding: 0px 7.5px 0px 15px;;
     border: 1px solid #555;
     border-radius: 50px;
@@ -76,18 +83,23 @@
     margin-top: 3px;
   }
 
-  .inventory-actions input.text {
+  .inventory-actions input.text,select {
     flex-grow: 100;
     padding: 15px 10px;
     border: none;
     outline: none !important;
   }
 
-  .inventory-actions input#submit {
+  .inventory-actions select {
+    padding-right: 15px;
+    margin-right: 15px;
+  }
+
+  .inventory-actions input.submit {
     border: none;
     border-radius: 50px;
     padding: 10px;
-    background: linear-gradient(50deg, darkblue,dodgerblue);
+    background: var(--session-color);
     font-weight: bold;
     color: white;
     cursor: pointer;
@@ -97,7 +109,45 @@
     border-radius: 50px;
     padding: 5px 25px;
     color: white;
-    background-color: darkblue;
+    background-color: var(--session-color);
     border: none;
     height: 50px;
+  }
+
+  .inventory-table {
+    width: 100%;
+    /* margin-left: -15px; */
+    
+  }
+
+  .inventory-table tr.header {
+    background-color: var(--session-color);
+    border-radius: 10px 10px 0 0;
+    border: none !important;
+  }
+
+  .inventory-table tr {
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    border-left: 1px solid #555;
+    border-right: 1px solid #555;
+  }
+
+  .inventory-table tr:last-child {
+    border-bottom: 1px solid #555;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .color-prev {
+    display: block;
+    border-radius: 100px;
+    padding: 2px;
+  }
+
+  .td-check, .td-mfr, .td-num, .td-qty, .td-color-prev, .td-edit, .td-delete {
+    width: 100px;
   }
