@@ -3,6 +3,12 @@
     ini_set('display_startup_errors', '1');
     error_reporting(E_ALL);
 
+    function session_message_init() {
+        $_SESSION['message'] = '';
+        $_SESSION['messageDisplay'] = 'none';
+        $_SESSION['messageColor'] = 'black';
+    }
+
     function hex2rgb($hex) {
         $hex = str_replace("#", "", $hex);
     
@@ -44,11 +50,11 @@
         <script src="../lib/js/dmc.js"></script>
         <script src="../lib/js/main.js"></script>
     </head>
-    <body onload="setCssColors(\'--session-color\', \'--text-color\',\''.$_SESSION['color'].'\');">
+    <body onload="setAccentColor([\'header\',\'footer\'],' . $_SESSION['color'] . ')">
         <header class="header" id="header">
             <div class="header-left">
-                <a href="./home" class="' . ($current_file_name == 'home.php' ? 'active' : '') . '"><i class="bx bx-home"></i>Home</a>
-                <a href="./inventory" class="' . ($current_file_name == 'inventory.php' ? 'active' : '') . '"><i class="bx bx-box"></i>Inventory</a>
+                <a href="./home" id="' . ($current_file_name == 'home.php' ? 'active' : '') . '"><i class="bx bx-home"></i>Home</a>
+                <a href="./inventory" id="' . ($current_file_name == 'inventory.php' ? 'active' : '') . '"><i class="bx bx-box"></i>Inventory</a>
             </div>
 
             <div class="header-right">

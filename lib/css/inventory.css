@@ -76,29 +76,28 @@
     margin-top: 3px;
   }
 
-  .inventory-actions input.text, select {
+  .inventory-actions input.text {
     flex-grow: 100;
     padding: 15px 10px;
     border: none;
     outline: none !important;
   }
 
-  .inventory-actions form select {
-    padding-right: 25px;
-    margin-right: 15px;
-  }
-
   .inventory-actions input#submit {
     border: none;
     border-radius: 50px;
     padding: 10px;
+    background: linear-gradient(50deg, darkblue,dodgerblue);
     font-weight: bold;
+    color: white;
     cursor: pointer;
   }
 
   button.new {
     border-radius: 50px;
     padding: 5px 25px;
+    color: white;
+    background-color: darkblue;
     border: none;
     height: 50px;
   }
