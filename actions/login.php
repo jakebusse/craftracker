@@ -33,6 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $_SESSION['user'] = $row['username'];
                 $_SESSION['id'] = $row['id'];
                 $_SESSION['color'] = $row['dmc'];
+                session_message_init();
                 $response['status'] = 'success';
                 $response['redirect'] = '../home';
             } else {
