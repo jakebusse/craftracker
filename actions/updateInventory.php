@@ -76,6 +76,59 @@
                 echo json_encode($response);
                 exit;
                 }
+        } elseif ($_POST['formid'] == "rowctrl") {
+            if($_POST['action'] == 'add') {
+                $sql = "UPDATE inventory SET qty = qty + 1 WHERE mfr = :mfr and num = :num and owner = :id";
+                $stmt = $conn->prepare($sql);
+                try {
+                    $stmt->execute([
+                        ':mfr' => strtoupper($_POST['mfr']),
+                        ':num' => htmlspecialchars($_POST['num']),
+                        ':id' => $_SESSION['id']
+                    ]);
+
+                    $response['status'] = 'success';
+                    $response['message'] = 'Inventory added';
+                } catch(PDOException $e) {
+                    $response['status'] = 'failure';
+                    $response['message'] = "Could not add inventory: " . $e->getMessage();
+                }
+            } elseif($_POST['action'] == 'subtract' && $_POST['qty'] > 1) {
+                $sql = "UPDATE inventory SET qty = qty - 1 WHERE mfr = :mfr and num = :num and owner = :id";
+                $stmt = $conn->prepare($sql);
+                try {
+                    $stmt->execute([
+                        ':mfr' => strtoupper($_POST['mfr']),
+                        ':num' => htmlspecialchars($_POST['num']),
+                        ':id' => $_SESSION['id']
+                    ]);
+
+                    $response['status'] = 'success';
+                    $response['message'] = "Inventory subtracted";
+                } catch(PDOException $e) {
+                    $response['status'] = 'failure';
+                    $response['message'] = "Could not subtract inventory: " . $e->getMessage();
+                }
+            } elseif($_POST['action'] == 'delete' || ($_POST['action'] == 'subtract' && $_POST['qty'] <= 1)) {
+                $sql = "DELETE FROM inventory WHERE mfr = :mfr and num = :num and owner = :id";
+                $stmt = $conn->prepare($sql);
+                try {
+                    $stmt->execute([
+                        ':mfr' => strtoupper($_POST['mfr']),
+                        ':num' => htmlspecialchars($_POST['num']),
+                        ':id' => $_SESSION['id']
+                    ]);
+
+                    $response['status'] = 'success';
+                    $response['message'] = "Inventory deleted";
+                } catch(PDOException $e) {
+                    $response['status'] = 'failure';
+                    $response['message'] = "Could not delete inventory: " . $e->getMessage();
+                }
+            } else {
+                $response['status'] = 'failure';
+                $response['message'] = "Invalid action";
+            }
         }
     }
     $conn = null;

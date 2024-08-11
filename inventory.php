@@ -32,13 +32,19 @@
                 foreach($results as $row) {
                     echo '
                     <tr>
-                        <td class="td-check"><input type="checkbox" /></td>
+                        <td class="td-check">
+                            <label class="check-container">
+                                <input type="checkbox" />
+                                <span class="checkmark"></span>
+                            </label>
+                        </td>
                         <td class="td-mfr">'.$row['mfr'].'</td>
                         <td class="td-num">'.$row['num'].'</td>
                         <td class="td-qty">'.$row['qty'].'</td>
                         <td class="td-color-prev"><div class="color-prev" style="background-color:'.$dmc_colors[$row['num']]['hex'].';">&nbsp;</div></td>
-                        <td class="td-add"></td>
-                        <td class="td-sub"></td>
+                        <td class="td-add"><button class="btn-add" data-mfr="'.$row['mfr'].'" data-num="'.$row['num'].'" data-qty="'.$row['qty'].'"><i class="bx bx-plus-circle"></i></button></td>
+                        <td class="td-sub"><button class="btn-sub" data-mfr="'.$row['mfr'].'" data-num="'.$row['num'].'" data-qty="'.$row['qty'].'"><i class="bx bx-minus-circle"></i></button></td>
+                        <td class="td-del"><button class="btn-del" data-mfr="'.$row['mfr'].'" data-num="'.$row['num'].'" data-qty="'.$row['qty'].'"><i class="bx bxs-trash"></i></button></td>
                     </tr>
                     ';
                 }
@@ -151,13 +157,19 @@
 
         <table class="inventory-table">
             <tr class="header">
-                <th class="td-check"><input type="checkbox" /></th>
+                <th class="td-check">
+                    <label class="check-container">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                    </label>
+                </th>
                 <th class="td-mfr">Manufacturer</th>
                 <th class="td-num">Number</th>
                 <th class="td-qty">Quantity</th>
                 <th class="td-color-prev"></th>
-                <th class="td-add"></th>
-                <th class="td-sub"></th>
+                <th class="td-add"><button class="btn-add"></button></th>
+                <th class="td-sub"><button class="btn-sub"></button</th>
+                <th class="td-del"><button class="btn-del"></button></th>
             </tr>
             <?php echo getFlossInventory(); ?>
         </table>
