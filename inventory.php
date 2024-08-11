@@ -54,37 +54,55 @@
     template_header('Home');
 ?>
 
+<link rel="stylesheet" type="text/css" href="./lib/css/inventory.css">
 <div class="tab-container">
     <div class="tab">
-        <div class="tablinks" onclick="openTab(event, 'DMC')" id="defaultOpen">DMC</div>
-        <div class="tablinks" onclick="openTab(event, 'Anchor')">Anchor</div>
+        <div class="tablinks" onclick="openTab(event, 'embroidery-floss')" id="defaultOpen">Embroidery Floss</div>
+        <!-- <div class="tablinks" onclick="openTab(event, 'yarn')">Yarn</div> -->
         <div class="fillertab">&nbsp;</div>
     </div>
 
-    <div id="DMC" class="tabcontent">
+    <div id="embroidery-floss" class="tabcontent">
         <div class="inventory-actions">
             <div>
             <form>
-                <label for="filter"><i class="bx bxs-filter-alt"></i>
-                <input type="text" class="text" id="filter" name="filter" />
+                <label for="filter"><i class="bx bxs-filter-alt"></i></label>
+                <select name="filter" id="filter">
+                    <option value="" disabled default selected>-- SELECT --</option>
+                    <option value="" style="display:<?php if(isset($_GET['filter']) && $_GET['filter'] != '') echo 'block'; else echo 'none'; ?>;">None</option>
+                    <option value="dmc" <?php if(isset($_GET['filter']) && $_GET['filter'] == 'dmc') echo 'selected'; ?>>DMC</option>
+                    <option value="anchor" <?php if(isset($_GET['filter']) && $_GET['filter'] == 'anchor') echo 'selected'; ?>>Anchor</option>
+                </select>
+                <input type="submit" id="submit" value="Filter" />
+            </form>
+            </div>
+            <div>
+            <form>
+                <label for="search"><i class="bx bx-search"></i></label>
+                <input type="text" class="text" id="search" name="search" value="<?php echo isset($_GET['search']) ? $_GET['search'] : ''; ?>" />
                 <input type="submit" id="submit" value="Search" />
             </form>
             </div>
             <div>
                 <form>
                     <label for="quickadd"><i class="bx bxs-plus-circle"></i></label>
-                    <input type="text" class="text" id="quickadd" name="quickadd" />
+                    <input type="text" class="text" id="quickadd" name="quickadd" <?php if(isset($_GET['quickadd'])) echo 'autofocus' ?> />
                     <input type="submit" id="submit" value="Add" />
                 </form>
             </div>
             <button class="new"><i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Add New</button>
         </div>
+        <div class="inventory-table">
+
+        </div>
     </div>
 
-    <div id="Anchor" class="tabcontent">
+    <!--- 
+    <div id="yarn" class="tabcontent">
         <h3>Paris</h3>
         <p>Paris is the capital of France.</p> 
     </div>
+    -->
     <script src="./lib/js/inventory.js"></script>
 </div>
 
