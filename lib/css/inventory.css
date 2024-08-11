@@ -117,138 +117,158 @@
 
   .inventory-table {
     width: 100%;
-    /* margin-left: -15px; */
     margin-bottom: 10px;
-    overflow-x: scroll;
-    
+    overflow-x: hidden;
   }
 
-  .inventory-table tr.header {
-    background-color: var(--session-color);
-    color: rgba(var(--text-color),0.5);
-    border-radius: 10px 10px 0 0;
-    border: none !important;
+  .inventory-table table {
+    min-width: 100%;
+    max-width: fit-content;
+    table-layout: fixed;
+    border-collapse: collapse;
   }
 
-  .inventory-table tr.header:hover {
-    background-color: var(--session-color) !important;
-  }
+.inventory-table tr.header {
+  background-color: var(--session-color);
+  color: rgba(var(--text-color),0.5);
+  border-radius: 10px 10px 0 0;
+  border: none !important;
+}
 
-  .inventory-table tr {
-    padding: 10px 100px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    text-align: center;
-    border-left: 1px solid #555;
-    border-right: 1px solid #555;
-  }
+.inventory-table tr.header:hover {
+  background-color: var(--session-color) !important;
+}
 
-  .inventory-table tr:hover {
-    background-color: #eee;
-  }
+/* Customize the label (the container) */
+.check-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
-  .inventory-table tr:last-child {
-    border-bottom: 1px solid #555;
-    border-radius: 0px 0px 10px 10px;
-  }
+/* Hide the browser's default checkbox */
+.check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
 
-  .inventory-table tr.selected {
-    background-color: #ddd;
-  }
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ddd;
+}
 
-  /* Customize the label (the container) */
-  .check-container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
+/* On mouse-over, add a grey background color */
+.check-container:hover input ~ .checkmark {
+  background-color: #bbb;
+}
 
-  /* Hide the browser's default checkbox */
-  .check-container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
+/* When the checkbox is checked, add a blue background */
+.check-container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
 
-  /* Create a custom checkbox */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #ddd;
-  }
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
 
-  /* On mouse-over, add a grey background color */
-  .check-container:hover input ~ .checkmark {
-    background-color: #bbb;
-  }
+/* Show the checkmark when checked */
+.check-container input:checked ~ .checkmark:after {
+  display: block;
+}
 
-  /* When the checkbox is checked, add a blue background */
-  .check-container input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
+/* Style the checkmark/indicator */
+.check-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
+.inventory-table tr {
+  /* padding: 10px 5%; */
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: nowrap; */
+  justify-content: space-between;
+  /* text-align: center; */
+  border-left: 1px solid #555;
+  border-right: 1px solid #555;
+  gap: 25px;
+}
 
-  /* Show the checkmark when checked */
-  .check-container input:checked ~ .checkmark:after {
-    display: block;
-  }
+.inventory-table tr:hover {
+  background-color: #eee;
+}
 
-  /* Style the checkmark/indicator */
-  .check-container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
+.inventory-table tr:last-child {
+  border-bottom: 1px solid #555;
+  border-radius: 0px 0px 10px 10px;
+}
 
+.inventory-table tr.selected {
+  background-color: #ddd;
+}
 
-  .color-prev {
-    display: block;
-    border-radius: 100px;
-    padding: 2px;
-  }
+.inventory-table th, .inventory-table td {
+  padding: 8px;
+  text-align: center;
+  white-space: nowrap; /* Prevent text wrapping */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  background-color: black;
+  min-width: 100px;
+}
 
-  .td-check {
-    width: 25px;
-  }
+.color-prev {
+  display: block;
+  border-radius: 100px;
+  padding: 2px;
+}
 
-  .td-mfr, .td-num, .td-qty, .td-color-prev {
-    width: 100px;
-  }
+.td-check {
+  width: 25px !important;
+}
 
-  .td-ctrl {
-    width: 125px;
-  }
+.td-mfr, .td-num, .td-qty, .td-color-prev {
+  width: 100px !important;
+}
 
-  .btn-add, .btn-sub, .btn-del {
-    background-color: inherit;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    margin-top: 3px;
+.td-ctrl {
+  width: 125px !important;
+}
+
+@media (max-width: 779px) {
+  .inventory-table {
+    overflow-x:scroll;
   }
+}
+
+.btn-add, .btn-sub, .btn-del {
+  background-color: inherit;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 3px;
+}
