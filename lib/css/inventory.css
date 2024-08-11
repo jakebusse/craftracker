@@ -49,6 +49,7 @@
     background-color: #fff;
     border-radius: 0px 10px 10px 10px;
     z-index: 99;
+    margin-bottom: 50px;
   }
 
   .inventory-actions {
@@ -117,6 +118,7 @@
   .inventory-table {
     width: 100%;
     /* margin-left: -15px; */
+    margin-bottom: 10px;
     
   }
 
@@ -148,6 +150,6 @@
     padding: 2px;
   }
 
-  .td-check, .td-mfr, .td-num, .td-qty, .td-color-prev, .td-edit, .td-delete {
+  .td-check, .td-mfr, .td-num, .td-qty, .td-color-prev, .td-add, .td-sub {
     width: 100px;
   }

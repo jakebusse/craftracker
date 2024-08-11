@@ -60,7 +60,7 @@
     console.log("Form data being sent:", formData); // Log form data for debugging
     
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', '../actions/register', true);
+    xhr.open('POST', '../actions/register.php', true);
     
     xhr.onload = function() {
         console.log("AJAX request completed with status:", xhr.status);

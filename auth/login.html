@@ -31,7 +31,7 @@
 
             const formData = new FormData(this);
             const xhr = new XMLHttpRequest();
-            xhr.open('POST', '../actions/login', true);
+            xhr.open('POST', '../actions/login.php', true);
 
             xhr.onload = function() {
                 const response = JSON.parse(this.responseText);

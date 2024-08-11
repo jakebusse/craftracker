@@ -3,12 +3,6 @@
     ini_set('display_startup_errors', '1');
     error_reporting(E_ALL);
 
-    function session_message_init() {
-        $_SESSION['message'] = '';
-        $_SESSION['messageDisplay'] = 'none';
-        $_SESSION['messageColor'] = 'black';
-    }
-
     function hex2rgb($hex) {
         $hex = str_replace("#", "", $hex);
     

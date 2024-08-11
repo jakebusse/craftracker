@@ -3,9 +3,6 @@ include '../main.php';
 $configs = include('../config.php');
 
 session_start();
-if($_SESSION['loggedin']) {
-    header('Location: ../home');
-}
 
 $response = ['status' => 'error', 'message' => ''];
 
@@ -33,8 +30,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $_SESSION['user'] = $row['username'];
                 $_SESSION['id'] = $row['id'];
                 $_SESSION['color'] = $row['dmc'];
-                session_message_init();
                 $response['status'] = 'success';
+                $response['message'] = 'authenticated';
                 $response['redirect'] = '../home';
             } else {
                 $response['message'] = "Invalid username or password";
@@ -45,5 +42,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     }
 
     $conn = null;
-    echo json_encode($response);
 }
+
+echo json_encode($response);

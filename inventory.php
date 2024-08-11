@@ -1,5 +1,5 @@
 <?php
-    include 'main.php';
+    include './main.php';
 
     session_start();
     if(!$_SESSION['loggedin']) {
@@ -37,8 +37,8 @@
                         <td class="td-num">'.$row['num'].'</td>
                         <td class="td-qty">'.$row['qty'].'</td>
                         <td class="td-color-prev"><div class="color-prev" style="background-color:'.$dmc_colors[$row['num']]['hex'].';">&nbsp;</div></td>
-                        <td class="td-edit"></td>
-                        <td class="td-delete"></td>
+                        <td class="td-add"></td>
+                        <td class="td-sub"></td>
                     </tr>
                     ';
                 }
@@ -114,6 +114,7 @@
     </div>
 
     <div id="embroidery-floss" class="tabcontent">
+        <p id="form-validation" style="padding-left: 25px;"></p>
         <div class="inventory-actions">
             <form>
 
@@ -135,9 +136,11 @@
                 </fieldset>
             </form>
 
-            <form>
+            <form id="quickadd">
                 <fieldset>
                     <label for="quickadd"><i class="bx bxs-plus-circle"></i></label>
+                    <input type="text" id="formid" name="formid" value="quickadd" hidden />
+                    <input type="text" id="mfr" name="mfr" value="<?php echo isset($_GET['filter']) ? $_GET['filter'] : ''; ?>" hidden />
                     <input type="text" class="text" id="quickadd" name="quickadd" <?php if(isset($_GET['quickadd'])) echo 'autofocus'; ?> />
                     <input type="submit" class="submit" id="quickaddsubmit" value="Add" />
                 </fieldset>
@@ -153,8 +156,8 @@
                 <th class="td-num">Number</th>
                 <th class="td-qty">Quantity</th>
                 <th class="td-color-prev"></th>
-                <th class="td-edit"></th>
-                <th class="td-delete"></th>
+                <th class="td-add"></th>
+                <th class="td-sub"></th>
             </tr>
             <?php echo getFlossInventory(); ?>
         </table>
