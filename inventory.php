@@ -42,16 +42,20 @@
                         <td class="td-num">'.$row['num'].'</td>
                         <td class="td-qty">'.$row['qty'].'</td>
                         <td class="td-color-prev"><div class="color-prev" style="background-color:'.$dmc_colors[$row['num']]['hex'].';">&nbsp;</div></td>
-                        <td class="td-add"><button class="btn-add" data-mfr="'.$row['mfr'].'" data-num="'.$row['num'].'" data-qty="'.$row['qty'].'"><i class="bx bx-plus-circle"></i></button></td>
-                        <td class="td-sub"><button class="btn-sub" data-mfr="'.$row['mfr'].'" data-num="'.$row['num'].'" data-qty="'.$row['qty'].'"><i class="bx bx-minus-circle"></i></button></td>
-                        <td class="td-del"><button class="btn-del" data-mfr="'.$row['mfr'].'" data-num="'.$row['num'].'" data-qty="'.$row['qty'].'"><i class="bx bxs-trash"></i></button></td>
+                        <td class="td-ctrl">
+                            <button class="btn-add" data-mfr="'.$row['mfr'].'" data-num="'.$row['num'].'" data-qty="'.$row['qty'].'" style="color:'.$dmc_colors['909']['hex'].';"><i class="bx bxs-plus-circle"></i></button>
+                            <button class="btn-sub" data-mfr="'.$row['mfr'].'" data-num="'.$row['num'].'" data-qty="'.$row['qty'].'" style="color:'.$dmc_colors['3829']['hex'].';"><i class="bx bxs-minus-circle"></i></button>
+                            <button class="btn-del" data-mfr="'.$row['mfr'].'" data-num="'.$row['num'].'" data-qty="'.$row['qty'].'" style="color:'.$dmc_colors['814']['hex'].';"><i class="bx bxs-trash"></i></button>
+                        </td>
                     </tr>
                     ';
                 }
             } else {
                 echo '
                 <tr>
+                    <td></td>
                     <td>0 results</td>
+                    <td></td>
                 </tr>
                 ';
             }
@@ -166,10 +170,12 @@
                 <th class="td-mfr">Manufacturer</th>
                 <th class="td-num">Number</th>
                 <th class="td-qty">Quantity</th>
-                <th class="td-color-prev"></th>
-                <th class="td-add"><button class="btn-add"></button></th>
-                <th class="td-sub"><button class="btn-sub"></button</th>
-                <th class="td-del"><button class="btn-del"></button></th>
+                <th class="td-color-prev"><div class="color-prev" style="background-color:rgba(255,255,255,0.25);border:1px solid rgba(255,255,255,0.75);">&nbsp;</div></th>
+                <th class="td-ctrl">
+                    <button class="btn-add" data-mfr="" data-num="" data-qty="" style="color:rgba(var(--text-color),0.5);cursor:default;"><i class="bx bxs-plus-circle"></i></button>
+                    <button class="btn-sub" data-mfr="" data-num="" data-qty="" style="color:rgba(var(--text-color),0.5);cursor:default;"><i class="bx bxs-minus-circle"></i></button>
+                    <button class="btn-del" data-mfr="" data-num="" data-qty="" style="color:rgba(var(--text-color),0.5);cursor:default;"><i class="bx bxs-trash"></i></button>
+                </th>
             </tr>
             <?php echo getFlossInventory(); ?>
         </table>

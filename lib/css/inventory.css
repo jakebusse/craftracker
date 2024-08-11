@@ -119,6 +119,7 @@
     width: 100%;
     /* margin-left: -15px; */
     margin-bottom: 10px;
+    overflow-x: scroll;
     
   }
 
@@ -240,8 +241,8 @@
     width: 100px;
   }
 
-  .btn-add, .btn-sub, .btn-del {
-    width: 25px;
+  .td-ctrl {
+    width: 125px;
   }
 
   .btn-add, .btn-sub, .btn-del {

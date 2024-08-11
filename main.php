@@ -37,7 +37,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,minimum-scale=1">
-        <title>Craftracker - ' . $title . '</title>
+        <title>Craftracker - ' . strtoupper(substr($_SERVER['PHP_SELF'], 1, 1)) . substr(str_replace(".php", '', $_SERVER['PHP_SELF']), 2) . '</title>
         <link href="./lib/css/app.css" rel="stylesheet" type="text/css">
          <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
          <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -71,9 +71,9 @@
     function template_footer($title) {
         echo '        </div>
         <div class="footer" id="footer">
-                <p>(c) 2024</p>
-                <p>1</p>
-                <p>2</p>
+                <p>&copy; 2024 - Jake Busse</p>
+                <p></p>
+                <p></p>
         </div>
     </body>
 </html>';
