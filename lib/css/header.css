@@ -116,6 +116,7 @@
         bottom: 0;
         left: 0;
         background-color: var(--session-color) !important;
+        z-index: 100;
     }
 
     .mobilemenu .hamburger {

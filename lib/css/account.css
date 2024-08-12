@@ -5,3 +5,9 @@
 .account-block form {
     margin: 0px 75px;
 }
+
+@media (max-width: 500px) {
+  .account-block form {
+    margin: 0px 5%;
+  }
+}
