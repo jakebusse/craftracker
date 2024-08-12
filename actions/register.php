@@ -41,7 +41,7 @@
 
             $response['status'] = 'success';
             $response['message'] = 'Registration successful!';
-            $response['redirect'] = '../home';
+            $response['redirect'] = '../app';
         } catch (PDOException $e) {
             $response['status'] = 'failure';
             if($e->errorInfo[1] == 1062) {

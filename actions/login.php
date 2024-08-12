@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $_SESSION['color'] = $row['dmc'];
                 $response['status'] = 'success';
                 $response['message'] = 'authenticated';
-                $response['redirect'] = '../home';
+                $response['redirect'] = '../app';
             } else {
                 $response['message'] = "Invalid username or password";
             }

@@ -37,8 +37,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,minimum-scale=1">
-        <title>Craftracker - ' . strtoupper(substr($_SERVER['PHP_SELF'], 1, 1)) . substr(str_replace(".php", '', $_SERVER['PHP_SELF']), 2) . '</title>
-        <link href="./lib/css/app.css" rel="stylesheet" type="text/css">
+        <title>Craftracker - ' . $title . '</title>
+        <link href="./lib/css/main.css" rel="stylesheet" type="text/css">
+        <link href="./lib/css/header.css" rel="stylesheet" type="text/css">
          <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
          <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
         <script src="../lib/js/dmc.js"></script>
@@ -46,21 +47,25 @@
     </head>
     <body onload="setAccentColor([\'header\',\'footer\'],' . $_SESSION['color'] . ')">
         <header class="header" id="header">
-            <div class="header-left">
-                <a href="./home" id="' . ($current_file_name == 'home.php' ? 'active' : '') . '"><i class="bx bx-home"></i>Home</a>
-                <a href="./inventory" id="' . ($current_file_name == 'inventory.php' ? 'active' : '') . '"><i class="bx bx-box"></i>Inventory</a>
-            </div>
-
-            <div class="header-right">
-                <div class="dropdown">
-                    <button onclick="showDropdown()" class="icon profilebtn"><i class="bx bxs-user"></i>'.$_SESSION['user'].'</button>
-                    <div id="profileMenu" class="dropdown-menu">
-                        <!--- <a href="#home"><i class="bx bx-window-alt"></i>My Page <i>(beta)</i></a> -->
-                        <a href="./account"><i class="bx bxs-user-account"></i>My Account</a>
-                        <a href="./auth/logout"><i class="bx bx-log-out"></i>Logout</a>
-                    </div>
+            <div class="navlinks" id="navlinks">
+                <button class="hamburger" onclick="openMobileMenu()"><i class="bx bx-menu"></i></button>
+                <button class="close" onclick="closeMobileMenu()"><i class="bx bx-x"></i></button>
+                <div class="header-left">
+                    <a href="./app" id="' . ($current_file_name == 'app.php' ? 'active' : '') . '"><i class="bx bx-home"></i>Home</a>
+                    <a href="./inventory" id="' . ($current_file_name == 'inventory.php' ? 'active' : '') . '"><i class="bx bx-box"></i>Inventory</a>
                 </div>
-                <!--- <a href="./auth/logout" class="icon" title="Logout"><i class="fa-solid fa-right-from-bracket"></i></a> -->
+
+                <div class="header-right">
+                    <div class="dropdown">
+                        <button onclick="showDropdown()" class="icon profilebtn' . ($current_file_name == 'account.php' ? ' active' : '').'"><i class="bx bxs-user"></i>'.$_SESSION['user'].'</button>
+                        <div id="profileMenu" class="dropdown-menu">
+                            <!--- <a href="#home"><i class="bx bx-window-alt"></i>My Page <i>(beta)</i></a> -->
+                            <a href="./account"><i class="bx bxs-user-account"></i>My Account</a>
+                            <a href="./auth/logout"><i class="bx bx-log-out"></i>Logout</a>
+                        </div>
+                    </div>
+                    <!--- <a href="./auth/logout" class="icon" title="Logout"><i class="fa-solid fa-right-from-bracket"></i></a> -->
+                </div>
             </div>
         </header>
 
