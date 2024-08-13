@@ -200,31 +200,34 @@
     
   }
 
+  .inventory-table-container {
+    overflow-x: scroll;
+  }
+
   .inventory-table {
     width: 100%;
     /* margin-left: -15px; */
     margin-bottom: 10px;
-    overflow-x: scroll;
-    
   }
 
-  .inventory-table tr.header {
+  .inventory-table tr.tableheader {
     background-color: var(--session-color);
     color: rgba(var(--text-color),0.5);
     border-radius: 10px 10px 0 0;
     border: none !important;
   }
 
-  .inventory-table tr.header:hover {
+  .inventory-table tr.tableheader:hover {
     background-color: var(--session-color) !important;
   }
 
   .inventory-table tr {
-    padding: 10px 100px;
+    padding: 10px 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
     border-left: 1px solid #555;
     border-right: 1px solid #555;
@@ -241,6 +244,11 @@
 
   .inventory-table tr.selected {
     background-color: #ddd;
+  }
+
+  .inventory-table td, .inventory-table th {
+    /* width: 125px; */
+    padding: 0px 15px;
   }
 
   /* Customize the label (the container) */
@@ -274,6 +282,7 @@
     height: 25px;
     width: 25px;
     background-color: #ddd;
+    border-radius: 5px;
   }
 
   /* On mouse-over, add a grey background color */
@@ -320,6 +329,7 @@
 
   .td-check {
     width: 25px;
+    height: 25px;
   }
 
   .td-mfr, .td-num, .td-qty, .td-color-prev {

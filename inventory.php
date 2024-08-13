@@ -164,26 +164,28 @@
             <button class="new"><i class="bx bxs-plus-circle"></i>&nbsp;&nbsp;Add New</button>
         </div>
 
-        <table class="inventory-table">
-            <tr class="header">
-                <th class="td-check">
-                    <label class="check-container">
-                        <input type="checkbox" />
-                        <span class="checkmark"></span>
-                    </label>
-                </th>
-                <th class="td-mfr">Manufacturer</th>
-                <th class="td-num">Number</th>
-                <th class="td-qty">Quantity</th>
-                <th class="td-color-prev"><div class="color-prev" style="background-color:rgba(255,255,255,0.25);border:1px solid rgba(255,255,255,0.75);">&nbsp;</div></th>
-                <th class="td-ctrl">
-                    <button class="btn-add" data-mfr="" data-num="" data-qty="" style="color:rgba(var(--text-color),0.5);cursor:default;"><i class="bx bxs-plus-circle"></i></button>
-                    <button class="btn-sub" data-mfr="" data-num="" data-qty="" style="color:rgba(var(--text-color),0.5);cursor:default;"><i class="bx bxs-minus-circle"></i></button>
-                    <button class="btn-del" data-mfr="" data-num="" data-qty="" style="color:rgba(var(--text-color),0.5);cursor:default;"><i class="bx bxs-trash"></i></button>
-                </th>
-            </tr>
-            <?php echo getFlossInventory(); ?>
-        </table>
+        <div class="inventory-table-container">
+            <table class="inventory-table">
+                <tr class="tableheader">
+                    <th class="td-check">
+                        <label class="check-container">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </th>
+                    <th class="td-mfr">Manufacturer</th>
+                    <th class="td-num">Number</th>
+                    <th class="td-qty">Quantity</th>
+                    <th class="td-color-prev"><div class="color-prev" style="background-color:rgba(255,255,255,0.25);border:1px solid rgba(255,255,255,0.75);">&nbsp;</div></th>
+                    <th class="td-ctrl">
+                        <button class="btn-add" data-mfr="" data-num="" data-qty="" style="color:rgba(var(--text-color),0.5);cursor:default;"><i class="bx bxs-plus-circle"></i></button>
+                        <button class="btn-sub" data-mfr="" data-num="" data-qty="" style="color:rgba(var(--text-color),0.5);cursor:default;"><i class="bx bxs-minus-circle"></i></button>
+                        <button class="btn-del" data-mfr="" data-num="" data-qty="" style="color:rgba(var(--text-color),0.5);cursor:default;"><i class="bx bxs-trash"></i></button>
+                    </th>
+                </tr>
+                <?php echo getFlossInventory(); ?>
+            </table>
+        </div>
     </div>
 
     <!--
