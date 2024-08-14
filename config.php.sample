@@ -1,0 +1,8 @@
+<?php
+
+return (object) array(
+    'mysql_host' => 'localhost',
+    'mysql_user' => '',
+    'mysql_pass' => '',
+    'mysql_db' => 'craftracker'
+);
