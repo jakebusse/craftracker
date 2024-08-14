@@ -38,6 +38,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,minimum-scale=1">
         <title>Craftracker - ' . $title . '</title>
+        <link rel="shortcut icon" href="./lib/img/favicon.png">
         <link href="./lib/css/main.css" rel="stylesheet" type="text/css">
         <link href="./lib/css/header.css" rel="stylesheet" type="text/css">
          <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
