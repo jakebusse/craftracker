@@ -23,8 +23,32 @@
                 <fieldset>
                     <input type="text" id="formid" name="formid" value="dmcquickadd" hidden />
                     <label for="num"><i class="bx bxs-plus-circle"></i></label>
-                    <input type="text" class="text" id="quickaddnum" name="num" <?php if(isset($_GET['quickadd'])) echo 'autofocus'; ?> />
+                    <input type="text" class="text" id="quickaddnum" name="num" />
                     <input type="submit" class="submit" id="quickaddsubmit" value="Add" />
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="widget" id="lookup">
+            <div class="title">DMC Lookup</div>
+            <form id="dmclookup">
+                <fieldset>
+                    <input type="text" id="formid" name="formid" value="dmclookup" hidden />
+                    <label for="num"><i class="bx bx-search"></i></label>
+                    <input type="text" class="text" id="lookupnum" name="num" />
+                    <input type="submit" class="submit" id="lookupsubmit" value="Search" />
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="widget" id="lookup">
+            <div class="title">DMC Color Preview</div>
+            <form id="dmcpreview" name="dmcpreview">
+                <fieldset>
+                    <input type="text" id="formid" name="formid" value="dmcpreview" hidden />
+                    <label for="num"><i class="bx bx-palette"></i></label>
+                    <input type="text" class="text" id="previewnum" name="num" />
+                    <input type="submit" class="submit" id="lookupsubmit" value="Preview" />
                 </fieldset>
             </form>
         </div>

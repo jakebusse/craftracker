@@ -61,6 +61,38 @@
                 echo json_encode($response);
                 exit;
             }
+        } elseif ($_POST['formid'] == 'dmclookup') {
+            if(isset($dmc_colors[$_POST['num']])) {
+                $sql = "SELECT num, qty FROM inventory WHERE mfr = 'dmc' and num = :num and owner = :id";
+                $stmt = $conn->prepare($sql);
+
+                try {
+                    $stmt->execute([
+                        ':num' => htmlspecialchars($_POST['num']),
+                        ':id' => $_SESSION['id']
+                    ]);
+                    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+                    // if(count($results) > 0) {
+                    if(isset($result['qty'])) {
+                        $response['status'] = 'success';
+                        $response['num'] = $result['num'];
+                        $response['message'] = 'You have quantity '.$result['qty'].' of DMC '.$result['num'];
+                    } else {
+                        $response['status'] = 'warning';
+                        $response['message'] = 'You do not have DMC '.$_POST['num'].' in your inventory.';
+                    }
+                } catch(PDOException $e) {
+                    $response['status'] = 'failure';
+                    $response['message'] = 'Could not add DMC '.htmlspecialchars($_POST['num']).': '.$e->getMessage();
+                    echo json_encode($response);
+                    exit;
+                }
+            } else {
+                $response['status'] = 'failure';
+                $response['message'] = htmlspecialchars($_POST['num']).' is not a valid DMC number.';
+                echo json_encode($response);
+                exit;
+            }
         }
     }
 $conn = null;

@@ -13,18 +13,18 @@
 }
 
 .response-text.fail {
-    background-color: #ffdddd;
-    color: #a2191f;
+    background-color: #ffdddd !important;
+    color: #a2191f !important;
 }
 
 .response-text.success {
-    background-color: #ddffdd;
-    color: #277a3d;
+    background-color: #ddffdd !important;
+    color: #277a3d !important;
 }
 
 .response-text.warning {
-    background-color: #ffffcc;
-    color: #b0ac38;
+    background-color: #ffffcc !important;
+    color: #b0ac38 !important;
 }
 
 .response-text-close {
@@ -101,4 +101,8 @@
     font-weight: bold;
     color: white;
     cursor: pointer;
+  }
+
+  #lookupresults {
+    padding: 15px;
   }
