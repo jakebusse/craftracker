@@ -1,0 +1,104 @@
+.response-text {
+    width: calc(100% - 30px);
+    padding: 10px 10px 10px 15px;
+    border: none;
+    margin: 25px 0px 25px 0px;
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bbb;
+    display: none;
+}
+
+.response-text.fail {
+    background-color: #ffdddd;
+    color: #a2191f;
+}
+
+.response-text.success {
+    background-color: #ddffdd;
+    color: #277a3d;
+}
+
+.response-text.warning {
+    background-color: #ffffcc;
+    color: #b0ac38;
+}
+
+.response-text-close {
+    --close-button-size: 20px;
+    border: none;
+    background-color: transparent;
+    font-size: var(--close-button-size);
+    cursor: pointer;
+    width: var(--close-button-size);
+    height: var(--close-button-size);
+    padding: 0px;
+    color: inherit;
+}
+
+.widgets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.widget {
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    padding: 15px;
+    min-width: 200px;
+}
+
+.widget .title {
+    width: 100%;
+    padding: 15px;
+    margin: -15px 0px 0px -15px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #fff;
+}
+
+.widget fieldset {
+    padding: 0px 7.5px 0px 15px;;
+    margin: 15px;
+    border: 1px solid #555;
+    border-radius: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    align-items: center;
+    min-width: 275px;
+    background-color: #fff;
+  }
+
+  .widget label {
+    margin-top: 3px;
+  }
+
+  .widget input.text, select {
+    flex-grow: 100;
+    padding: 15px 10px;
+    border: none;
+    outline: none !important;
+  }
+
+  .widget select {
+    padding-right: 15px;
+    margin-right: 15px;
+  }
+
+  .widget input.submit {
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    background: var(--session-color);
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }

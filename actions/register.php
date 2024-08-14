@@ -36,6 +36,7 @@
             session_regenerate_id();
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['user'] = $_POST['username'];
+            $_SESSION['fname'] = $_POST['firstname'];
             $_SESSION['id'] = $conn->lastInsertId();
             $_SESSION['color'] = $dmc;
 

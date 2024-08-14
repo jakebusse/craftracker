@@ -18,7 +18,7 @@
             exit;
         }
 
-        if($_POST['formid'] == "quickadd") {
+        if($_POST['formid'] == "dmcquickadd") {
             if(isset($dmc_colors[$_POST['quickadd']]) && $_POST['mfr'] == 'dmc') {
                     $sql = "INSERT INTO inventory (mfr, num, qty, owner) VALUES (:mfr, :num, :qty, :id)";
                     $stmt = $conn->prepare($sql);
@@ -31,7 +31,7 @@
                             ':id' => $_SESSION['id'],
                         ]);
                         $response['status'] = 'success';
-                        $response['message'] = 'Record created';
+                        $response['message'] = 'DMC '.htmlspecialchars($_POST['quickadd']).' added to inventory.';
                         $response['redirect'] = './inventory.php?filter='.$_POST['mfr'].'&quickadd';
                     } catch(PDOException $e) {
                         if($e->errorInfo[1] == 1062) {
@@ -41,11 +41,11 @@
                             try {
                                 $stmt->execute([
                                     ':mfr' => strtoupper($_POST['mfr']),
-                                    ':num' => htmlspecialchars($_POST['quickadd']),
+                                    ':num' => htmlspecialchars($_POST['num']),
                                     ':id' => $_SESSION['id']
                                 ]);
-                                $response['status'] = 'success';
-                                $response['message'] = 'Record updated';
+                                $response['status'] = 'warning';
+                                $response['message'] = 'DMC '.htmlspecialchars($_POST['num']).' already existed. Added 1 to quantity.';
                                 $response['redirect'] = './inventory.php?filter='.$_POST['mfr'].'&quickadd';
                             } catch(PDOException $e) {
                                 $response['status'] = 'failure';
@@ -55,7 +55,7 @@
                             }
                         } else {
                             $response['status'] = 'failure';
-                            $response['message'] = "Could not create or update record: ".$e->getMessage();
+                            $response['message'] = "Could not add DMC ".htmlspecialchars($_POST['num']).": ".$e->getMessage();
                             echo json_encode($response);
                             exit;
                         }

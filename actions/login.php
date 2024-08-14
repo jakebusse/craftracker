@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         exit;
     }
 
-    $sql = "SELECT id, username, password, dmc FROM accounts WHERE username = :username";
+    $sql = "SELECT id, firstname, username, password, dmc FROM accounts WHERE username = :username";
     $stmt = $conn->prepare($sql);
     $stmt->execute([':username' => htmlspecialchars($_POST['username'])]);
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -28,6 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 session_regenerate_id();
                 $_SESSION['loggedin'] = TRUE;
                 $_SESSION['user'] = $row['username'];
+                $_SESSION['fname'] = $row['firstname'];
                 $_SESSION['id'] = $row['id'];
                 $_SESSION['color'] = $row['dmc'];
                 $response['status'] = 'success';

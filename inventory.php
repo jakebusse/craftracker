@@ -152,15 +152,7 @@
                     </form>
                     </div>
 <!-- 
-                <form id="quickadd">
-                    <fieldset>
-                        <label for="quickadd"><i class="bx bxs-plus-circle"></i></label>
-                        <input type="text" id="formid" name="formid" value="quickadd" hidden />
-                        <input type="text" id="mfr" name="mfr" value="<?php echo isset($_GET['filter']) ? $_GET['filter'] : ''; ?>" hidden />
-                        <input type="text" class="text" id="quickadd" name="quickadd" <?php if(isset($_GET['quickadd'])) echo 'autofocus'; ?> />
-                        <input type="submit" class="submit" id="quickaddsubmit" value="Add" />
-                    </fieldset>
-                </form> -->
+                 -->
 
             <button class="new"><i class="bx bxs-plus-circle"></i>&nbsp;&nbsp;Add New</button>
         </div>
