@@ -126,31 +126,32 @@
     <div id="embroidery-floss" class="tabcontent">
         <p id="form-validation" style="padding-left: 25px;"></p>
         <div class="inventory-actions" id="inventory-actions">
-                <button class="new ia-button" onclick="openMobileActionsMenu()"><i class="bx bx-play"></i>&nbsp;&nbsp;Actions</button>
-                <button class="mobile-close" onclick="closeMobileActionsMenu()"><i class="bx bx-x"></i></button>
-                <form>
-                    <fieldset>
-                        <label for="quickadd"><i class="bx bxs-filter-alt"></i></label>
-                        <input type="text" id="formid" name="formid" value="filter" hidden />
-                        <select name="filter" id="filter" required>
-                            <option selected default disabled>-- SELECT --</option>
-                            <option value='' style="display:<?php if(isset($_GET['filter']) && $_GET['filter'] != '') echo 'block'; else echo 'none'?>">None</option>
-                            <option value="dmc" <?php selectFilter('filter', 'dmc')?>>DMC</option>
-                            <option value="anchor" <?php selectFilter('filter', 'anchor'); ?>>Anchor</option>
-                        </select>
-                        <input type="submit" class="submit" id="filtersubmit" value="Filter" />
-                    </fieldset>
-                </form>
+                <button class="new filters-button" onclick="openMobileFiltersMenu()"><i class="bx bxs-filter-alt"></i>&nbsp;&nbsp;Filters</button>
+                <div id="filters-container">
+                    <form>
+                        <fieldset>
+                            <label for="quickadd"><i class="bx bxs-filter-alt"></i></label>
+                            <input type="text" id="formid" name="formid" value="filter" hidden />
+                            <select name="filter" id="filter" required>
+                                <option selected default disabled>-- SELECT --</option>
+                                <option value='' style="display:<?php if(isset($_GET['filter']) && $_GET['filter'] != '') echo 'block'; else echo 'none'?>">None</option>
+                                <option value="dmc" <?php selectFilter('filter', 'dmc')?>>DMC</option>
+                                <option value="anchor" <?php selectFilter('filter', 'anchor'); ?>>Anchor</option>
+                            </select>
+                            <input type="submit" class="submit" id="filtersubmit" value="Filter" />
+                        </fieldset>
+                    </form>
 
-                <form id="search">
-                    <fieldset>
-                        <label for="search"><i class="bx bx-search"></i></label>
-                        <input type="text" id="formid" name="formid" value="search" hidden />
-                        <input type="text" class="text" id="search" name="search" <?php if(isset($_GET['quickadd'])) echo 'autofocus'; ?> />
-                        <input type="submit" class="submit" id="searchsubmit" value="Search" />
-                    </fieldset>
-                </form>
-
+                    <form id="search">
+                        <fieldset>
+                            <label for="search"><i class="bx bx-search"></i></label>
+                            <input type="text" id="formid" name="formid" value="search" hidden />
+                            <input type="text" class="text" id="search" name="search" <?php if(isset($_GET['quickadd'])) echo 'autofocus'; ?> />
+                            <input type="submit" class="submit" id="searchsubmit" value="Search" />
+                        </fieldset>
+                    </form>
+                    </div>
+<!-- 
                 <form id="quickadd">
                     <fieldset>
                         <label for="quickadd"><i class="bx bxs-plus-circle"></i></label>
@@ -159,7 +160,7 @@
                         <input type="text" class="text" id="quickadd" name="quickadd" <?php if(isset($_GET['quickadd'])) echo 'autofocus'; ?> />
                         <input type="submit" class="submit" id="quickaddsubmit" value="Add" />
                     </fieldset>
-                </form>
+                </form> -->
 
             <button class="new"><i class="bx bxs-plus-circle"></i>&nbsp;&nbsp;Add New</button>
         </div>
