@@ -55,6 +55,16 @@
     min-width: 200px;
 }
 
+@media (max-width: 800px) {
+  .widgets {
+    flex-direction: column;
+  }
+
+  .widget {
+    width: calc(100% - 30px);
+  }
+}
+
 .widget .title {
     width: 100%;
     padding: 15px;
@@ -101,6 +111,26 @@
     font-weight: bold;
     color: white;
     cursor: pointer;
+  }
+
+  @media (max-width: 400px) {
+    .widget {
+      overflow-x: hidden;
+      min-width: max-content;
+    }
+
+    .widget fieldset {
+      margin: 5px -10px;
+      min-width: max-content;
+    }
+
+    .widget label {
+      display: none;
+    }
+
+    .widget input.submit {
+      margin: 0px;
+    }
   }
 
   #lookupresults {

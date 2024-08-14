@@ -163,6 +163,21 @@
     }
   }
 
+  @media (max-width: 400px) {
+    .tabcontent {
+      overflow-x: scroll;
+    }
+
+    .inventory-actions fieldset {
+      min-width: max-content;
+      margin: 5px -5px;
+    }
+
+    .inventory-actions label {
+      display: none;
+    }
+  }
+
   .inventory-table-container {
     overflow-x: scroll;
   }

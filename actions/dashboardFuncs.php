@@ -20,7 +20,7 @@
 
         if($_POST['formid'] == 'dmcquickadd') {
             if(isset($dmc_colors[$_POST['num']])) {
-                $sql = "INSERT INTO inventory (mfr, num, qty, owner) VALUES ('dmc', :num, 1, :id)";
+                $sql = "INSERT INTO inventory (mfr, num, qty, owner) VALUES ('DMC', :num, 1, :id)";
                 $stmt = $conn->prepare($sql);
 
                 try {
@@ -32,7 +32,7 @@
                     $response['message'] = 'DMC '.htmlspecialchars($_POST['num']).' added to inventory.';
                 } catch(PDOException $e) {
                     if($e->errorInfo[1] == 1062) {
-                        $sql = "UPDATE inventory SET qty = qty + 1 WHERE mfr = 'dmc' and num = :num and owner = :id";
+                        $sql = "UPDATE inventory SET qty = qty + 1 WHERE mfr = 'DMC' and num = :num and owner = :id";
                         $stmt = $conn->prepare($sql);
 
                         try {
@@ -63,7 +63,7 @@
             }
         } elseif ($_POST['formid'] == 'dmclookup') {
             if(isset($dmc_colors[$_POST['num']])) {
-                $sql = "SELECT num, qty FROM inventory WHERE mfr = 'dmc' and num = :num and owner = :id";
+                $sql = "SELECT num, qty FROM inventory WHERE mfr = 'DMC' and num = :num and owner = :id";
                 $stmt = $conn->prepare($sql);
 
                 try {
