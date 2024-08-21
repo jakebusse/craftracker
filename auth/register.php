@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Craftracker - Register</title>
     <link rel="stylesheet" href="../lib/css/auth.css">
+    <link rel="shortcut icon" href="../lib/img/favicon.png" />
     <script src="../lib/js/dmc_colors.json"></script>
     <script src="../lib/js/dmc.js"></script>
 </head>

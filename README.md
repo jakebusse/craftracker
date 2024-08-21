@@ -51,7 +51,7 @@ When prompted, respond `Y` to each of the four prompts.
 ## Pull Source Files
 1. Navigate to the `/var/www` folder and run the following code to pull the latest code from GitHub
 ```console
-foo@bar:/var/www$ git pull https://github.com/jakebusse/craftracker
+foo@bar:/var/www$ git clone https://github.com/jakebusse/craftracker.git
 ```
 
 ## Initiate Database
